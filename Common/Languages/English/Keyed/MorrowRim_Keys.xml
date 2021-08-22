@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+	<!--ash resistance -->
+    <MorrowRim_AshResistant>Resistant to ash-storms</MorrowRim_AshResistant>
+    <MorrowRim_AshProtection>Protects against ash-storms</MorrowRim_AshProtection>
+	
+    <MorrowRim_AshResistant_Description>Whether an animal is resistant to the effects of ash storms.\n\nIf an animal is resistant it will avoid all ash buildup when outside during an ash-storm.\n\nMechanoids, and other robotic constructs, may be resistant to ash buildup, but their servos may temporarily become clogged with ash.\n\nEven if an organic life-form is resistant to the affects of ash storms, it may occasionally suffer temporary blindness during one.</MorrowRim_AshResistant_Description>
+    <MorrowRim_AshResistant_DescriptionPlant>Whether a plant is resistant to the effects of ash storms.\n\nIf a plant is not resistant it will slowly take damage during an ash storm, eventually killing the plant.</MorrowRim_AshResistant_DescriptionPlant>
+    <MorrowRim_AshResistant_DescriptionApparel>Whether worn apparel will protect the wearer from the effects of ash storms.\n\nIf the apparel does not cover the wearers eyes it will only prevent ash buildup.</MorrowRim_AshResistant_DescriptionApparel>
+    <MorrowRim_AshResistant_DescriptionHediff>This prevents the pawn from gaining ash build up while outside during an ash storm.</MorrowRim_AshResistant_DescriptionHediff>
+	
+    <MorrowRim_AshResistant_Susceptible>No</MorrowRim_AshResistant_Susceptible>
+    <MorrowRim_AshResistant_Resistant>Yes</MorrowRim_AshResistant_Resistant>
+    <MorrowRim_AshResistant_Mechanical>Mechanical</MorrowRim_AshResistant_Mechanical>
+	
+	<MorrowRim_shedGrowth>Progress until next {0} harvest</MorrowRim_shedGrowth>
+	<!-- Events -->
+	<LetterLabelSiltStriderPasses>silt strider enters the area</LetterLabelSiltStriderPasses>
+	<LetterSiltStriderPasses>Silt striders have wandered into the area.\n\nTaming them would gain your colony a useful long distance transport animal.\n\nThey will leave in a few days.</LetterSiltStriderPasses>	
+	<LetterSiltStriderAttracted>Recent festivities have attracted the attention of a silt strider. Taming it would gain your colony a useful long distance transport animal, but it will leave in a few days.</LetterSiltStriderAttracted>
+	
+	<LetterLabelAlbinoGuarPasses>albino guar enters the area</LetterLabelAlbinoGuarPasses>
+	<LetterAlbinoGuarPasses>An albino guar has wandered into the area.\n\nIt can be sold for a substantial amount to collectors.\n\nIt will leave in a few days.</LetterAlbinoGuarPasses>
+	
+	<LetterLabelCliffRacerSwarm>cliff racer swarm enters the area</LetterLabelCliffRacerSwarm>
+	<LetterCliffRacerSwarm>A swarm of cliff racers has entered the area.\n\nIt may be best to deal with them quickly before the swarm grows too large.\n\nThey will leave in a few days.</LetterCliffRacerSwarm>
+	
+	<LetterLabelCliffRacerSwarmManhunter>cliff racer swarm enters the area</LetterLabelCliffRacerSwarmManhunter>
+	<LetterCliffRacerSwarmManhunter>A swarm of cliff racers has entered the area.\n\nIt may be best to deal with them quickly before the swarm grows too large.\n\nThis swarm appears to be unusually agressive.</LetterCliffRacerSwarmManhunter>
+
+	<MorrowRim_LetterLabelAnimalBlight>animal blight</MorrowRim_LetterLabelAnimalBlight>
+	<MorrowRim_LetterAnimalBlight>The blight storm has affected some of the animals in the area, enraging them and turning them manhunter.\n\nThe following animals have become blighted:\n\n</MorrowRim_LetterAnimalBlight>
+	
+	<MorrowRim_LetterLabelPlantBlight>plant blight</MorrowRim_LetterLabelPlantBlight>
+	<MorrowRim_LetterPlantBlight>The blight storm has affected some of the plants you have sown, they have become blighted.\n\nThe following plants have become blighted:\n\n</MorrowRim_LetterPlantBlight>
+
+	<MorrowRim_LetterLabelCliffRacerExtinction>cliff racer extinction</MorrowRim_LetterLabelCliffRacerExtinction>
+	<MorrowRim_LetterCliffRacerExtinction>As the last cliff racer falls, the ashlands grow silent. The torment of the winged scourge has finally ended. You are a true saint.\n\nCliff racers will no longer appear in the wild, and the cliff racer swarm events will no longer occur.</MorrowRim_LetterCliffRacerExtinction>
+
+	<MorrowRim_LetterLabelCorprusRefugeeJoins>Corprus refugee joins: {PAWN_nameDef}</MorrowRim_LetterLabelCorprusRefugeeJoins>
+	<LetterCorprusRefugeeJoins>A {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.\n\n{0_nameDef} claims to be a {1_label} refugee, but is unwilling to disclose if they are infected with {1_label}, or the severity of the infection..\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily, claiming to have nowhere else to go. You can choose to turn {PAWN_objective} down and send {PAWN_objective} away. However, your colonists will be disturbed at sending someone away in need.</LetterCorprusRefugeeJoins>
+
+	<!-- kawma nests -->
+	<LetterLabelKwamaNestThreatened>kwama nest threatened</LetterLabelKwamaNestThreatened>
+	<LetterKwamaNestThreatened>A kwama nest has been threatened and will now defend their hive aggressively. They will return to a passive state when they feel safe.</LetterKwamaNestThreatened>
+	<LetterLabelKwamaNestCalmed>kwama nest calmed</LetterLabelKwamaNestCalmed>
+	<LetterKwamaNestCalmed>A kwama nest that had previously felt threatened has now returned to a calm state. It is safe to enter the nest again.</LetterKwamaNestCalmed>
+	
+	<LetterLabelKwamaNestEmerges>kwama nest expands</LetterLabelKwamaNestEmerges>
+	<LetterKwamaNestEmerges>A kwama nest is expanding into a nearby cave. They will remain peaceful, unless threatened.</LetterKwamaNestEmerges>
+
+	<!-- misc -->
+	<MorrowRim_Notification_CorprusInfected>{0} has contracted corprus!</MorrowRim_Notification_CorprusInfected>
+
+	<!-- mod settings -->
+	
+	<MorrowRim_SettingEnableLightingEffects>Enable ash weathers decreasing lighting levels.</MorrowRim_SettingEnableLightingEffects>
+	
+	<MorrowRim_SettingEnableAshEffects>Enable ash storms causing effects.</MorrowRim_SettingEnableAshEffects>
+	<MorrowRim_SettingEnableAshEffects_Tooltip>Allows ash storms to: damage plants, cause ash buildup, clog servos, fill eyes, and damage wind turbines.\n\nIndividual settings can be disabled through certain settings below.</MorrowRim_SettingEnableAshEffects_Tooltip>
+	<MorrowRim_SettingAshFilledEye>The chance of ash filled eyes during an ash storm damage event.</MorrowRim_SettingAshFilledEye>
+	<MorrowRim_SettingAshCloggedServo>The chance of ash clogged servos during an ash storm damage event.</MorrowRim_SettingAshCloggedServo>
+	<MorrowRim_SettingAshIgnoreResistance>Ignore ash resistance for animals and plants.</MorrowRim_SettingAshIgnoreResistance>
+	<MorrowRim_SettingAshBuildupMultiplier>The multiplier added to ash buildup during an ash storm.</MorrowRim_SettingAshBuildupMultiplier>
+	<MorrowRim_SettingAshPlantDamage>The average amount of damage a plant can receive during an ash storm damage event.</MorrowRim_SettingAshPlantDamage>
+	<MorrowRim_SettingAshPlantChance>The chance a plant takes damage during an ash storm damage event.</MorrowRim_SettingAshPlantChance>
+	<MorrowRim_SettingAshOnlySownPlants>Disable ash storms damaging wild plants, causing them to only damage sown plants.</MorrowRim_SettingAshOnlySownPlants>
+	<MorrowRim_SettingAshPreventVisitors>Prevent visitors, traders, travellers and raiders from arriving during ash storms.</MorrowRim_SettingAshPreventVisitors>
+	<MorrowRim_SettingAshRegrowth>Enable plant regrowth when an ash storm ends. </MorrowRim_SettingAshRegrowth>
+	<MorrowRim_SettingAshRegrowth_Tooltip>May cause performance issues when an ash storm ends, if enabled.</MorrowRim_SettingAshRegrowth_Tooltip>
+	<MorrowRim_SettingAshTurbineDamage>The average amount of damage a wind turbine or windmill takes during an ash storm damage event.</MorrowRim_SettingAshTurbineDamage>
+	
+	<MorrowRim_SettingEnableBlightEffects>Enable blight storms causing effects (crop blights, mad animals).</MorrowRim_SettingEnableBlightEffects>
+	<MorrowRim_SettingBlightPlantChance>The chance a plant becomes blighted during an ash storm blight event.</MorrowRim_SettingBlightPlantChance>
+	<MorrowRim_SettingBlightPlantNumber>The maximum number of plants that can become blighted during a single ash storm blight event.</MorrowRim_SettingBlightPlantNumber>
+	<MorrowRim_SettingBlightAnimalChance>The chance an animal turns manhunter during an ash storm blight event.</MorrowRim_SettingBlightAnimalChance>
+	<MorrowRim_SettingBlightAnimalIgnoreScaling>Ignore the colonies threat points value when turning an animal manhunter.</MorrowRim_SettingBlightAnimalIgnoreScaling>
+	<MorrowRim_SettingBlightAnimalNumber>The maximum number of animals that can turn manhunter during a single ash storm blight event.</MorrowRim_SettingBlightAnimalNumber>
+	<MorrowRim_SettingBlightAnimalMultiplier>A multiplier for the threat points, used when checking for potential manhunter targets during an ash blight storm.</MorrowRim_SettingBlightAnimalMultiplier>
+	
+	<MorrowRim_SettingEnableFireEffects>Enable volcanic (acid and inferno) weather causing effects (burns, fires).</MorrowRim_SettingEnableFireEffects>
+	<MorrowRim_SettingFireOnlySownPlants>Disable volcanic weather igniting wild plants, causing them to only ignite sown plants.</MorrowRim_SettingFireOnlySownPlants>
+	<MorrowRim_SettingFireBurnChance>The chance a pawn is burned during a volcanic weather damage event.</MorrowRim_SettingFireBurnChance>
+	<MorrowRim_SettingFireFirePawnChance>The chance a pawn is ignited during a volcanic weather damage event.</MorrowRim_SettingFireFirePawnChance>
+	<MorrowRim_SettingFireFirePlantChance>The chance a plant is ignited during a volcanic weather damage event.</MorrowRim_SettingFireFirePlantChance>
+	
+	<MorrowRim_SettingBiomeEnableAshlands>Enable generation of the ashlands biome.</MorrowRim_SettingBiomeEnableAshlands>
+	<MorrowRim_SettingBiomeEnableBlightedAshlands>Enable generation of the blighted ashlands biome.</MorrowRim_SettingBiomeEnableBlightedAshlands>
+	<MorrowRim_SettingBiomeEnableAshlandsSwamp>Enable generation of the ashlands swamp biome.</MorrowRim_SettingBiomeEnableAshlandsSwamp>
+	<MorrowRim_SettingBiomeEnablePlantsOutside>Enable certain ashland plants spawning in non-ashland biomes.</MorrowRim_SettingBiomeEnablePlantsOutside>
+	<MorrowRim_SettingBiomeDisableSwampBeaches>Disable the generation of sandy beaches in the Ashlands Swamp.</MorrowRim_SettingBiomeDisableSwampBeaches>
+	<MorrowRim_SettingBiomeSwitchToDumbLava>Switch to 'dumb' lava in Volcanic Ashlands biomes.</MorrowRim_SettingBiomeSwitchToDumbLava>
+	<MorrowRim_SettingBiomeSwitchToDumbLava_Tooltip>This could potentially improve performance, however it will only affect newly generated maps.</MorrowRim_SettingBiomeSwitchToDumbLava_Tooltip>
+	<MorrowRim_SettingBiomeMultiplier>Multiplier applied to the MorrowRim biome coverage. Increasing this will increase the coverage of ashland biomes.</MorrowRim_SettingBiomeMultiplier>
+	<MorrowRim_SettingBiomePolarShift>Enable polar ashlands, generating ashlands biomes closer to the poles than normal.</MorrowRim_SettingBiomePolarShift>
+	<MorrowRim_SettingBiomePolarShift_Tooltip>This affects: Ashlands, Ashlands Swamp, Volcanic Ashlands, and Grazelands.\n\nKeep in mind that many of the animals and plants native to these biomes are not adapted for the cold.\n\nYou may also want to increase the MorrowRim biome coverage multiplier.</MorrowRim_SettingBiomePolarShift_Tooltip>
+	
+	<!-- 
+	<MorrowRim_SettingBiomeSwitchLava>Volcanic ashlands lava type.</MorrowRim_SettingBiomeSwitchLava>
+	<MorrowRim_SettingBiomeSwitchTo_RG_Lava>Regrowth lava.</MorrowRim_SettingBiomeSwitchTo_RG_Lava>
+	<MorrowRim_SettingBiomeSwitchTo_RG_LavaRock>'Dumb' lava.</MorrowRim_SettingBiomeSwitchTo_RG_LavaRock>
+	<MorrowRim_SettingBiomeSwitchTo_MorrowRimRG_LavaDumb>Regrowth volcanic rock.</MorrowRim_SettingBiomeSwitchTo_MorrowRimRG_LavaDumb>
+	<MorrowRim_SettingBiomeSwitchLava_Tooltip>Switching may potentially improve performance, however it will only affect newly generated maps.</MorrowRim_SettingBiomeSwitchLava_Tooltip>
+	-->
+	
+	<MorrowRim_SettingForceKwamaNatural>Force kwama nests to spawn on natural floors.</MorrowRim_SettingForceKwamaNatural>
+	<MorrowRim_SettingKwamaMaxNests>The maximum number of kwama nests on any single map.</MorrowRim_SettingKwamaMaxNests>
+	<MorrowRim_SettingKwamaMinDistance>The maximum calculated distance from a kwama egg mine for kwama nests to generate on map creation.</MorrowRim_SettingKwamaMinDistance>
+	<MorrowRim_SettingKwamaEnableGen>Enable kwama nests generating on map creation, if distance to egg mine is satisfied.</MorrowRim_SettingKwamaEnableGen>
+	<MorrowRim_SettingEnablePredatorAvoidKwama>Prevent predators from hunting kwama that belong to a kwama nest.</MorrowRim_SettingEnablePredatorAvoidKwama>
+	<MorrowRim_SettingKwamaEnableTrojanHostile>Enable kwama nests automatically turning hositle when a trojan infestation occurs.</MorrowRim_SettingKwamaEnableTrojanHostile>
+	<MorrowRim_SettingKwamaNestReproducing>Enable kwama nests creating other kwama nests, given certain criteria are met.</MorrowRim_SettingKwamaNestReproducing>
+	<MorrowRim_SettingKwamaMining>Enable kwama workers mining natural stone.</MorrowRim_SettingKwamaMining>
+	
+	<MorrowRim_SettingEnableCliffRacerEvents>Enable the cliff racer incidents.</MorrowRim_SettingEnableCliffRacerEvents>
+	<MorrowRim_SettingEnableSiltStriderEvent>Enable the silt strider incident.</MorrowRim_SettingEnableSiltStriderEvent>
+	<MorrowRim_SettingEnableAlbinoGuarEvent>Enable the albino guar incident.</MorrowRim_SettingEnableAlbinoGuarEvent>
+	<MorrowRim_SettingEnableKwamaNestEmerging>Enable the kwama nest emerges incident.</MorrowRim_SettingEnableKwamaNestEmerging>
+	<MorrowRim_SettingEnableKwamaTrojanInfestation>Enable the trojan infestation incident.</MorrowRim_SettingEnableKwamaTrojanInfestation>
+	<MorrowRim_SettingEnableCorprusRefugee>Enable corprus refugee quests.</MorrowRim_SettingEnableCorprusRefugee>
+	<MorrowRim_SettingEnableCorprusRefugeeChance>The chance a refugee has corprus.</MorrowRim_SettingEnableCorprusRefugeeChance>
+	<MorrowRim_SettingEnableCorprusRefugeeSeverity>The maximum severity a corprus refugee can generate with.</MorrowRim_SettingEnableCorprusRefugeeSeverity>
+	
+	<MorrowRim_SettingEnableScribBehaviour>Enable the custom kwama scrib behaviour, allowing them to munch on scrib cabbage.</MorrowRim_SettingEnableScribBehaviour>
+	<MorrowRim_SettingEnableScampBehaviour>Enable the custom scamp behaviour, allowing them to take drugs.</MorrowRim_SettingEnableScampBehaviour>
+	<MorrowRim_SettingEnableScampInsults>Enable the custom scamp behaviour, allowing them to insult humanlike pawns.</MorrowRim_SettingEnableScampInsults>
+	<MorrowRim_SettingEnableAshStormHiding>Enable tame animals hiding from ash storms.</MorrowRim_SettingEnableAshStormHiding>
+	<MorrowRim_SettingEnableAshStormHiding_Tooltip>Enabling this will cause tame animals to hide indoors if they become afflicted with ash build up during an ash storm.\n\nLivestock will respect pens, but other animals will not respect zones.\n\nAnimals will seek rooms that are completely roofed, though if they find themselves under a roof at any point, they will remain there.</MorrowRim_SettingEnableAshStormHiding_Tooltip>
+	<MorrowRim_SettingEnableAshStormHidingMin>The minimum build up for pawns to seek shelter.</MorrowRim_SettingEnableAshStormHidingMin>
+	<MorrowRim_SettingEnableAshStormHidingHumanlike>Enable player colonists hiding from ash storms.</MorrowRim_SettingEnableAshStormHidingHumanlike>
+	<MorrowRim_SettingEnableAshStormHidingHumanlike_Tooltip>Enabling this will cause player colonists to hide indoors if they become afflicted with ash build up during an ash storm.\n\nThey will not respect zones, and will seek rooms that are completely roofed. If they find themselves under a roof at any point, they may remain there, even if they are not in a room.</MorrowRim_SettingEnableAshStormHidingHumanlike_Tooltip>
+	
+	<MorrowRim_SettingEnableCliffRacerExtinction>Enable the wild cliff racer extinction.</MorrowRim_SettingEnableCliffRacerExtinction>
+	<MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>This prevents wild cliff racers from spawning, you may also want to disable the MorrowRim cliff racer swarm incidents.\n\nCliff racers will still be able to appear with traders, or through vanilla or other modded incidents.</MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>
+	
+	<MorrowRim_SettingEnableSiltStriderExtinction>Enable the wild silt strider extinction.</MorrowRim_SettingEnableSiltStriderExtinction>
+	<MorrowRim_SettingEnableSiltStriderExtinction_Tooltip>This prevents wild silt striders from spawning, and prevents factions using them as caravan animals. You may also want to disable the MorrowRim silt strider incident.\n\nSilt striders will still be able to appear with traders, or through vanilla or other modded incidents.</MorrowRim_SettingEnableSiltStriderExtinction_Tooltip>
+	
+	<MorrowRim_SettingEnableCorprusExtinction>Enable corprus eradication.</MorrowRim_SettingEnableCorprusExtinction>
+	<MorrowRim_SettingEnableCorprusExtinction_Tooltip>This prevents corprus infections from occruing through the standard infection incident. Corprus beasts will still be able to spread corprus.</MorrowRim_SettingEnableCorprusExtinction_Tooltip>
+	
+	<MorrowRim_SettingEnableAshBuildupNotifications>Enable notifications for when a pawn reaches the ash buildup threshold.</MorrowRim_SettingEnableAshBuildupNotifications>
+	<MorrowRim_SettingEnableAshBuildupNotifications_Colonist>Enable notifications for player colonists.</MorrowRim_SettingEnableAshBuildupNotifications_Colonist>
+	<MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold>The buildup threshold for player colonists.</MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold>
+	<MorrowRim_SettingEnableAshBuildupNotifications_Animals>Enable notifications for player animals.</MorrowRim_SettingEnableAshBuildupNotifications_Animals>
+	<MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold>The buildup threshold for player animals.</MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold>
+	<MorrowRim_SettingEnableAshBuildupNotifications_Friendly>Enable notifications for neutral and friendly pawns.</MorrowRim_SettingEnableAshBuildupNotifications_Friendly>
+	<MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold>The buildup threshold for neutral and friendly pawns</MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold>
+	
+	<MorrowRim_AshBuildupNotification>{0} has passed the ash buildup threshold: {1}%</MorrowRim_AshBuildupNotification>
+	
+	<MorrowRim_SettingVFIChitinIntegration>Vanilla Factions Expanded - Insectoids. Give insects from MorrowRim VFE-I chitin.</MorrowRim_SettingVFIChitinIntegration>
+	<MorrowRim_SettingVFIChitinIntegration_Tooltip>Chitin will be given to insectoids from enabled MorrowRim mods if they currently lack a leather def. This setting requires a restart to apply changes.</MorrowRim_SettingVFIChitinIntegration_Tooltip>
+	<MorrowRim_SettingZombielandIntegration>Zombieland. Make zombies immune to ash buildup during an ash storm.</MorrowRim_SettingZombielandIntegration>
+	
+	<!-- pages -->
+	<MorrowRim_PageDefault>Main settings page</MorrowRim_PageDefault>
+	<MorrowRim_PagePresets>Settings presets</MorrowRim_PagePresets>
+	<MorrowRim_PageAsh>Ash weather settings</MorrowRim_PageAsh>
+	<MorrowRim_PageBlight>Blight weather settings</MorrowRim_PageBlight>
+	<MorrowRim_PageFire>Volcanic weather settings</MorrowRim_PageFire>
+	<MorrowRim_PageBiome>Biome settings</MorrowRim_PageBiome>
+	<MorrowRim_PageKwama>Kwama settings</MorrowRim_PageKwama>
+	<MorrowRim_PageIncident>Incident and event settings</MorrowRim_PageIncident>
+	<MorrowRim_PageAnimalBehaviour>Behaviour settings</MorrowRim_PageAnimalBehaviour>
+	<MorrowRim_PageNotification>Notification settings</MorrowRim_PageNotification>
+	<MorrowRim_PageModIntegration>Mod integration settings</MorrowRim_PageModIntegration>
+	
+	<MorrowRim_ModIntegrationText1>Some changes to these settings will only take effect after the game is restarted.</MorrowRim_ModIntegrationText1>
+	<MorrowRim_ModIntegrationText2>Specific settings will only appear if the corresponding mod is enabled.</MorrowRim_ModIntegrationText2>
+	
+	<!-- Resets -->
+	<MorrowRim_ResetDefault>Reset all settings to default</MorrowRim_ResetDefault>
+	<MorrowRim_ResetIncident>Reset incident settings to default</MorrowRim_ResetIncident>
+	<MorrowRim_ResetAsh>Reset ash weather settings to default</MorrowRim_ResetAsh>
+	<MorrowRim_ResetBlight>Reset blight weather settings to default</MorrowRim_ResetBlight>
+	<MorrowRim_ResetFire>Reset volcanic weather settings to default</MorrowRim_ResetFire>
+	<MorrowRim_ResetBiome>Reset biome settings to default</MorrowRim_ResetBiome>
+	<MorrowRim_ResetKwama>Reset kwama settings to default</MorrowRim_ResetKwama>
+	<MorrowRim_ResetAnimalBehaviour>Reset animal behaviour settings to default</MorrowRim_ResetAnimalBehaviour>
+	<MorrowRim_ResetNotification>Reset notification settings to default</MorrowRim_ResetNotification>
+	<MorrowRim_ResetModIntegration>Reset mod integration settings to default</MorrowRim_ResetModIntegration>
+	
+	<!-- Presets -->
+	<MorrowRim_ResetPreset>Reset preset settings</MorrowRim_ResetPreset>
+	<MorrowRim_SettingPreset_VolcanicHellscape>Stormclouds on the Battlefield</MorrowRim_SettingPreset_VolcanicHellscape>
+	<MorrowRim_SettingPreset_VolcanicHellscapeDesc>The eruption of Red Mountain has decimated the landscape, every day is a struggle.\n\nAsh storms are deadly, and nothing is safe from them.\n\nBlight storms are capable of driving even the strongest of animals insane, from day one, and are devastating to crops.\n\nSilt striders are effectively extinct.</MorrowRim_SettingPreset_VolcanicHellscapeDesc>
+	<MorrowRim_SettingPreset_AdpatedAshlands>Silt Sunrise</MorrowRim_SettingPreset_AdpatedAshlands>
+	<MorrowRim_SettingPreset_AdpatedAshlandsDesc>Wild plants are safe from ash storms, but non-resistant sown plants take increased damage.</MorrowRim_SettingPreset_AdpatedAshlandsDesc>
+	<MorrowRim_SettingPreset_Peaceful>Blessing of Vivec</MorrowRim_SettingPreset_Peaceful>
+	<MorrowRim_SettingPreset_PeacefulDesc>The Tribunal protects all who call the ashlands their home.\n\nAsh storms are nice and safe, they do no damage to plants and cause no build-up in pawns, but they still decrease lighting levels.\n\nBlight storms make the sky look weird, but are otherwise harmless.\n\nTrojan infestation incidents are disabled, corprus has largely been eradicated, and cliff racers are effectively extinct.</MorrowRim_SettingPreset_PeacefulDesc>
+	<MorrowRim_SettingPreset_DagothDead>The Prophecy Fullfilled</MorrowRim_SettingPreset_DagothDead>
+	<MorrowRim_SettingPreset_DagothDead_Tooltip>The defeat of the Sixth House has cleansed the skies above Red Mountain, the blight is no more.\n\nBlight storms are completely safe, and corprus only spreads between infected.\n\nAsh storms continue to be a constant threat to those ill-prepared.</MorrowRim_SettingPreset_DagothDead_Tooltip>
+	<MorrowRim_SettingPreset_Zombieland>[Zombieland] Bright Spears, Dark Blood</MorrowRim_SettingPreset_Zombieland>
+	<MorrowRim_SettingPreset_Zombieland_Tooltip>The ashlands are flourishing thanks to the near extinction of cliff racers, however a new threat has emerged. Turns out cliff racers actually kept the zombie hordes in check.\n\nWild plants are safe from ash storms, but non-resistant sown plants take increased damage.\n\nAsh buildup is increased during an ash storm, yet the zombies are completely immune to it.\n\nCorprus has largely been eradicated, and cliff racers are effectively extinct.</MorrowRim_SettingPreset_Zombieland_Tooltip>
+	
+</LanguageData>

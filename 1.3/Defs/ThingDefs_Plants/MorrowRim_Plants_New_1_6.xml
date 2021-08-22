@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- parasol 'bush' -->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_ParasolMushroom</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<label>parasol mushroom</label>
+		<description>A significantly smaller variant of the emperor parasol. The stem is far too soft to be used in building, but the flesh is completely edible. While the parasol mushroom grows best in light, it is capable of growing in complete darkness.</description>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_ParasolMushroom</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.2, 0.2)</volume>
+			<offset>(0,0,-0.0)</offset>
+		  </shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<plant>
+		  <fertilityMin>1.0</fertilityMin>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growDays>9</growDays>
+		  <harvestYield>10</harvestYield>
+		  <harvestWork>250</harvestWork>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+		  <harvestedThingDef>MorrowRim_RawAshFungus</harvestedThingDef>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>250</wildClusterWeight>
+		  <visualSizeRange>0.95~2.0</visualSizeRange>
+		  <topWindExposure>0.3</topWindExposure>
+		  <wildOrder>2</wildOrder>
+		  <purpose>Food</purpose>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		</plant>
+	</ThingDef>
+	
+	<!-- cultivated parasol 'bush' -->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_ParasolMushroomCultivated</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<label>cultivated parasol mushroom</label>
+		<description>A significantly smaller variant of the emperor parasol. The stem is far too soft to be used in building, but the flesh is completely edible. While the parasol mushroom grows best in light, it is capable of growing in complete darkness.\n\nParasol mushroom recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_ParasolMushroom</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.2, 0.2)</volume>
+			<offset>(0,0,-0.0)</offset>
+		  </shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<plant>
+		  <fertilityMin>1.0</fertilityMin>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growDays>9</growDays>
+		  <harvestYield>10</harvestYield>
+		  <harvestWork>250</harvestWork>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+		  <harvestedThingDef>MorrowRim_RawAshFungus</harvestedThingDef>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>250</wildClusterWeight>
+		  <visualSizeRange>0.95~2.0</visualSizeRange>
+		  <topWindExposure>0.3</topWindExposure>
+		  <wildOrder>2</wildOrder>
+		  <purpose>Food</purpose>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<!-- small mushrooms -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_SmallMushrooms</defName>
+		<label>ash fungus cluster</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A cluster of small mushrooms of an unknown species. Likely extremely toxic to humanoids, but grazing animals seem to like it.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>1</Beauty>
+		  <Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_SmallMushrooms</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <cavePlant>false</cavePlant>
+		  <fertilityMin>0.9</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <growDays>3.8</growDays>
+		  <maxMeshCount>4</maxMeshCount>
+		  <visualSizeRange>0.3~0.5</visualSizeRange>
+		  <topWindExposure>0.05</topWindExposure>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>8</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		</plant>
+		<comps>
+		</comps>
+	</ThingDef>
+	
+	<!-- cultivated small mushrooms -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_SmallMushroomsCultivated</defName>
+		<label>cultivated ash fungus</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<description>A small mushroom of unknown species. Likely extremely toxic to humanoids, but grazing animals seem to like it.\n\nAsh fungus recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>1</Beauty>
+		  <Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_SmallMushrooms</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <cavePlant>false</cavePlant>
+		  <fertilityMin>0.9</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <growDays>3.8</growDays>
+		  <maxMeshCount>4</maxMeshCount>
+		  <visualSizeRange>0.3~0.5</visualSizeRange>
+		  <topWindExposure>0.05</topWindExposure>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>8</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <sowWork>170</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		</plant>
+		<comps>
+		</comps>
+	</ThingDef>
+	
+	<!-- Ash grass -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshGrass</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<label>Resdayn grass</label>
+		<description>Wild grass, originally from Vvardenfell. Requires fertile soil, but is capable of growing in low light and surviving ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>1.1</fertilityMin>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growDays>3.5</growDays>
+		  <growMinGlow>0.4</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+		  <harvestWork>40</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.4~0.6</visualSizeRange>
+		  <topWindExposure>0.35</topWindExposure>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>80</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	<!-- cultivated Ash grass -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshGrassCultivated</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<label>cultivated Resdayn grass</label>
+		<description>Wild grass, originally from Vvardenfell. Requires fertile soil, but is capable of growing in low light and surviving ash storms.\n\nResdayn grass recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>1.1</fertilityMin>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growDays>3.5</growDays>
+		  <growMinGlow>0.4</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+		  <harvestWork>40</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.4~0.6</visualSizeRange>
+		  <topWindExposure>0.35</topWindExposure>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>80</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <sowWork>170</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		</plant>
+	</ThingDef>
+	
+	<!-- Ash hay grass -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshHayGrass</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<label>grazelands haygrass</label>
+		<description>A comparatively more resilient variation of haygrass, created by Great House Telvanni. The increase in durability allows the grass to survive ash storms, but also increases the time taken to harvest.\n\nGrazelands haygrass recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshHayGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.8</fertilitySensitivity>
+		  <fertilityMin>1.1</fertilityMin>
+		  <harvestWork>400</harvestWork>
+		  <growDays>7</growDays>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <maxMeshCount>4</maxMeshCount>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>Hay</harvestedThingDef>
+		  <harvestYield>18</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <topWindExposure>0.1</topWindExposure>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- Dune grass -->
+	<!--
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_DuneGrass</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>MorrowRim_SandyAsh</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<label>dune grass</label>
+		<description>Wild grass that has adapted to growing in sand dunes.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Flammability>1.3</Flammability>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_DuneGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.2</fertilityMin>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growDays>2.5</growDays>
+		  <growMinGlow>0.4</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+		  <harvestWork>40</harvestWork>
+		  <maxMeshCount>9</maxMeshCount>
+		  <visualSizeRange>0.4~0.6</visualSizeRange>
+		  <topWindExposure>0.35</topWindExposure>
+		  <wildClusterRadius>5</wildClusterRadius>
+		  <wildClusterWeight>80</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	-->
+	
+	<!-- -->
+
+</Defs>

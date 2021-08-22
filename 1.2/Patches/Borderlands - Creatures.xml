@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Borderlands: Creatures</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- add select animals to ashlands -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Skag"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="SkagSpitter"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Spiderant"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+			<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Rakk"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<!-- give select animals ash-resistant -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[@Name="ThingBaseSkag"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Rakk"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

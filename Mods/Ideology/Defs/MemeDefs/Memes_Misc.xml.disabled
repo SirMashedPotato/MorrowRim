@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Category: None -->
+
+  <MemeDef>
+    <defName>MorrowRim_Ashlander</defName>
+    <label>ashlander</label>
+    <description>The ashlands are home, and we are meant to live there.</description>
+    <iconPath>UI/Memes/MorrowRim_Ashlander</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>InsectMeatEating_Loved</li>
+      </li>
+	  <li>
+        <li>RoughLiving_Welcomed</li>
+      </li>
+	  <li>
+        <li>Slavery_Disapproved</li>
+        <li>Slavery_Acceptable</li>
+        <li>Slavery_Honorable</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->ash</li>
+        <li>memeCreed->fire</li>
+        <li>memeCreed->foyoda</li>
+        <li>memeCreed->silt</li>
+        <li>memeAdjective->fungal</li>
+        <li>memeAdjective->ashen</li>
+        <li>memeHyphenPrefix->insectoid</li>
+        <li>memeHyphenPrefix->fungus</li>
+        <li>memeHyphenPrefix->ash</li>
+        <li>memeHyphenPrefix->silt</li>
+        <li>memeConcept->ash</li>
+        <li>memeConcept->silt</li>
+        <li>memeConcept->fire</li>
+        <li>memeLeaderNoun->ashspeaker</li>
+        <li>memeLeaderNoun->ashkhan</li>
+        <li>memeLeaderNoun->breather</li>
+        <li>memeLeaderAdjective->ash</li>
+        <li>memeLeaderAdjective->silt</li>
+        <li>memeLeaderAdjective->fire</li>
+        <li>memeMoralist->ashseer</li>
+        <li>memeMoralist->fungalseer</li>
+        <li>memeMoralist->foyodawalker</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_Ashlander)        ->[deity0_name] was born under the earth at the center of the world. [deity0_pronoun] blessed those closest to [deity0_objective] in the deepest valleys and tunnels.</li>
+          <li>episode(uses=1,tag=meme_Ashlander)  ->[deity0_name] filled the rocks with rich minerals and resources as a gift to those wise enough to dig down to be closer to [deity0_name].</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_Ashlander)           ->When the first settlers came to the [place_summary] [place_name], the [deity0_type] [deity0_name] used a brutal solar flare to force them to live underground, so they could hear [deity0_possessive] wisdom in the stillness of the tunnels.</li>
+          <li>conflict(tag=meme_Ashlander)        ->A claustrophobic [foeLeader] proposed using [dangerousMining] to mine for minerals, putting the [memberNamePlural]' underground homes at risk.</li>
+          <li>founderJoin(tag=meme_Ashlander)     ->The prophet [founderName] was miraculously born from the stone of [place_name], and discovered when [founder_possessive] parents broke open a fungus-covered geode.</li>
+          <li>victory(tag=meme_Ashlander)         ->The [memberNamePlural] dug a tunnel under the [foeLeader]'s [place_powerCenter], and [founderName] used pheromones to summon giant insects which overran the [foeLeader]'s [foeSoldiers]. [founderName] dragged the [foeLeader] down to a deep dungeon and imprisoned [foeLeader_objective].</li>
+          <li>dangerousMining->strip mining</li>
+          <li>dangerousMining->microchipped insects</li>
+          <li>dangerousMining->nuclear blasting</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Ashlander)           ->In a shallow and meaningless world, [founderName] meditated by an emperor parasol and found meaning, and founded our movement.</li>
+          <li>story(uses=1,tag=meme_Ashlander)    ->[founderName] hid treasures in the ashlands, so that [memberNamePlural] would master breathing to find them.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Ashlander)         ->The codex I found in the ashlands taught me one lesson above all others:</li>
+          <li>lesson(tag=meme_Ashlander)              ->the ash cleanses impurities, and will provide the path to ascension</li>
+          <li>lessonReinforcement(tag=meme_Ashlander) ->So grab a shovel, and start digging with me. It's only a grave if we stop.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_Ashlander)    ->The archotechs slumber, buried beneath mountains of ash. We must protect them.</li>
+          <li>archistFact(tag=meme_Ashlander)     ->Archotechs bio-engineered nutrifungus for us so that humanity could thrive underground, close to buried archotech minds.</li>
+          <li>archistFact(tag=meme_Ashlander)     ->Archotechs created the ashlands to weed out the undesirable and the unfaithful.</li>
+          <li>archistProphecy(tag=meme_Ashlander) ->[inTheEnd], archotechs will admit us to their ashen heavens.</li>
+          <!-- animist -->
+          <li>animistFact(tag=meme_Ashlander)     ->The spirits in ash will protect those that visit them.</li>
+          <li>animistFact(tag=meme_Ashlander)     ->The most noble spirits are those of the ash, and the deeper stones are stronger and more good than those above.</li>
+          <li>animistFact(tag=meme_Ashlander)     ->Anxious humans make the spirits of the ash anxious, and this summons the fires of the mountain.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <renderOrder>110</renderOrder>
+    <addDesignators>
+    </addDesignators>
+    <styleItemTags>
+      <li>
+        <tag>TattooBodyInsect</tag>
+        <baseWeight>0.01</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <startingResearchProjects>
+      <li>MorrowRim_AshSowing</li>
+      <li>MorrowRim_AshCuisine</li>
+      <li>MorrowRim_MuckRefining_Wasteful</li>
+    </startingResearchProjects>
+    <agreeableTraits>
+      <li>MorrowRim_AshLover</li>
+    </agreeableTraits>
+  </MemeDef>
+
+</Defs>

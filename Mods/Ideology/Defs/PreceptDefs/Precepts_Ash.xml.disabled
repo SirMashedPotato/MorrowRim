@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+  <IssueDef>
+    <defName>MorrowRim_Ash</defName>
+    <label>ash</label>
+    <iconPath>UI/Issues/Trees</iconPath>
+  </IssueDef>
+
+  <!-- Precept -->
+
+  <PreceptDef>
+    <defName>MorrowRim_Ash_Desired</defName>
+    <issue>MorrowRim_Ash</issue>
+    <label>desired</label>
+    <description>It's essential to live surrounded by ash.</description>
+    <impact>Medium</impact>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <associatedMemes>
+      <li>MorrowRim_Ashlander</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>MorrowRim_AshDesired</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <!-- Thoughts -->
+
+  <ThoughtDef>
+    <defName>MorrowRim_AshDesired</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>MorrowRim.ThoughtWorker_AshDesired</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>amazing ash</label> <!-- 100% -->
+        <description>I am completely surrounded by ash. This truly is home!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>remarkable ash</label> <!-- 90% -->
+        <description>There is so much ash around me.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>plenty of ash</label> <!-- 75% -->
+        <description>There is quite a bit of ash around me.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>some ash</label> <!-- 60% -->
+        <description>There is some nice ash around me, but there could be more.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>some ash</label> <!-- 45% -->
+        <description>There is some ash around me, but there could be more.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>little ash</label> <!-- 30% -->
+        <description>There is a little bit of ash around me, but there should be more.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>minimum ash</label> <!-- 15% -->
+        <description>There is a barely any ash around me, there needs to be more.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>tiny ash</label> <!-- < 15% -->
+        <description>There is almost no ash around me, this is not home.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+	  <li>
+        <label>no ash</label> <!-- 0% -->
+        <description>There is no ash around me. Why am I even here!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+	  
+    </stages>
+  </ThoughtDef>
+
+</Defs>

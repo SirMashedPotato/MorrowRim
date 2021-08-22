@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>MorrowRim_AshInEyes</defName>
+		<label>ash filled eye</label>
+		<labelNoun>an ash filled eye</labelNoun>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<description>Ash in the eyes. It impairs vision, but can be cleared in a few moments.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<battleStateLabel>blind</battleStateLabel>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+		  <li>
+			<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+		  </li>
+		</stages>
+		<comps>
+		  <li Class="HediffCompProperties_SelfHeal">
+			<healAmount>0.1</healAmount>
+		  </li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ChronicDiseaseBase">
+		<defName>MorrowRim_AshLungs</defName>
+		<label>ash scarred lung</label>
+		<labelNoun>an ash scarred lung</labelNoun>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<description>Lung scarring caused by high levels of exposure to ash, decreases breathing capabilites.</description>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
+		<stages>
+			  <li>
+					<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			  </li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>MorrowRim_AshCloggedServo</defName>
+		<label>ash clogged servo</label>
+		<labelNoun>an ash clogged servo</labelNoun>
+		<description>A servo that has been clogged with ash, reducing part efficiency. Will be cleared within a few moments.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<stages>
+		  <li>
+			<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+		  </li>
+		</stages>
+		<comps>
+		  <li Class="HediffCompProperties_SelfHeal">
+			<healAmount>0.02</healAmount>
+		  </li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ChronicDiseaseBase">
+		<defName>MorrowRim_BrainDamage</defName>
+		<label>brain damage</label>
+		<labelNoun>a damaged brain</labelNoun>
+		<description>Permanent brain damage, can be caused by the brain being deprived of oxygen for too long.</description>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
+		<stages>
+			  <li>
+					<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+			  </li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>MorrowRim_Paralysis</defName>
+		<label>paralysis</label>
+		<description>Prevents movement entirely, but passes within a few moments.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 0.4)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<setMax>0.01</setMax>	
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+		  <li Class="HediffCompProperties_SelfHeal">
+			<healAmount>0.02</healAmount>
+		  </li>
+		</comps>
+	</HediffDef>
+	  
+</Defs>

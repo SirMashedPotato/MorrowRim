@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>MorrowRim_ArchotechFilter</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</modExtensions>
+		<label>archotech ash filter</label>
+		<description>A collection of several thousand archotech nanites that have accumulated in the respiratory system. They constantly scan for ash particles, and then terminate them without remorse.\n\nAny pawn with these nanites will no longer suffer ash build up during an ash storm.</description>
+		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+		</stages>
+	</HediffDef>
+
+</Defs>

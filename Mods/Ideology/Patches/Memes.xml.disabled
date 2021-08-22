@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- InsectMeatEating_Loved -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="InsectMeatEating_Loved"]/associatedMemes</xpath>
+		<value>
+			<li>MorrowRim_Ashlander</li>
+		</value>
+	</Operation>
+	
+	<!-- Slaves -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="Slavery_Disapproved" or defName="Slavery_Acceptable" or defName="Slavery_Honorable"]/associatedMemes</xpath>
+		<value>
+			<li>MorrowRim_Ashlander</li>
+		</value>
+	</Operation>
+	
+	<!-- RoughLiving_Welcomed -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+		<value>
+			<li>MorrowRim_Ashlander</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]/associatedMemes</xpath>
+		<value>
+			<li>MorrowRim_Ashlander</li>
+		</value>
+	</Operation>
+	
+</Patch>
+

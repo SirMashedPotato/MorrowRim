@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>MorrowRim_SiltStriderAttracted</defName>
+		<label>silt strider</label>
+		<category>Special</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_SiltStrider_Single</workerClass>
+		<baseChance>0</baseChance> <!-- created by ritual effect worker, or achievement reward -->
+		<letterDef>PositiveEvent</letterDef>
+	</IncidentDef>
+
+</Defs>

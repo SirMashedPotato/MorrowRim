@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<!-- Building -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBuildStriderChitin</defName>
+							<label>Stronger Than Wood</label>
+							<description>Build something out of silt strider chitin</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<madeFrom>MorrowRim_SiltStriderChitin</madeFrom>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBuildStriderChitin</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Crafting -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCraftStriderChitin</defName>
+							<label>Lighter Than Steel</label>
+							<description>Craft something out of silt strider chitin</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<madeFrom>MorrowRim_SiltStriderChitin</madeFrom>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCraftStriderChitin</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Hediffs -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAshDeath</defName>
+							<label>Breathing is Overrated Anyway</label>
+							<description>Have a pawn die from ash buildup</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffDeathTracker">
+								<def>MorrowRim_AshBuildup</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAshDeath</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAshDeathMany</defName>
+							<label>Get Out of Here N'wah</label>
+							<description>Have 25 pawns die from ash buildup, maybe you don't belong here</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffDeathTracker">
+								<def>MorrowRim_AshBuildup</def>
+								<count>25</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAshDeathMany</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAshBrain</defName>
+							<label>Ashed Yam</label>
+							<description>Have a pawn gain permanent brain damage from extreme ash buildup</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_BrainDamage</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAshBrain</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAshEyes</defName>
+							<label>Might Be Good to Wear Goggles</label>
+							<description>Have pawns be blinded by ash 100 times</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_AshInEyes</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAshEyes</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementParalysed</defName>
+							<label>Mr Scrib is Not to be Underestimated</label>
+							<description>Have pawns be paralysed 15 times by scrib bites</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_Paralysis</def>
+								<count>15</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementParalysed</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Incidents -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTrojanInfestation</defName>
+							<label>Not The Insects I Expected</label>
+							<description>Experience your first trojan infestation</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.IncidentTracker">
+								<def>MorrowRim_TrojanInfestation</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTrojanInfestation</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+											
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBondNetch</defName>
+							<label>A Toxic Relationship</label>
+							<description>Have a colonist bond with a netch</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.AnimalBondedTracker">
+								<kindDef>MorrowRim_Netch</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBondNetch</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBondDeathRetchNetch</defName>
+							<label>An Explosive Ending</label>
+							<description>Have a bonded retching netch die on fire</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.BondedAnimalOnFireKillTracker">
+								<kindDef>MorrowRim_RetchingNetch</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBondDeathRetchNetch</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementOgrimTitan</defName>
+							<label>Meet Goliath</label>
+							<description>Have a tame ogrim enter a state of titanic fury</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_TitanMode</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementOgrimTitan</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementScampInsult</defName>
+							<label>Turns Out Words do Hurt</label>
+							<description>Have pawns be insulted by tamed scamp 15 times</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_HiddenInsulted</def>
+								<count>15</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementScampInsult</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Items -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCollectKwamaEgg</defName>
+							<label>Pupal of Therana</label>
+							<description>Obtain 300 kwama eggs</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_KwamaEgg</def>
+								<count>300</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCollectKwamaEgg</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCollectNetchJelly</defName>
+							<label>Who Needs Milk When You Can Have Jelly</label>
+							<description>Obtain 100 vessels of netch jelly</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_NetchJelly</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCollectNetchJelly</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCollectMuck</defName>
+							<label>Master Mucker</label>
+							<description>Obtain 200 buckets of raw muck</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Muck</def>
+								<count>200</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCollectMuck</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCollectAshYam</defName>
+							<label>Enough to Feed All the Slaves on Vvardenfell</label>
+							<description>Obtain 400 raw ash-yams, of course every slave would only get a few crumbs</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_RawAshYam</def>
+								<count>400</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCollectAshYam</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementDaedraStone</defName>
+							<label>This Seems Dangerous</label>
+							<description>Obtain a daedra summoning stone</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Apparel_DaedraSummoningStone</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementDaedraStone</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- 
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCollectBugMusk</defName>
+							<label>The Sweet Scent of Bug Sweat</label>
+							<description>Obtain 100 bottles of bug musk</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_BugMusk</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCollectBugMusk</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						-->
+						
+						<!-- Kills -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayCliffRacer</defName>
+							<label>The First of Many</label>
+							<description>Slay your first cliff racer</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_CliffRacer</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayCliffRacer</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayCliffRacerMore</defName>
+							<label>I Keep Killing, And Killing, And Still More</label>
+							<description>Slay 100 cliff racers</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_CliffRacer</kindDef>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayCliffRacerMore</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayCliffRacerMany</defName>
+							<label>How Many More Could There Possibly Be?</label>
+							<description>Slay 1,000 cliff racers</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_CliffRacer</kindDef>
+								<count>1000</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayCliffRacerMany</texPath>
+							<points>100</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayCliffRacerJiub</defName>
+							<label>Making Saint Jiub Proud</label>
+							<description>Slay 10,000 cliff racers, their screams of agony will forever haunt your dreams</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_CliffRacer</kindDef>
+								<count>10000</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayCliffRacerJiub</texPath>
+							<points>500</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlaySiltStrider</defName>
+							<label>I Guess You Prefer Walking</label>
+							<description>Hunt 20 silt striders, you do know they are endangered right?</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_SiltStrider</kindDef>
+								<count>20</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlaySiltStrider</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayAlbinoGuar</defName>
+							<label>Dreams of a White Guar</label>
+							<description>Succesfully hunt an albino guar</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_AlbinoGuar</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayAlbinoGuar</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementKwamaSlayer</defName>
+							<label>How You Shouldn't Manage an Egg Mine</label>
+							<description>Slay 100 Kwama</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<factionDefs>
+									<li>MorrowRim_Kwama</li>
+								</factionDefs>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementKwamaSlayer</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Livestock -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTameNixHound</defName>
+							<label>Woof?</label>
+							<description>Have a tame nix-hound</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_NixHound</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTameNixHound</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTameSiltStrider</defName>
+							<label>Why Walk When You Can Ride?</label>
+							<description>Have a tame silt strider</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_SiltStrider</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTameSiltStrider</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTameGuar</defName>
+							<label>Hope You Have Spare Boots</label>
+							<description>Have 12 tame guar</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_Guar</key>
+										<value>12</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTameGuar</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementAshlandsTamer</defName>
+							<label>Ashlands Tamer</label>
+							<description>Have one of each species of tameable animal native to the ashlands at the same tame</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+								
+									<li>
+										<key>MorrowRim_Netch</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_RetchingNetch</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_SiltStrider</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_NixHound</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Shalk</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_AshHopper</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_NixOx</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_KwamaScrib</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_KwamaForager</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_AshPanther</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Guar</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Alit</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Kagouti</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Durzog</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_CliffRacer</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_TigerGuar</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Vvardvark</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_BantamGuar</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_FungalShalk</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Wormmouth</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Scuttler</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+								
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementAshlandsTamer</texPath>
+							<points>75</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementDaedraTamer</defName>
+							<label>Daedra Collector</label>
+							<description>Have one of each standard daedra at the same time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+			
+									<li>
+										<key>MorrowRim_Clannfear</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Daedroth</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Ogrim</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Scamp</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_Hunger</key>
+										<value>1</value>
+									</li>
+									
+								</kindDefs>
+									
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementDaedraTamer</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSmolOgrim</defName>
+							<label>We Have an Ogrim at Home</label>
+							<description>Ogrim at home:</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+			
+									<li>
+										<key>MorrowRim_OgrimSmol</key>
+										<value>1</value>
+									</li>
+									
+								</kindDefs>
+									
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSmolOgrim</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Plants -->
+						
+							<!-- one of each -->
+							<!-- 100 emperor parasol -->
+							
+						<!-- Research -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementResearchAshlandGrowing</defName>
+							<label>Goodbye Potatoes, Hello Ash-Yams</label>
+							<description>Research ashland natives farming</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<def>MorrowRim_AshSowing</def>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementResearchAshlandGrowing</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementResearchAshlandCooking</defName>
+							<label>Learning to Cook the Ashlands Way</label>
+							<description>Research ashlands cuisine preparation</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<def>MorrowRim_AshCuisine</def>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementResearchAshlandCooking</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Trade -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSellKwamaEgg</defName>
+							<label>A Peculiar Mining Operation</label>
+							<description>Earn 10,000 silver by selling kwama eggs</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.TraderTracker">
+								<def>MorrowRim_KwamaEgg</def>
+								<worth>10000</worth>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSellKwamaEgg</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

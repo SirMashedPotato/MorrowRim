@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Colovian Fur Helm</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!-- other fishables -->
+
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_MorrowRim_ColovianHelm</defName>
+							<thingDef>MorrowRim_ColovianFurHelm</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Ashlands</li>		
+							</allowedBiomes>  	
+							<commonality>0.05</commonality>			
+							<baseFishingYield>1</baseFishingYield>		
+						</VCE_Fishing.FishDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

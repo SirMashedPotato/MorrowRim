@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- New wild and cultivated flowers -->
+	
+	<!-- cultivated stone flower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_StoneFlowerCultivated</defName>
+		<label>stoneflower</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands. Though fragile looking, it is capable of surviving ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>10</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_StoneFlower</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>750</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- cultivated willow flower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_WillowAntherCultivated</defName>
+		<label>willow flower</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe anthers of these flowers are sometimes used to make weak curative elixirs.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>8</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_WillowAnther</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>700</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>7.5</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.4~0.9</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- willow flower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_WillowAnther</defName>
+		<label>willow flower</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe anthers of these flowers are sometimes used to make weak curative elixirs.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>8</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_WillowAnther</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible />
+		<plant>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>7.5</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.4~0.9</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	
+	<!-- cultivated black anther flower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_BlackAntherCultivated</defName>
+		<label>black anther</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe anthers are sometimes harvested for use as a mild sedative.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>16</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_BlackAnther</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>750</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.25</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.4~0.9</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- black anther flower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_BlackAnther</defName>
+		<label>black anther</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe anthers are sometimes harvested for use as a mild sedative.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>16</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_BlackAnther</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible />
+		<plant>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <growMinGlow>0.25</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.4~0.9</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	
+	<!-- cultivated gold kanet -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_GoldKanetCultivated</defName>
+		<label>gold kanet</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe flowers are actually rather poisonous, and are sometimes used in assassinations.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>8</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_GoldKanet</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>600</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>7</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- Gold kanet -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+		</modExtensions>
+		<defName>MorrowRim_GoldKanet</defName>
+		<label>gold kanet</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands.\n\nThe flowers are actually rather poisonous, and are sometimes used in assassinations.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>8</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_GoldKanet</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible />
+		<plant>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>7</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	
+	<!-- Timsa Come By -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_MorrowRim_TimsaComeBy</defName>
+		<label>timsa-come-by</label>
+		<description>A cultivated flower, often found growing in the gardens of wealthy Dunmer. The timsa-come-by is notoriously difficult to grow, and quite short lived, but is most definitely worth the effort.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>35</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_TimsaComeBy</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_ExoticFlowers</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>750</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>3.4</growDays>
+		  <lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+</Defs>

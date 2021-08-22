@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+					<ThingDef ParentName="RoughPlantBase">
+						<defName>VCE_HackleLoSyrup</defName>
+						<label>hackle-lo syrup</label>
+						<description>A thin and semi-sweet syrup, known to reduce fatigue in those who consume it. Although healthier than sugar, its high fructose content may be harmful if taken constantly.</description>
+						<graphicData>
+							<texPath>MorrowRim/Items/Resources/HackleLoSyrup</texPath>
+							<graphicClass>Graphic_StackCount</graphicClass>
+							<drawSize>1</drawSize>
+						</graphicData>
+						<statBases>
+							<MarketValue>4</MarketValue>
+							<Nutrition>0</Nutrition>
+							<Flammability>1.3</Flammability>
+						</statBases>
+						<thingCategories>
+							<li>VCE_Condiments</li>
+						</thingCategories>
+						<ingestible>
+							<preferability>NeverForNutrition</preferability>
+							<specialThoughtAsIngredient>VCE_ConsumedHackleLo</specialThoughtAsIngredient>
+						</ingestible>
+						<tradeTags>
+							<li>AshlandCommon</li>
+						</tradeTags>
+					</ThingDef>
+
+					<ThingDef ParentName="RoughPlantBase">
+						<defName>VCE_ScathecrawSyrup</defName>
+						<label>scathecraw syrup</label>
+						<description>A thin and semi-bitter syrup, known to provide resistance to toxic buildup in those who consume it. Although healthier than sugar, its high fructose content may be harmful if taken constantly.</description>
+						<graphicData>
+							<texPath>MorrowRim/Items/Resources/ScathecrawSyrup</texPath>
+							<graphicClass>Graphic_StackCount</graphicClass>
+							<drawSize>1</drawSize>
+						</graphicData>
+						<statBases>
+							<MarketValue>4</MarketValue>
+							<Nutrition>0</Nutrition>
+							<Flammability>1.3</Flammability>
+						</statBases>
+						<thingCategories>
+							<li>VCE_Condiments</li>
+						</thingCategories>
+						<ingestible>
+							<preferability>NeverForNutrition</preferability>
+							<specialThoughtAsIngredient>VCE_ConsumedScathecraw</specialThoughtAsIngredient>
+						</ingestible>
+						<tradeTags>
+							<li>AshlandCommon</li>
+						</tradeTags>
+					</ThingDef>
+
+
+					<ThingDef ParentName="RoughPlantBase">
+						<defName>VCE_ScribCabbageSyrup</defName>
+						<label>scrib cabbage syrup</label>
+						<description>A thin and semi-sweet syrup, known to fortify movement in those who consume it. Although healthier than sugar, its high fructose content may be harmful if taken constantly.</description>
+						<graphicData>
+							<texPath>MorrowRim/Items/Resources/ScribCabbageSyrup</texPath>
+							<graphicClass>Graphic_StackCount</graphicClass>
+							<drawSize>1</drawSize>
+						</graphicData>
+						<statBases>
+							<MarketValue>4</MarketValue>
+							<Nutrition>0</Nutrition>
+							<Flammability>1.3</Flammability>
+						</statBases>
+						<thingCategories>
+							<li>VCE_Condiments</li>
+						</thingCategories>
+						<ingestible>
+							<preferability>NeverForNutrition</preferability>
+							<specialThoughtAsIngredient>VCE_ConsumedScribCabbage</specialThoughtAsIngredient>
+						</ingestible>
+						<tradeTags>
+							<li>AshlandCommon</li>
+						</tradeTags>
+					</ThingDef>
+					
+					<ThingDef ParentName="RoughPlantBase">
+						<defName>VCE_MarshmerrowSyrup</defName>
+						<label>marshmerrow syrup</label>
+						<description>A thin and sweet syrup, known to fortify immunity gain in those who consume it. Only marginally healthier than sugar, its high fructose content may be harmful if taken constantly.</description>
+						<graphicData>
+							<texPath>MorrowRim/Items/Resources/MarshmerrowSyrup</texPath>
+							<graphicClass>Graphic_StackCount</graphicClass>
+							<drawSize>1</drawSize>
+						</graphicData>
+						<statBases>
+							<MarketValue>4</MarketValue>
+							<Nutrition>0</Nutrition>
+							<Flammability>1.3</Flammability>
+						</statBases>
+						<thingCategories>
+							<li>VCE_Condiments</li>
+						</thingCategories>
+						<ingestible>
+							<preferability>NeverForNutrition</preferability>
+							<specialThoughtAsIngredient>VCE_ConsumedMarshmerrow</specialThoughtAsIngredient>
+						</ingestible>
+						<tradeTags>
+							<li>AshlandCommon</li>
+						</tradeTags>
+					</ThingDef>
+
+</Defs>

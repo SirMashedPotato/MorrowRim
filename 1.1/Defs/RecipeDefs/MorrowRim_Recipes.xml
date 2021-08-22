@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Muck to medicine -->
+	
+	<RecipeDef>
+		<defName>MorrowRim_MakeMedicince_FromMuck</defName>
+		<label>refine muck into herbal medicine</label>
+		<description>Refines 20 buckets of muck into 4 herbal medicine.</description>
+		<jobString>Refining herbal medicine from muck.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_Muck</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MedicineHerbal>4</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_MuckRefining_Wasteful</researchPrerequisite>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MorrowRim_MakeMedicince_FromMuckAndNetchJelly</defName>
+		<label>refine muck with netch jelly into herbal medicine</label>
+		<description>Refines 10 buckets of muck and 10 netch jelly into 6 herbal medicine.</description>
+		<jobString>Refining herbal medicine from muck.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_NetchJelly</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_Muck</li>
+			<li>MorrowRim_NetchJelly</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MedicineHerbal>6</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_MuckRefining_Inefficient</researchPrerequisite>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MorrowRim_MakeMedicince_FromMuckAndScribJelly</defName>
+		<label>refine muck with scrib jelly into herbal medicine</label>
+		<description>Refines 10 buckets of muck and 10 scrib jelly into 8 herbal medicine.</description>
+		<jobString>Refining herbal medicine from muck.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_ScribJelly</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_Muck</li>
+			<li>MorrowRim_ScribJelly</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MedicineHerbal>8</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_MuckRefining_Inefficient</researchPrerequisite>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MorrowRim_MakeMedicince_FromMuckAndKwamaEgg</defName>
+		<label>refine muck with a kwama egg into herbal medicine</label>
+		<description>Refines 10 buckets of muck and 1 kwama egg into 10 herbal medicine.</description>
+		<jobString>Refining herbal medicine from muck.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_KwamaEgg</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_Muck</li>
+			<li>MorrowRim_KwamaEgg</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MedicineHerbal>10</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_MuckRefining_Efficient</researchPrerequisite>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+  
+	<!-- wood from raw cork bulb -->
+	
+	<RecipeDef>
+		<defName>MorrowRim_WoodFromCorkbulb</defName>
+		<label>harvest wood from raw corkbulb</label>
+		<description>Harvests 1 corkbulb for 3 wood.</description>
+		<jobString>Harvesting wood from raw corkbulb.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+			<li>TableSculpting</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_RawCorkbulb</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_RawCorkbulb</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <WoodLog>3</WoodLog>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MorrowRim_WoodFromCorkbulb_Bulk</defName>
+		<label>bulk harvest wood from raw corkbulb</label>
+		<description>Harvests 10 corkbulb for 30 wood.</description>
+		<jobString>Harvesting wood from raw corkbulb.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>TableStonecutter</li>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+			<li>TableSculpting</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_RawCorkbulb</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_RawCorkbulb</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <WoodLog>30</WoodLog>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+  
+	<!-- Kresh to cloth -->
+	
+	<RecipeDef>
+		<defName>MorrowRim_MakeClothFromKresh</defName>
+		<label>weave kresh fiber into cloth</label>
+		<description>Weave 20 kresh fiber cloth into 10 cloth.</description>
+		<jobString>Weaving kresh fiber.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>900</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_KreshFiber</li>
+			  </thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_KreshFiber</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Cloth>10</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+  
+</Defs>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+				
+						<MVCF.ModDef>
+							<defName>MVCF_MorrowRim</defName>
+							<label>MorrowRim</label>
+							<description>Adds in ranged attacks for certain animals</description>
+							<Features>
+								<RangedAnimals>true</RangedAnimals>
+								<!--<HediffVerbs>true</HediffVerbs>-->
+								<IntegratedToggle>true</IntegratedToggle>
+							</Features>
+						</MVCF.ModDef>
+				
+					</value>
+				</li>
+				<!-- adding in some custom animal behaviour from the framework -->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Kagouti"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+							<customThingToDig>			
+								<li>MorrowRim_RawAshYam</li>
+								<li>MorrowRim_RawAshYam</li>
+								<li>MorrowRim_RawAshYam</li>
+								<li>MorrowRim_RawCorkbulb</li>
+								<li>MorrowRim_RawCorkbulb</li>
+								<li>MorrowRim_RawCorkbulb</li>
+								<li>Steel</li>
+								<li>Steel</li>		
+							</customThingToDig>
+							<customAmountToDig>				
+								<li>1</li>
+								<li>3</li>
+								<li>5</li>	
+								<li>1</li>
+								<li>3</li>
+								<li>5</li>
+								<li>5</li>	
+								<li>10</li>	
+							</customAmountToDig>
+							<ticksToDig>90000</ticksToDig>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Guar"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+							<customThingToDig>MorrowRim_RawAshYam</customThingToDig>
+							<customAmountToDig>5</customAmountToDig>
+							<acceptedTerrains>
+								<li>MorrowRim_Ash</li>
+								<li>MorrowRim_StonyAsh</li>
+								<li>MorrowRim_SoftAsh</li>
+								<li>MorrowRim_BlightedAsh</li>
+							</acceptedTerrains>
+							<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_KwamaForager"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+							<customThingToDig>						
+								<li>RawFungus</li>			
+								<li>RawFungus</li>			
+								<li>RawFungus</li>			
+								<li>MorrowRim_FungalMash</li>			
+								<li>MorrowRim_FungalMash</li>			
+							</customThingToDig>
+							<customAmountToDig>				
+								<li>1</li>
+								<li>3</li>
+								<li>5</li>		
+								<li>3</li>		
+								<li>5</li>	
+							</customAmountToDig>
+							<ticksToDig>60000</ticksToDig>
+							<spawnForbidden>true</spawnForbidden>
+						</li>
+						<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+							<customThingToDig>MorrowRim_FungalMash</customThingToDig>
+							<customAmountToDig>5</customAmountToDig>
+							<digAnywayEveryXTicks>true</digAnywayEveryXTicks>
+							<spawnForbidden>true</spawnForbidden>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Scuttler"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+							<customThingToDig>Meat_Megaspider</customThingToDig>
+							<customAmountToDig>5</customAmountToDig>
+							<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
+						</li>
+					</value>
+				</li>
+				
+				<!-- patches for wormmouth -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<DamageDef>
+							<defName>MorrowRim_AcidSaliva</defName>
+							<label>acidic saliva</label>
+							<workerClass>DamageWorker_AddInjury</workerClass>
+							<externalViolence>true</externalViolence>
+							<hediff>VEF_AcidBurn</hediff>
+							<defaultDamage>1</defaultDamage>
+
+							<deathMessage>{0} has been poisoned to death.</deathMessage>
+							<additionalHediffs>
+								<li>
+									<hediff>VEF_AcidBuildup</hediff>
+									<severityPerDamageDealt>0.01</severityPerDamageDealt>
+									<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+								</li>
+							</additionalHediffs>
+
+							<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+
+							<armorCategory>Heat</armorCategory>
+						</DamageDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Wormmouth"]/tools/li[linkedBodyPartsGroup="Teeth"]/extraMeleeDamages/li[def="MorrowRim_AcidBurn"]</xpath>
+					<value>
+						  <li>
+							<def>MorrowRim_AcidSaliva</def>
+							<amount>5</amount>
+							<chance>1</chance>
+						  </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Hunger"]/tools/li[linkedBodyPartsGroup="Teeth"]/extraMeleeDamages/li[def="MorrowRim_AcidBurn"]</xpath>
+					<value>
+						  <li>
+							<def>MorrowRim_AcidSaliva</def>
+							<amount>5</amount>
+							<chance>1</chance>
+						  </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Wormmouth" or defName="MorrowRim_Hunger"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_AcidImmunity">
+						</li>
+					</value>
+				</li>
+				
+				<!-- Floating patches -->
+				<!-- Need to lower speed too -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch" or defName="MorrowRim_RetchingNetch" or defName="MorrowRim_CliffRacer"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_Floating">
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch"]/statBases/MoveSpeed</xpath>
+					<value>
+						<MoveSpeed>2.0</MoveSpeed>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_RetchingNetch"]/statBases/MoveSpeed</xpath>
+					<value>
+						<MoveSpeed>1.7</MoveSpeed>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_CliffRacer"]/statBases/MoveSpeed</xpath>
+					<value>
+						<MoveSpeed>3.5</MoveSpeed>
+					</value>
+				</li>
+				
+				<!-- Hunger bile -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+					
+						<DamageDef>
+							<defName>MorrowRim_HungerBile</defName>
+							<label>toxic bile</label>
+							<workerClass>DamageWorker_AddInjury</workerClass>
+							<externalViolence>true</externalViolence>
+							<deathMessage>{0} has been burnt to death.</deathMessage>
+							<hediff>Burn</hediff>
+							<hediffSolid>Crack</hediffSolid>
+							<impactSoundType>Blunt</impactSoundType>
+							<makesBlood>false</makesBlood>
+							<armorCategory>Heat</armorCategory>
+							<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+							<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+							<additionalHediffs>
+							  <li>
+								<hediff>ToxicBuildup</hediff>
+								<severityPerDamageDealt>0.005</severityPerDamageDealt>
+								<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+								<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+							  </li>
+							</additionalHediffs>
+						</DamageDef>
+
+						<ThingDef>
+							<defName>MorrowRim_ProjectileHungerBile</defName>
+							<tickerType>Normal</tickerType>
+							<thingClass>Bullet</thingClass>
+							<category>Projectile</category>
+							<label>hunger bile</label>
+							<useHitPoints>False</useHitPoints>
+							<neverMultiSelect>True</neverMultiSelect>
+							<graphicData>
+							  <shaderType>Transparent</shaderType>
+							  <graphicClass>Graphic_Single</graphicClass>
+							  <texPath>MorrowRim/Projectile/HungerBile</texPath>
+							</graphicData>
+							<projectile>
+							  <damageDef>MorrowRim_HungerBile</damageDef>
+							  <damageAmountBase>10</damageAmountBase>
+							  <stoppingPower>0.3</stoppingPower>
+							  <speed>40</speed>
+							</projectile>
+						</ThingDef>
+					
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_Hunger"]</xpath>
+					<value>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>MorrowRim_ProjectileHungerBile</defaultProjectile>
+								<warmupTime>1.8</warmupTime>
+								<range>10.9</range>
+								<soundCast>Hive_Spawn</soundCast>
+								<muzzleFlashScale>9</muzzleFlashScale>
+								<targetParams>
+								  <canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+								<!-- -->
+								<accuracyTouch>0.80</accuracyTouch>
+								<accuracyShort>0.60</accuracyShort>
+								<accuracyMedium>0.40</accuracyMedium>
+								<accuracyLong>0.20</accuracyLong>
+								<defaultCooldownTime>1.6</defaultCooldownTime>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

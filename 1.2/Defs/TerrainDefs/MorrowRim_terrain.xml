@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_Ash</defName>
+		<label>ash covered soil</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_ash</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.3</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+	<!-- Stony Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_StonyAsh</defName>
+		<label>ash covered gravel</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_stonyAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.8</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<!-- Soft Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_SoftAsh</defName>
+		<label>ash enriched soil</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_softAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>12</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.5</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>SandInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<!-- Sandy Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_SandyAsh</defName>
+		<label>ash covered sand</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_sandyAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>6</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Sand</generatedFilth>
+		<fertility>0.2</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>SandInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+	<!-- Blighted Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_BlightedAsh</defName>
+		<label>blighted ash covered soil</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_blightedAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>8</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.4</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<!-- Blighted Stony Ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_BlightedStonyAsh</defName>
+		<label>blighted ash covered gravel</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_blightedStonyAsh</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+	<!-- Blighted cracked ash -->
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_BlightedCrackedGround</defName>
+		<label>blighted cracked ground</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_blightedRiverBed</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>300</renderPrecedence>
+		<pathCost>8</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>ash</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_BlightedMud</defName>
+		<label>blighted mud</label>
+		<texturePath>MorrowRim/Terrain/MorrowRim_BlightedMud</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>330</renderPrecedence>
+		<pathCost>18</pathCost>
+		<statBases>
+		  <Beauty>-2</Beauty>
+		  <Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+		  <li>Bridgeable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+		<driesTo>MorrowRim_StonyAsh</driesTo>
+		<tools>
+		  <li>
+			<label>mud</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>MudInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+</Defs>

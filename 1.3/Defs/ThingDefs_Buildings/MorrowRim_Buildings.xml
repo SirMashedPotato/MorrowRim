@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="TrapIEDBase">
+		<defName>MorrowRim_Trap_RetchingNetch</defName>
+		<label>IED retching netch gas trap</label>
+		<description>A pair of retching netch shells, connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Buildings/MorrowRim_IEDRetchingNetch</texPath>
+		</graphicData>
+		<costList>
+		  <MorrowRim_RetchingNetchShell>2</MorrowRim_RetchingNetchShell>
+		</costList>
+		<researchPrerequisites>
+		  <li>IEDs</li>
+		  <li>MorrowRim_RetchingNetch</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc10</designationHotKey>
+		<comps>
+		  <li Class="CompProperties_Explosive">
+			<explosiveRadius>8</explosiveRadius>
+			<explosiveDamageType>Smoke</explosiveDamageType>
+			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+			<postExplosionSpawnThingDef>Gas_RetchingNetch</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<wickTicks>10</wickTicks>
+			<startWickOnDamageTaken>
+			  <li>Bullet</li>
+			  <li>Arrow</li>
+			  <li>ArrowHighVelocity</li>
+			</startWickOnDamageTaken>
+		  </li>
+		</comps>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+	</ThingDef>
+
+ </Defs>

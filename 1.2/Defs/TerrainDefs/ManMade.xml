@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>MorrowRim_StriderChitinTile</defName>
+		<label>silt strider chitin tiles</label>
+		<!--<color>(132,113,89)</color>-->
+		<description>Silt strider chitin roughly placed to form flooring. Moderately nice to look at, and quite the conversation starter among nobles and the wealthy, but requires quite a bit of work to place.</description>
+		<texturePath>MorrowRim/Terrain/MorrowRim_StriderChitinFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>220</renderPrecedence>
+		<statBases>
+		  <Beauty>2</Beauty>
+		  <WorkToBuild>2500</WorkToBuild>
+		</statBases>
+		<costList>
+		  <MorrowRim_SiltStriderChitin>3</MorrowRim_SiltStriderChitin>
+		</costList>
+		<designationHotKey>Misc6</designationHotKey>
+		<researchPrerequisites>
+		  <li>Stonecutting</li>
+		</researchPrerequisites>
+		<tags>
+		  <li>FineFloor</li>
+		</tags>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+	
+	<!-- Carpet -->
+
+  <TerrainDef ParentName="CarpetBase">
+    <defName>MorrowRim_CarpetKresh</defName>
+    <label>kresh carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+	<costList Inherit="false">
+      <MorrowRim_KreshFiber>7</MorrowRim_KreshFiber>
+    </costList>
+	<statBases>
+		 <Beauty>1</Beauty>
+	</statBases>
+    <description>Coarse carpet, made from kresh fiber.</description>
+    <color>(108,98,68)</color>
+    <designationHotKey>Misc8</designationHotKey>
+  </TerrainDef>
+
+</Defs>

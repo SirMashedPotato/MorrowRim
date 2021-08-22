@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementFishingSlaughterfish</defName>
+							<label>Slaughterfish Slaughterer</label>
+							<description>Obtain 500 Vvardenfell slaughterfish</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_RawSlaughterfish</def>
+								<count>500</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementFishingSlaughterfish</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementFishingCrayfish</defName>
+							<label>One For Each Lesson</label>
+							<description>Obtain 36 Vivec crayfish</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_RawCrayfish</def>
+								<count>36</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementFishingCrayfish</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementFishingSailfin</defName>
+							<label>One For the Trophy Case</label>
+							<description>Obtain a Resdaynian sailfin</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_RawSailfin</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementFishingSailfin</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- 
+						
+						obtain a cephalopod helm
+						
+						-->
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

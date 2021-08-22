@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Crabeater -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawCrabeater</defName>
+		<label>crabeater</label>
+		<description>Raw crabeater. Crabeater are remnants of the family Dunkleosteidae, heavily armoured fish that specialised in eating heavily armoured marine life. Luckily crabeater are much smaller in comparison to their ancestors.\n\nWhile their jaws are designed to break crab shells, they are just as effective at slicing through bone, something certain Dunmeri Tong make great use of.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_Crabeater</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>4.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>crabeater</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Foyoda Fish -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawFoyodaFish</defName>
+		<label>foyoda hopper</label>
+		<description>Raw foyoda hopper. A primitive lobe finned fish, the foyda hopper can rarely be encountered hopping around a foyada in its search for water.\n\nThe Erabenimsun Ashlander tribe have tales of giant foyoda hoppers, coated in molten rock. Of course no one has actually seen a foyoda hopper of such grandiose size.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_FoyodaFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.35</Mass>
+			<Nutrition>0.15</Nutrition>
+			<MarketValue>3.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>foyoda hopper</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Mudcrab -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawMudcrab</defName>
+		<label>juvenile mudcrab</label>
+		<description>Raw juvenile mudcrab. Adult mudcrab are most often found in swampy regions, though juveniles such as these may be found anywhere with fresh water and warm temperatures.\n\nDue to their young age, these mudcrab have yet to be tainted by swampy waters, and are actually rather delicious, and perfectly safe to eat.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_Mudcrab</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>4.0</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>juvenile mudcrab</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		
+	<!-- Resdaynian Sailfin -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawSailfin</defName>
+		<label>Resdaynian sailfin</label>
+		<description>Raw Resdaynian sailfin. A rare species of sailfish, rarely found in the warmer waters around Vvardenfell.\n\nThe Resdaynian sailfin is an absolutely massive fish, and a true sight to behold.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_ResdaynianSailfin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1.25</Mass>
+			<Nutrition>1.25</Nutrition>
+			<MarketValue>30</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>Resdaynian sailfin</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<!-- Small -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawSmallSlaughterfish</defName>
+		<label>small slaugherfish</label>
+		<description>Raw small slaughterfish. A comparatively smaller breed of slaughterfish, though just as dangerous in numbers. Like the Vvardenfell slaugherfish, they are most often found in warmer waters.\n\nSome outlanders choose to keep these fish as pets, due to their iridescent colouration. The outlanders are often surprised when their fish tank is bright red, and full of little bits of bone.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_SmallSlaughterfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.8</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>small slaugherfish</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Slaughterfish -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawSlaughterfish</defName>
+		<label>Vvardenfell slaughterfish</label>
+		<description>Raw slaughterfish. There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in the ashlands, though it has also been found in other places.\n\nVvardenfell slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_Slaughterfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.12</Nutrition>
+			<MarketValue>2.8</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>Vvardenfell slaughterfish</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Telvannis cephalopod -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawCephalopod</defName>
+		<label>Telvannis cephalopod</label>
+		<description>Raw Telvannis cephalopod. This particular species of cephalopod can often be found in the waters around Port Telvannis, although they have also been found further abroad in warmer waters.\n\nMembers of Great House Telvanni can often be found wearing the hollowed out shell of a Telvannis cephalopod as a helmet. The process of preparing these shells is said to take years to master.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_Cephalopod</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>Telvannis cephalopod</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Vivec crayfish -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawCrayfish</defName>
+		<label>Vivec crayfish</label>
+		<description>Raw Vivec crayfish. A brilliant blue species of crayfish, often found in the fresh waters surrounding Vivec city.\n\nFishing for these was considered a crime by the Tribunal, which wasn't really a problem as you would be far more likely to lose a hand to slaughterfish.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_VivecCrayfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.12</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>4.6</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>Vivec crayfish</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

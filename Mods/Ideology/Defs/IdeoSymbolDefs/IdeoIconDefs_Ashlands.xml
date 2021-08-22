@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsA</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsA</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsB</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsB</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsC</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsC</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsD</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsD</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsE</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsE</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsF</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsF</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsG</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsG</iconPath>
+    <memes>
+
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>MorrowRim_AshlandsH</defName>
+    <iconPath>UI/Ideoligions/MorrowRim_AshlandsH</iconPath>
+    <memes>
+	
+    </memes>
+  </IdeoIconDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RitualAttachableOutcomeEffectDef>
+		<defName>MorrowRim_SiltStriderAttacted</defName>
+		<label>attract a silt strider</label>
+		<effectDesc>50% chance you will attract a silt strider to the area.</effectDesc>
+		<letterInfoText>You've attracted the attention of a silt strider.</letterInfoText>
+		<workerClass>MorrowRim.RitualAttachableOutcomeEffectWorker_AttractSiltStrider</workerClass>
+		<requiredMemeAny>
+			<li>MorrowRim_Ashlander</li>
+		</requiredMemeAny>
+		<disallowedRituals>
+		  <li>FuneralStandard</li>
+		  <li>FuneralNoCorpse</li>
+		</disallowedRituals>
+	</RitualAttachableOutcomeEffectDef>
+  
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Ashland Swamp</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!-- other fishables -->
+						
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_MorrowRim_MudcrabEgg</defName>
+							<thingDef>MorrowRim_Egg_MudcrabFertilized</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>false</canBeSaltwater>
+							<allowedBiomes>
+								<li>Ashlands</li>		
+							</allowedBiomes>  	
+							<commonality>0.1</commonality>			
+							<baseFishingYield>5</baseFishingYield>		
+						</VCE_Fishing.FishDef>
+
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_MorrowRim_WamasuEgg</defName>
+							<thingDef>MorrowRim_Egg_WamasuFertilized</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>false</canBeSaltwater>
+							<allowedBiomes>
+								<li>Ashlands</li>		
+							</allowedBiomes>  	
+							<commonality>0.05</commonality>			
+							<baseFishingYield>1</baseFishingYield>		
+						</VCE_Fishing.FishDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

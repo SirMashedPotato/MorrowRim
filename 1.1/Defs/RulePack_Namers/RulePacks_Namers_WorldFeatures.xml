@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>MorrowRim_NamerBlightedAshlands</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>terrain_word(p=4)->wastes</li>
+			<li>terrain_word(p=4)->wasteland</li>
+			<li>terrain_word(p=2)->blight</li>
+			<li>terrain_word->foyada</li>
+			<li>terrain_word->barrens</li>
+			<li>terrain_word->gash</li>
+			<li>terrain_word->desert</li>
+			<li>terrain_word->scar</li>
+			<li>terrain_word->badlands</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  
+	<RulePackDef>
+		<defName>MorrowRim_NamerAshlands</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>terrain_word(p=8)->ashlands</li>
+			<li>terrain_word->expanse</li>
+			<li>terrain_word->lands</li>
+			<li>terrain_word->barrens</li>
+			<li>terrain_word->plains</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

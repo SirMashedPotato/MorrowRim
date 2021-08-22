@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>MorrowRim_CorprusRefugeeJoin</defName>
+		<label>corprus refugee join</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_GiveQuest_Corprus</workerClass>
+		<questScriptDef>MorrowRim_CorprusRefugeeJoin</questScriptDef>
+		<baseChance>0.4</baseChance>
+		<pawnKind>Villager</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+	</IncidentDef>
+
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen" or defName="Plant_MossGauranlen" or defName="Plant_PodGauranlen"]</xpath>
+		<value>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name="DryadBase"]</xpath>
+		<value>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
+

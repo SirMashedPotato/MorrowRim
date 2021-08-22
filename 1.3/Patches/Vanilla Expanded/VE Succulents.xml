@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - Succulents</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildPlants</xpath>
+					<value>
+						<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+						<VCE_Plant_BunnyEarsCactus>0.01</VCE_Plant_BunnyEarsCactus>
+						<VCE_Plant_Echeveria>0.015</VCE_Plant_Echeveria>
+						<VCE_Plant_FairyWashboard>0.015</VCE_Plant_FairyWashboard>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="VCE_Plant_AloeVera" or defName="VCE_Plant_BunnyEarsCactus" or defName="VCE_Plant_Echeveria" or defName="VCE_Plant_FairyWashboard"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

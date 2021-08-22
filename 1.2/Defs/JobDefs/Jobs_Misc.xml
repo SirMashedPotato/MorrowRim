@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>MorrowRim_GotoSafeFromAshstorm</defName>
+    <driverClass>JobDriver_Goto</driverClass>
+    <reportString>seeking shelter from ash storm.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>MorrowRim_Wait_DuringAshstorm</defName>
+    <driverClass>JobDriver_Wait</driverClass>
+    <reportString>hiding from ash storm.</reportString>
+  </JobDef>
+
+</Defs>

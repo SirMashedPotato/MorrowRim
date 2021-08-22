@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- kreshweed -->
+
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_Kreshweed</defName>
+		<label>kreshweed plant</label>
+		<description>A coarse grass, found natively in the ashlands. Kreshweed is farmed by the Dunmer for its durable fiber, which is often used to make clothing.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Kreshweed</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_KreshFiber</harvestedThingDef>
+		  <harvestYield>14</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowMinSkill>4</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.1</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>12</growDays>
+		  <visualSizeRange>0.6~1.3</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_KreshweedImmature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	
+	<!-- wild kreshweed -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_Kreshweed_Wild</defName>
+		<label>wild kreshweed plant</label>
+		<description>A coarse grass, found natively in the ashlands. Kreshweed is farmed by the Dunmer for its durable fiber, which is often used to make clothing.\n\nWild kreshweed can only be found growing in ash-enriched soil.</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Kreshweed</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <fertilityMin>1.4</fertilityMin>
+		  <growMinGlow>0.51</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_KreshFiber</harvestedThingDef>
+		  <harvestYield>14</harvestYield>
+		  <topWindExposure>0.1</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>12</growDays>
+		  <visualSizeRange>0.6~1.3</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_KreshweedImmature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	
+	<!-- flowers -->
+	
+	<!-- wild stoneflower -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_StoneFlower</defName>
+		<label>stoneflower</label>
+		<description>A beautiful flower, that can sometimes be found growing in the ashlands. Though fragile looking, it is capable of surviving ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>10</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_StoneFlower</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.5</growDays>
+		  <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_NobleSedge</defName>
+		<label>noble sedge</label>
+		<description>A cultivated flower associated with royalty. Noble sedge are very beautiful, but must be replanted often.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>24</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_NobleSedge</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_ExoticFlowers</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>500</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.2</growDays>
+		  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+  
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_Nirthfly</defName>
+		<label>nirthfly</label>
+		<description>A cultivated flower named after a species of fly. Like the fly, the nirthfly is very short lived, though very easy to plant.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>20</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Nirthfly</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_ExoticFlowers</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>150</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.3</growDays>
+		  <lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_HornLily</defName>
+		<label>horn lily</label>
+		<description>A cultivated flower, often found growing in the gardens of wealthy Dunmer. The horn lily is very difficult to plant, though its beauty is often considered worth the effort.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>30</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_HornLily</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_ExoticFlowers</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>750</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>4</growDays>
+		  <lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GoldenSedge</defName>
+		<label>golden sedge</label>
+		<description>A cultivated flower associated with wealth. Golden sedge are not quite as captivating as the royal sedge, but last far longer.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>18</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_GoldenSedge</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_ExoticFlowers</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <sowWork>500</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>2.1</growDays>
+		  <lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+</Defs>

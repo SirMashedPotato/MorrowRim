@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Desert</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add select animals to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+						
+				<!-- give select animals ash-resistant -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>	
+		
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

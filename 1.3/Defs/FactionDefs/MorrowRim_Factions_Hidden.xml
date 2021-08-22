@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef>
+		<defName>MorrowRim_Corprus</defName>
+		<label>corprus victims</label>
+		<pawnSingular>corprus victim</pawnSingular>
+		<pawnsPlural>corprus victims</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Corprus Victims</fixedName>
+		<factionIconPath>World/WorldObjects/Expanding/Sites/Manhunters</factionIconPath>
+		<raidCommonalityFromPointsCurve>
+		  <points>
+			<li>(0, 0)</li>
+		  </points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(0, 0)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-20~100</allowedArrivalTemperatureRange>
+	</FactionDef>
+
+</Defs>

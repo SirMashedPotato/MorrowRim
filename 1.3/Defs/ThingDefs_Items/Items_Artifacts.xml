@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArtifactBase">
+    <defName>MorrowRim_ArchotechFilterVessel</defName>
+    <label>archotech filter vessel</label>
+    <description>A one-use vessel that, when activated, releases a short-lived cloud of filtering nanites. These nanites build up in the lungs of anyone nearby, and prevent ash build up during ash storms.</description>
+    <graphicData>
+      <texPath>MorrowRim/Items/Artifact/MorrowRim_ArchotechFilter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <relicChance>3</relicChance>
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>MorrowRim.CompTargetable_VesselRadius</compClass>
+        <psychicSensitiveTargetsOnly>false</psychicSensitiveTargetsOnly>
+        <doCameraShake>false</doCameraShake>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <fleckOnUsed>PsycastAreaEffect</fleckOnUsed>
+        <fleckOnUsedScale>10</fleckOnUsedScale>
+      </li>
+      <li>
+        <compClass>MorrowRim.CompTargetEffect_ArchotechFilter</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectArtifact">
+        <sound>PsychicSoothePulserCast</sound>
+      </li>
+    </comps>
+	<!-- Not actually using it as a place worker, but it works anyway -->
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<placeWorkers>
+      <li>MorrowRim.PlaceWorker_ShowVesselRadius</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtifactBase">
+    <defName>MorrowRim_ArchotechAshformer</defName>
+    <label>archotech ashformer</label>
+    <description>A one-use vessel that, when activated, releases a fast acting cloud of terraforming nanites. These nanites convert nearby terrain, including blighted ash, into the appropriate ash-covered version.\n\nIf any of the terrain is already ash covered soil, it will instead be converted into ash-enriched soil.</description>
+    <graphicData>
+      <texPath>MorrowRim/Items/Artifact/MorrowRim_ArchotechAshformer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <relicChance>3</relicChance>
+    <comps>
+	  <li Class="MorrowRim.CompProperties_UseEffectAshformer">
+        <sound>PsychicSoothePulserCast</sound>
+      </li>
+    </comps>
+	<!-- Not actually using it as a place worker, but it works anyway -->
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<placeWorkers>
+      <li>MorrowRim.PlaceWorker_ShowAshformerRadius</li>
+    </placeWorkers>
+  </ThingDef>
+ 
+</Defs>

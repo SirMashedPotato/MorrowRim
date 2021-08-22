@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MorrowRim</name>
+	<packageId>SirMashedPotato.MorrowRim</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.1</li>
+    	<li>1.2</li>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>Adds two new Morrowind inspired biomes, with unique weather, plants, animals and terrain. The ashlands are known for their unusal ecosystem, with giant mushroom trees, floating shelled jellyfish, and a variety of oversized insectoids. The terrain here is incredibly fertile, though frequent ashstorms make growing non-native plants difficult.\n\n-Supports Vanilla Achievements Expanded.\n-Requires Harmony.\n-Includes several patches that make animals added by other mods ash resistant.\n-Includes several patches to add wild animals and plants to both biomes from other mods.\n-Includes several patches for Vanilla Expanded mods.\n-Includes a patch for RimBees, adding wild hives to the ashlands.\n-Includes a patch for Camouflage and Stealth, with both biomes using desert camo.\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	</description>
+	
+	<modDependencies>
+      <li>
+        <packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      </li>
+    </modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Orion.FactionDiscovery</li>
+		<li>sarg.alphabiomes</li>
+		<li>VanillaExpanded.VCookE</li>
+		<li>VanillaExpanded.VCEF</li>
+		<li>OskarPotocki.VFE.Insectoid</li>
+		<li>vanillaexpanded.achievements</li>
+	</loadAfter>
+</ModMetaData>

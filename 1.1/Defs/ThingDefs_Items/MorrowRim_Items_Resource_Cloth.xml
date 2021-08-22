@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorrowRim_KreshFiber</defName>
+		<label>kresh fiber cloth</label>
+		<description>Cloth woven from kresh fiber.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/Cloth</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <color>(108,98,68)</color>
+		</graphicData>
+		<statBases>
+		  <StuffPower_Armor_Sharp>0.28</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <MarketValue>1.5</MarketValue>
+		  <Mass>0.026</Mass>
+		  <Flammability>1.2</Flammability>
+		  <DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+		  <statFactors>
+			<Flammability>1.2</Flammability>
+			<Beauty>1</Beauty>
+		  </statFactors>
+		  <categories>
+			<li>Fabric</li>
+		  </categories>
+		  <color>(108,98,68)</color>
+		  <commonality>1.4</commonality>
+		</stuffProps>
+		<thingCategories>
+		  <li>Textiles</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+
+</Defs>

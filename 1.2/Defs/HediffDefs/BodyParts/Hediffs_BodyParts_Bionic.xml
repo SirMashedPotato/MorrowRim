@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- bionic filter -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>MorrowRim_BionicFilter</defName>
+	<modExtensions>
+		<li Class="MorrowRim.ExtendedRaceProperties">
+			<ashResistant>Resistant</ashResistant>
+        </li>
+	</modExtensions>
+    <label>bionic filter</label>
+    <labelNoun>a bionic filter</labelNoun>
+    <description>An installed bionic filter, protects from ash buildup.</description>
+    <descriptionHyperlinks><ThingDef>MorrowRim_BionicFilter</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>MorrowRim_BionicFilter</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+        <li>
+          <makeImmuneTo>
+            <li>MorrowRim_AshBuildup</li>
+          </makeImmuneTo>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>MorrowRim_BionicFilter</defName>
+    <label>bionic filter</label>
+    <description>A bionic implant attached to the sinuses, contains an advanced filtration system. Cleanses undesirable particles before they accumulate in the lungs, particularly useful during ash storms. A lattice-dust healing system allows it to recover from damage.</description>
+    <descriptionHyperlinks><RecipeDef>MorrowRim_InstallBionicFilter</RecipeDef>
+	<RecipeDef>MorrowRim_InstallBionicFilterAnimal</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+	<recipeMaker>
+		<researchPrerequisite>MorrowRim_Bionics</researchPrerequisite>
+	</recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>MorrowRim_InstallBionicFilter</defName>
+    <label>install bionic filter in humanoid</label>
+    <description>Install a bionic filter in a humanoid.</description>
+    <descriptionHyperlinks><ThingDef>MorrowRim_BionicFilter</ThingDef></descriptionHyperlinks>
+    <jobString>Installing bionic filter.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_BionicFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MorrowRim_BionicFilter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MorrowRim_BionicFilter</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>MorrowRim_InstallBionicFilterAnimal</defName>
+    <label>install bionic filter in animal</label>
+    <description>Install a bionic filter in an animal.</description>
+    <descriptionHyperlinks><ThingDef>MorrowRim_BionicFilter</ThingDef></descriptionHyperlinks>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing bionic filter.</jobString>
+	<workAmount>2000</workAmount>
+    <ingredients>
+      <li>
+		<filter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</filter>
+		<count>1</count>
+	  </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>MorrowRim_BionicFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+		<li>Medicine</li>
+	  </categories>
+      <thingDefs>
+        <li>MorrowRim_BionicFilter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MorrowRim_BionicFilter</addsHediff>
+  </RecipeDef>
+
+</Defs>

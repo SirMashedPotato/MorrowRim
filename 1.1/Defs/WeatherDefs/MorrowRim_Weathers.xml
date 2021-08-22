@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- regular ash storm -->
+	<WeatherDef>
+		<defName>MorrowRim_AshStorm</defName>
+		<label>ash storm</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.5</reduceLightLevelsFactor>
+				<isAshStorm>true</isAshStorm>
+            </li>
+		</modExtensions>
+		<isBad>true</isBad>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<description>An ash storm. Ash blocks the sky, reducing sunlight. Strong winds slow movement and reduce ranged weapon accuracy, as well as damaging plants and wind turbines.</description>
+		<windSpeedFactor>1.8</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_ashCovered</exposedThought>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<durationRange>10000~40000</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshDamage</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>MorrowRim.WeatherOverlay_AshStorm</li>
+		  <li>MorrowRim.WeatherOverlay_AshStormAdditional</li>
+		</overlayClasses>  
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+
+	<!-- metallic ash storm -->
+	<WeatherDef>
+		<defName>MorrowRim_AshStorm_Metallic</defName>
+		<label>metallic ash storm</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.5</reduceLightLevelsFactor>
+				<isAshStorm>true</isAshStorm>
+            </li>
+		</modExtensions>
+		<isBad>true</isBad>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<description>An ash storm. Ash blocks the sky, reducing sunlight. Strong winds slow movement and reduce ranged weapon accuracy, as well as damaging plants and wind turbines.\n\nThis storm is full of metallic particles, causing frequent lightning strikes.</description>
+		<windSpeedFactor>1.8</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_ashCovered</exposedThought>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<durationRange>1500~10000</durationRange>
+		<eventMakers>
+		  <li>
+			<averageInterval>300</averageInterval>
+			<eventClass>WeatherEvent_LightningFlash</eventClass>
+		  </li>
+		  <li>
+			<averageInterval>300</averageInterval>
+			<eventClass>WeatherEvent_LightningStrike</eventClass>
+		  </li>
+		  <li>
+			<averageInterval>300</averageInterval>
+			<eventClass>MorrowRim.WeatherEvent_AshDamage</eventClass>
+		  </li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>MorrowRim.WeatherOverlay_AshStorm</li>
+		  <li>MorrowRim.WeatherOverlay_AshStormAdditional</li>
+		</overlayClasses>   
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.7</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- blight rain -->
+	<WeatherDef>
+		<defName>MorrowRim_BlightRain</defName>
+		<label>ash blight storm</label>
+		<description>Rain reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.\n\nThis rain carries ash blight, this can cause crop blights and drive animals mad.</description>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>SoakingWet</exposedThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Rain</li>
+		</ambientSounds>
+		<eventMakers>
+			<li>
+				<averageInterval>3000</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshBlight</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<durationRange>1500~10000</durationRange>
+		<commonalityRainfallFactor>
+		  <points>
+			<li>(0, 0)</li>
+			<li>(1300, 0.5)</li>
+			<li>(4000, 1.5)</li>
+		  </points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.7,0.7)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1.0,0.9,0.9)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.30,0.35)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.30,0.35)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- lingering ash clouds -->
+	<WeatherDef>
+		<defName>MorrowRim_LingeringAshClouds</defName>
+		<label>lingering ash clouds</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.7</reduceLightLevelsFactor>
+            </li>
+		</modExtensions>
+		<description>Ash clouds obscure sunlight, reducing the light level.</description>
+		<repeatable>true</repeatable>
+		<favorability>Good</favorability>
+		<perceivePriority>0</perceivePriority>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>   
+		<!-- Colors are Clear -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.6</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- blight storm -->
+	<WeatherDef>
+		<defName>MorrowRim_BlightStorm</defName>
+		<label>intense ash blight storm</label>
+		<description>Rain reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.\n\nThis rain carries ash blight, this can cause crop blights and drive animals mad.</description>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<windSpeedFactor>1.7</windSpeedFactor>
+		<accuracyMultiplier>0.7</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_outsideInBlightStorm</exposedThought>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Rain</li>
+		</ambientSounds>
+		<durationRange>1500~10000</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+			<li>
+				<averageInterval>1800</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshBlight</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+		  <points>
+			<li>(0, 0)</li>
+			<li>(1300, 0.5)</li>
+		  </points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- volcanic blight storm -->
+	<WeatherDef>
+		<defName>MorrowRim_BlightStormVolcanic</defName>
+		<label>volcanic ash blight storm</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.5</reduceLightLevelsFactor>
+				<isAshStorm>true</isAshStorm>
+            </li>
+		</modExtensions>
+		<description>An ash storm. Ash blocks the sky, reducing sunlight. Strong winds slow movement and reduce ranged weapon accuracy, as well as damaging plants and wind turbines.\n\nThe ash carries ash blight, this can cause crop blights and drive animals mad.</description>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<windSpeedFactor>1.7</windSpeedFactor>
+		<accuracyMultiplier>0.7</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_ashCovered</exposedThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<durationRange>1500~10000</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+			<li>
+				<averageInterval>1800</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshBlight</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshDamage</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>MorrowRim.WeatherOverlay_AshStorm</li>
+		  <li>MorrowRim.WeatherOverlay_AshStormAdditional</li>
+		</overlayClasses>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.8,0.2,0.2)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>1.0</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- ash fall -->
+	<WeatherDef>
+		<defName>MorrowRim_Ashfall</defName>
+		<label>ash fall</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.8</reduceLightLevelsFactor>
+            </li>
+		</modExtensions>
+		<description>A light cloud of ash, possibly disturbed by wind or volcanic activity, is descending over the area. Ash will fall from the sky, and the cloud will partially obscure the sun, but it is otherwise completely harmless.</description>
+		<temperatureRange>-999~999</temperatureRange>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_ashCovered</exposedThought>
+		<ambientSounds>
+		  <li>Ambient_Wind_Clear</li>
+		</ambientSounds>
+		<overlayClasses>
+		  <li>WeatherOverlay_SnowGentle</li>
+		</overlayClasses>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- foggy ash fall -->
+	<WeatherDef>
+		<defName>MorrowRim_FoggyAshfall</defName>
+		<label>foggy ash fall</label>
+		<modExtensions>
+			<li Class="MorrowRim.WeatherProperties">
+                <reduceLightLevels>true</reduceLightLevels>
+				<reduceLightLevelsFactor>0.8</reduceLightLevelsFactor>
+            </li>
+		</modExtensions>
+		<description>A light cloud of ash, possibly disturbed by wind or volcanic activity, is descending over the area . Ash will fall from the sky, and the cloud will partially obscure the sun, but it is otherwise completely harmless.</description>
+		<windSpeedFactor>0.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<temperatureRange>-999~999</temperatureRange>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>MorrowRim_ashCovered</exposedThought>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<overlayClasses>
+		  <li>WeatherOverlay_SnowGentle</li>
+		  <li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.8,0.8)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1,1,1)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.40,0.45)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(1,1,1)</overlay>
+		  <saturation>0.8</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<!-- foggy blight rain -->
+	<WeatherDef>
+		<defName>MorrowRim_FoggyBlightRain</defName>
+		<label>foggy ash blight storm</label>
+		<description>Rain reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.\n\nThis rain carries ash blight, this can cause crop blights and drive animals mad.</description>
+		<repeatable>false</repeatable>
+		<temperatureRange>-999~999</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>SoakingWet</exposedThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+		  <li>Ambient_Rain</li>
+		   <li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<eventMakers>
+			<li>
+				<averageInterval>3000</averageInterval>
+				<eventClass>MorrowRim.WeatherEvent_AshBlight</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+		  <li>WeatherOverlay_Rain</li>
+		  <li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+		<durationRange>1500~10000</durationRange>
+		<commonalityRainfallFactor>
+		  <points>
+			<li>(0, 0)</li>
+			<li>(1300, 0.5)</li>
+			<li>(4000, 1.5)</li>
+		  </points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+		  <sky>(0.8,0.7,0.7)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.7,0.7,0.7)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+		  <sky>(1.0,0.9,0.9)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.6,0.6,0.6)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+		  <sky>(0.35,0.30,0.35)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+		  <sky>(0.35,0.30,0.35)</sky>
+		  <shadow>(0.92,0.92,0.92)</shadow>
+		  <overlay>(0.5,0.5,0.5)</overlay>
+		  <saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+</Defs>

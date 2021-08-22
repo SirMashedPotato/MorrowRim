@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- giant Luminous Russula -->
+	
+	<!--<ThingDef ParentName="TreeBase">
+		<defName>MorrowRim_GiantLuminousRussula</defName>
+		<label>giant luminous russula</label>
+		<description>A large mushroom that grows exclusively in the ashlands, though somewhat rarely. Its brilliant blue colouration and glow is quite beautiful. Takes a lengthy amount of time to grow and does not need light to grow. Its stem is too soft to be used in place of wood, can instead be harvested for its edible flesh.\n\nCan only grow in ash or fertile soil.\nRather fragile, damaged by ash-storms.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_GiantLuminousRussula</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.35, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<statBases>
+		  <Beauty>4</Beauty>
+		</statBases>
+		<plant>
+		  <harvestedThingDef>RawFungus</harvestedThingDef>
+		  <fertilityMin>1.2</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>21</growDays>
+		  <visualSizeRange>1.2~2.1</visualSizeRange>
+		  <harvestWork>1000</harvestWork>
+		  <harvestYield>40</harvestYield>
+		  <wildClusterWeight>45</wildClusterWeight>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>6</glowRadius>
+			<glowColor>(35,43,50,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>-->
+
+	<!-- Aesthetic plants -->
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_LuminousRussula</defName>
+	<label>luminous russula</label>
+	<modExtensions>
+		<li Class="MorrowRim.PlantProperties">
+			<forceOntoTerrain>true</forceOntoTerrain>
+			<whitelist>false</whitelist>
+			<terrainList>
+				<li>Marsh</li>
+				<li>MarshyTerrain</li>
+			</terrainList>
+		</li>
+	</modExtensions>
+    <description>A small mushroom that can be found growing in the ashlands. Its brilliant colouration and glow is quite beautiful. Like the violet coprinus, the flesh is mildly toxic to humanoids.</description>
+	<statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>6</Beauty>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_LuminousRussula</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+	  <cavePlant>false</cavePlant>
+	  <fertilityMin>0.9</fertilityMin>
+      <growMinGlow>-0.5</growMinGlow>
+	  <growOptimalGlow>0.9</growOptimalGlow>
+      <growDays>3.8</growDays>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(3,47,69,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_LuminousRussulaCultivated</defName>
+	<label>cultivated luminous russula</label>
+    <description>A small mushroom that can be found growing in the ashlands. Its brilliant colouration and glow is quite beautiful. Like the violet coprinus, the flesh is mildly toxic to humanoids.</description>
+	<statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>6</Beauty>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_LuminousRussula</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+	  <cavePlant>false</cavePlant>
+	  <fertilityMin>0.9</fertilityMin>
+      <growMinGlow>-0.5</growMinGlow>
+	  <growOptimalGlow>0.9</growOptimalGlow>
+      <growDays>3.8</growDays>
+	  <sowWork>800</sowWork>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+	  </sowResearchPrerequisites>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(3,47,69,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <!-- violet coprinus -->
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_VioletCoprinus</defName>
+	<label>violet coprinus</label>
+    <description>A small mushroom that can be found growing in the ashlands. Its brilliant colouration and glow is quite beautiful. Like the luminous russula, the flesh is mildly toxic to humanoids.</description>
+	<statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>6</Beauty>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_VioletCoprinus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+	  <cavePlant>false</cavePlant>
+	  <fertilityMin>0.9</fertilityMin>
+      <growMinGlow>-0.5</growMinGlow>
+	  <growOptimalGlow>0.9</growOptimalGlow>
+      <growDays>3.8</growDays>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(33,94,84,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>MorrowRim_VioletCoprinusCultivated</defName>
+	<label>cultivated violet coprinus</label>
+    <description>A small mushroom that can be found growing in the ashlands. Its brilliant colouration and glow is quite beautiful. Like the luminous russula, the flesh is mildly toxic to humanoids.</description>
+	<statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>6</Beauty>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>MorrowRim/Plants/MorrowRim_VioletCoprinus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+	  <cavePlant>false</cavePlant>
+	  <fertilityMin>0.9</fertilityMin>
+      <growMinGlow>-0.5</growMinGlow>
+	  <growOptimalGlow>0.9</growOptimalGlow>
+      <growDays>3.8</growDays>
+	  <sowWork>800</sowWork>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+	  </sowResearchPrerequisites>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(33,94,84,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+ 
+	<!-- Scrib Cabbage -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_ScribCabbage</defName>
+		<label>scrib cabbage plant</label>
+		<description>A leafy succulent, cultivated by the Dunmer. Named after the scrib, who seem to rather enjoy munching on the leaves. Grows quite quickly and only needs minimal light, but produces a low yield and requires fertile soil.</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_ScribCabbage</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>1.0</fertilitySensitivity>
+		  <fertilityMin>1.3</fertilityMin>
+		  <growMinGlow>0.25</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawScribCabbage</harvestedThingDef>
+		  <harvestYield>4</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowMinSkill>4</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.1</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>1.8</growDays>
+		  <visualSizeRange>0.4~0.7</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <!--<immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_ScribCabbageImmature</immatureGraphicPath>-->
+		  <purpose>Food</purpose>
+		  <humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<!-- funnel cap -->
+	
+	<ThingDef ParentName="TreeBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+                <forceOntoTerrain>true</forceOntoTerrain>
+                <whitelist>false</whitelist>
+                <terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_FunnelCap</defName>
+		<label>funnel cap mushroom</label>
+		<description>A giant mushroom found native to the ashlands. Takes a considerable time to grow and does not need light. The stem hardens as it ages, though it is too soft and porous to be used as a building material. It can instead be cut down for its delicious flesh. Funnel cap can only grow on ash covered or ash enriched soil, as they rely on the volcanic nutrients contained within.\n\nFunnel cap recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_FunnelCap</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.35, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<statBases>
+		  <Beauty>4</Beauty>
+		</statBases>
+		<plant>
+		  <harvestedThingDef>MorrowRim_RawFunnelCap</harvestedThingDef>
+		  <harvestYield>45</harvestYield>
+		  <fertilitySensitivity>1.0</fertilitySensitivity>
+		  <fertilityMin>1.3</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>24</growDays>
+		  <visualSizeRange>1.3~2.8</visualSizeRange>
+		  <harvestWork>1000</harvestWork>
+		  <wildClusterWeight>45</wildClusterWeight>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+	</ThingDef>
+
+</Defs>

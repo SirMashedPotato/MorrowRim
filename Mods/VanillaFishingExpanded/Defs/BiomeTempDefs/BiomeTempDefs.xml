@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VCE_Fishing.BiomeTempDef>
+		<defName>MorrowRim_BiomeAshlands</defName>  
+		<biomeTempLabel>Ashlands</biomeTempLabel>
+		<biomes>
+			<li>MorrowRim_Ashlands</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.AshSwamp">MorrowRim_AshSwamp</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.Grazelands">MorrowRim_Grazelands</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_VolcanicAshlands</li>
+		</biomes>      
+	</VCE_Fishing.BiomeTempDef>
+
+</Defs>

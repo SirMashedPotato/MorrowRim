@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>MorrowRim_HumanlikeHideFromAshStorm</defName>
+		<insertTag>Humanlike_PostDuty</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalColonist">
+			<subNodes>
+				<li Class="MorrowRim.ThinkNode_ConditionalHideFromAshStorm_Humanlike">
+					<subNodes>
+						<li Class="MorrowRim.JobGiver_HideFromAshStorm"/>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>MorrowRim_AnimalHideFromAshStorm</defName>
+		<insertTag>Animal_PreMain</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalOfPlayerFaction">
+			<subNodes>
+				<li Class="MorrowRim.ThinkNode_ConditionalHideFromAshStorm">
+					<subNodes>
+						<li Class="MorrowRim.JobGiver_HideFromAshStorm"/>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+</Defs>

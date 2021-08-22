@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Megafauna</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add select animals to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Arthropleura"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Megalania"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
+						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Quinkana"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Gigantophis"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
+						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Meganeura"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Pulmonoscorpius"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
+						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
+					</value>
+				</li>
+				
+						
+				<!-- give select  animals ash-resistant -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Arthropleura"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Megalania"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Quinkana"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Gigantophis"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Meganeura"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="Pulmonoscorpius"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+		
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

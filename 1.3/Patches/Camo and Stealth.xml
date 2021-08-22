@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Camouflage and Stealth</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				 <li Class="PatchOperationAddModExtension"> 
+					 <xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]</xpath> 
+					 <value> 
+						 <li Class="CompCamo.CompCamoDefs"> 
+						 <CamoType>Desert</CamoType> 
+						 </li> 
+					 </value> 
+				 </li> 
+				 
+				 <li Class="PatchOperationAddModExtension"> 
+					 <xpath>/Defs/BiomeDef[defName="MorrowRim_BlightedAshlands"]</xpath> 
+					 <value> 
+						 <li Class="CompCamo.CompCamoDefs"> 
+						 <CamoType>Desert</CamoType> 
+						 </li> 
+					 </value> 
+				 </li> 
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
