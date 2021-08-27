@@ -171,7 +171,7 @@ namespace MorrowRim
             TooltipHandler.TipRegion(rectPageModIntegration, "MorrowRim_PageModIntegration".Translate());
             if (Widgets.ButtonText(rectPageModIntegration, "MorrowRim_PageModIntegration".Translate(), true, true, true))
             {
-                page = 8;
+                page = 9;
             }
             listing_Standard.Gap();
 

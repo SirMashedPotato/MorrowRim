@@ -591,7 +591,7 @@ namespace MorrowRim
     {
         [HarmonyPostfix]
         [HarmonyPatch("ShouldHaveLeader", MethodType.Getter)]
-        static void GetRidOfLeaderError_Patch(ref Faction __instance, ref bool __result)
+        public static void GetRidOfLeaderError_Patch(ref Faction __instance, ref bool __result)
         {
             if (__instance.def.defName == "MorrowRim_Kwama") __result = false;
         }

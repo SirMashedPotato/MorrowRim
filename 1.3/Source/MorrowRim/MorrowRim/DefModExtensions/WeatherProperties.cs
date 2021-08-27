@@ -15,6 +15,7 @@ namespace MorrowRim
         public bool isAshStorm = false;
 
         //blight
+        public bool isBlightStorm = false;
 
         //fire
         public bool isFireStorm = false;
