@@ -52,6 +52,24 @@ namespace MorrowRim
             p.TryAttachFire(f);
         }
 
+        //Tent checks
+
+        public static bool IsInResistantTent_Thought(Pawn p)
+        {
+            var currBed = p.CurrentBed();
+            if (currBed == null) return false; ;
+            var modExt = currBed.def.GetModExtension<YurtModExtension>();
+            return modExt != null && modExt.negateAcidRainThought;
+        }
+
+        public static bool IsInResistantTent_Burn(Pawn p)
+        {
+            var currBed = p.CurrentBed();
+            if (currBed == null) return false; ;
+            var modExt = currBed.def.GetModExtension<YurtModExtension>();
+            return modExt != null && modExt.negateAcidRainBurns;
+        }
+
         /* ========== plants ========== */
 
         public static bool GetChanceOfFirePlant(Plant p)

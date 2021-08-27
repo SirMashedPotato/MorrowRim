@@ -742,13 +742,35 @@ namespace MorrowRim
             {
                 var currBed = __instance.pawn.CurrentBed();
                 if (currBed == null) return;
+                bool removeThought = false;
+                WeatherDef curWeatherLerped = __instance.pawn.Map.weatherManager.CurWeatherLerped;
+                //Ash
                 if (WeatherUtilityAsh.IsInResistantTent_Thought(__instance.pawn))
                 {
-                    WeatherDef curWeatherLerped = __instance.pawn.Map.weatherManager.CurWeatherLerped;
                     if (curWeatherLerped.exposedThought != null && curWeatherLerped.exposedThought == ThoughtDef.Named("MorrowRim_ashCovered") && !__instance.pawn.Position.Roofed(__instance.pawn.Map))
                     {
-                        __instance.pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDef(curWeatherLerped.exposedThought);
+                        removeThought = true;
                     }
+                }
+                //Blight
+                if (WeatherUtilityBlight.IsInResistantTent_Thought(__instance.pawn))
+                {
+                    if (curWeatherLerped.exposedThought != null && curWeatherLerped.exposedThought == ThoughtDef.Named("MorrowRim_outsideInBlightStorm") && !__instance.pawn.Position.Roofed(__instance.pawn.Map))
+                    {
+                        removeThought = true;
+                    }
+                }
+                //acid
+                if (WeatherUtilityFire.IsInResistantTent_Thought(__instance.pawn) && ModSettings_Utility.CheckVolcanicAshlands())
+                {
+                    if (curWeatherLerped.exposedThought != null && curWeatherLerped.exposedThought == ThoughtDef.Named("MorrowRim_outsideInAcidWeather") && !__instance.pawn.Position.Roofed(__instance.pawn.Map))
+                    {
+                        removeThought = true;
+                    }
+                }
+                if (removeThought)
+                {
+                    __instance.pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDef(curWeatherLerped.exposedThought);
                 }
             }
         }

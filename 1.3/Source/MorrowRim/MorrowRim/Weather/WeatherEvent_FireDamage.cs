@@ -77,7 +77,7 @@ namespace MorrowRim
                         WeatherUtilityFire.IgnitePawn(p, props.fireSize);
                     }
                 } 
-                else
+                else if(!WeatherUtilityFire.IsInResistantTent_Burn(p))
                 {
                     if (WeatherUtilityFire.GetChanceOfBurn(p) && WeatherUtilityFire.GetBodyPart(p, out BodyPartRecord bpr))
                     {

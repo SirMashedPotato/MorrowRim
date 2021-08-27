@@ -8,7 +8,7 @@ namespace MorrowRim
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            return p.Awake() && !p.Position.Roofed(p.Map) && IsAshStorm(p);
+            return p.Awake() && !p.Position.Roofed(p.Map) && IsAshStorm(p) && !WeatherUtilityAsh.IsInResistantTent_Thought(p);
         }
 
         public bool IsAshStorm(Pawn p)

@@ -15,6 +15,21 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
+		<defName>MorrowRim_ashCoveredAndLovingIt</defName>
+		<workerClass>MorrowRim.ThoughtWorker_AshLover</workerClass>
+		<requiredTraits>
+		  <li>MorrowRim_AshLover</li>
+		</requiredTraits>
+		<stages>
+		  <li>
+			<label>covered in ash</label>
+			<description>It's everywhere! My shoes, my shirt, even my pants. I LOVE it!</description>
+			<baseMoodEffect>12</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
 		<defName>MorrowRim_outsideInBlightStorm</defName>
 		<durationDays>0.2</durationDays>
 		<stackLimit>1</stackLimit>

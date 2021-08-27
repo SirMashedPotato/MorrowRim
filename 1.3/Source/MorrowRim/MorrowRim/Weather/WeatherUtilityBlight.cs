@@ -38,6 +38,16 @@ namespace MorrowRim
             p.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, null, true, false, null, false);
         }
 
+        //Tent checks
+
+        public static bool IsInResistantTent_Thought(Pawn p)
+        {
+            var currBed = p.CurrentBed();
+            if (currBed == null) return false; ;
+            var modExt = currBed.def.GetModExtension<YurtModExtension>();
+            return modExt != null && modExt.negateBlightStormThought;
+        }
+
         /* ========== plants ========== */
 
         public static bool CheckPlantBlight(Plant p)
