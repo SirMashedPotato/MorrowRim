@@ -450,7 +450,7 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="MorrowRim_Orsimir.CompProperties_BeserkerRage">
+			<li Class="MorrowRim.CompProperties_BeserkerRage">
 				<hediffDef>MorrowRim_TitanMode</hediffDef>
 				<enableAugments>false</enableAugments>
 				<enableTracker>false</enableTracker>

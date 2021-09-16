@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="BiomeWorker\BiomeWorker_AshSwamp.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_GlaciatedAshlands.cs" />
+    <Compile Include="Comps\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comps\Comp_BeserkerRage.cs" />
     <Compile Include="CompTarget\CompTargetable_VesselRadius.cs" />
     <Compile Include="CompTarget\CompTargetEffect_ArchotechFilter.cs" />
     <Compile Include="CompUse\CompProperties_UseEffectAshformer.cs" />
@@ -149,7 +151,7 @@
     <Compile Include="ThinkNode\ThinkNode_ConditionalScribCabbage.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalDoDrugs.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalScampInsults.cs" />
-    <Compile Include="ThoughtWorker_AshLover.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_AshLover.cs" />
     <Compile Include="Weather\WeatherEvent_FireDamage.cs" />
     <Compile Include="Weather\WeatherOverlay_AshStormAdditional.cs" />
     <Compile Include="Weather\WeatherUtilityBlight.cs" />

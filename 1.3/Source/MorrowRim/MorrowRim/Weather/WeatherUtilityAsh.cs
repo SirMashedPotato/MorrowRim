@@ -221,14 +221,14 @@ namespace MorrowRim
                     return;
                 }
                 //player animals
-                if (p.AnimalOrWildMan() && p.Faction.IsPlayer && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Animals() &&
+                if (p.AnimalOrWildMan() && p.Faction != null && p.Faction.IsPlayer && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Animals() &&
                     sevCur - sevInc < ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold() && sevCur > ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold())
                 {
                     ActualNotification(p, sevCur);
                     return;
                 }
                 //friendly pawns
-                if (!p.Faction.HostileTo(Faction.OfPlayer) && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Friendly() &&
+                if (p.Faction != null && !p.Faction.HostileTo(Faction.OfPlayer) && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Friendly() &&
                     sevCur - sevInc < ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold() && sevCur > ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold())
                 {
                     ActualNotification(p, sevCur);

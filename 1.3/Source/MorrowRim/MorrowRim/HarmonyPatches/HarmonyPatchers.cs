@@ -238,7 +238,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ReplaceTerrainWithAsh(ref Map __result)
         {
-            if (__result.Biome.defName == "MorrowRim_VolcanicAshlands")
+            if (__result.Biome.defName == "MorrowRim_VolcanicAshlands" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsIsland" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsArchipelago")
             {
                 TerrainDef terrainDef = DefDatabase<TerrainDef>.GetNamed("MorrowRim_VolcanicGravel");
                 TerrainGrid terrainGrid = __result.terrainGrid;
