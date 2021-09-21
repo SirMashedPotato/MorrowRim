@@ -11,6 +11,7 @@
 		<fixedName>Kwama nests</fixedName>
 		<settlementNameMaker>MorrowRim_NamerEggMine</settlementNameMaker>
 		<factionIconPath>UI/KwamaSettlement</factionIconPath>
+		<canMakeRandomly>false</canMakeRandomly>
 		<raidCommonalityFromPointsCurve>
 		  <points>
 			<li>(0, 0)</li>

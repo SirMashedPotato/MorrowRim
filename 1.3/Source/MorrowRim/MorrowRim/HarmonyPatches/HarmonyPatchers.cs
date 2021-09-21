@@ -10,6 +10,8 @@ using Verse.AI;
 using Verse.AI.Group;
 using System.Text;
 using UnityEngine;
+using RimWorld.QuestGen;
+using Verse.Grammar;
 
 namespace MorrowRim
 {
@@ -490,8 +492,10 @@ namespace MorrowRim
 
         public static int DoTheThing(Faction faction)
         {
+            bool anythingIsGood = false;
             for (int i = 0; i < 500; i++)
             {
+                if (i > 25 && !anythingIsGood) anythingIsGood = true;
                 int num;
                 if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
                 {
@@ -502,10 +506,10 @@ namespace MorrowRim
                     }
                     if (biomeDefNames.Contains(tile.biome.defName))
                     {
-                        if(tile.biome.defName == biomeDefNames[0]) return tile.biome.settlementSelectionWeight * 2;
-                        return tile.biome.settlementSelectionWeight;
+                        return 1000f;
                     }
 
+                    if(anythingIsGood) return tile.biome.settlementSelectionWeight / 2;
                     return 0f;
                 }, out num))
                     if (CheckTileIsValid(num, null))
@@ -583,7 +587,7 @@ namespace MorrowRim
             return true;
         }
 
-        static readonly string[] biomeDefNames = { "MorrowRim_Ashlands", "MorrowRim_AshSwamp", "MorrowRim_VolcanicAshlands", BiomeDefOf.TemperateForest.defName, BiomeDefOf.TropicalRainforest.defName, BiomeDefOf.AridShrubland.defName };
+        static readonly string[] biomeDefNames = { "MorrowRim_Ashlands", "MorrowRim_AshSwamp", "MorrowRim_VolcanicAshlands", "MorrowRim_Grazelands" };
     }
 
     [HarmonyPatch(typeof(Faction))]
@@ -775,4 +779,24 @@ namespace MorrowRim
             }
         }
     }
+
+    //temp patches
+    /*
+    [HarmonyPatch(typeof(SitePartWorker_WorkSite))]
+    [HarmonyPatch("Init")]
+    public static class SitePartWorker_WorkSite_Init_Patch
+    {
+        [HarmonyPrefix]
+        public static bool prePatch(Site site, SitePart sitePart)
+        {
+            Log.Message("SitePartWorker_WorkSite_Init_Patch PRE: Faction = " + site.Faction);
+            return true;
+        }
+        [HarmonyPostfix]
+        public static void postPatch(Site site, SitePart sitePart)
+        {
+            Log.Message("SitePartWorker_WorkSite_Init_Patch POST: Faction = " + site.Faction + ", tile = " + site.Tile);
+        }
+    }
+    */
 }
