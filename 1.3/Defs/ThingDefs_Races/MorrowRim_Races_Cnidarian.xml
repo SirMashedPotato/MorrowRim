@@ -127,7 +127,7 @@
 		  <foodType>VegetarianRoughAnimal</foodType>
 		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
 		  <trainability>None</trainability>
-		  <gestationPeriodDays>35</gestationPeriodDays>
+		  <gestationPeriodDays>7</gestationPeriodDays>
 		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>
@@ -378,7 +378,7 @@
 		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
 		  <trainability>None</trainability>
 		  <canBePredatorPrey>false</canBePredatorPrey>
-		  <gestationPeriodDays>35</gestationPeriodDays>
+		  <gestationPeriodDays>7</gestationPeriodDays>
 		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>

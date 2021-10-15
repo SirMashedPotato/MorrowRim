@@ -35,6 +35,9 @@
 			<cooldownTime>1.5</cooldownTime>
 		  </li>
 		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
 	</TerrainDef>
 
 	<!-- Stony Ash -->
@@ -71,6 +74,9 @@
 			<cooldownTime>1.5</cooldownTime>
 		  </li>
 		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
 	</TerrainDef>
 	
 	<!-- Soft Ash -->
@@ -107,6 +113,9 @@
 			<cooldownTime>1.5</cooldownTime>
 		  </li>
 		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
 	</TerrainDef>
 	
 	<!-- Sandy Ash -->
@@ -179,6 +188,9 @@
 			<cooldownTime>1.5</cooldownTime>
 		  </li>
 		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
 	</TerrainDef>
 	
 	<!-- Blighted Stony Ash -->
@@ -215,6 +227,9 @@
 			<cooldownTime>1.5</cooldownTime>
 		  </li>
 		</tools>
+		<tags>
+		  <li>Soil</li>
+		</tags>
 	</TerrainDef>
 
 	<!-- Blighted cracked ash -->

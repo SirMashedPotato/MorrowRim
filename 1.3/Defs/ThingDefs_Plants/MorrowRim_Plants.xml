@@ -33,7 +33,7 @@
 		<plant>
 		  <fertilitySensitivity>0.4</fertilitySensitivity>
 		  <fertilityMin>1.3</fertilityMin>
-		  <growMinGlow>0.4</growMinGlow>
+		  <growMinGlow>0.51</growMinGlow>
 		  <growOptimalGlow>1</growOptimalGlow>
 		  <dieIfLeafless>false</dieIfLeafless>
 		  <harvestTag>Standard</harvestTag>
@@ -47,7 +47,7 @@
 		  </sowResearchPrerequisites>
 		  <topWindExposure>0.05</topWindExposure>
 		  <neverBlightable>true</neverBlightable>
-		  <growDays>6</growDays>
+		  <growDays>5</growDays>
 		  <visualSizeRange>0.4~0.7</visualSizeRange>
 		  <wildOrder>2</wildOrder>
 		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_AshYamImmature</immatureGraphicPath>
@@ -87,7 +87,7 @@
 		<plant>
 		  <fertilitySensitivity>0.4</fertilitySensitivity>
 		  <fertilityMin>1.0</fertilityMin>
-		  <growMinGlow>0.49</growMinGlow>
+		  <growMinGlow>0.51</growMinGlow>
 		  <growOptimalGlow>1</growOptimalGlow>
 		  <dieIfLeafless>false</dieIfLeafless>
 		  <harvestTag>Standard</harvestTag>
@@ -132,7 +132,7 @@
 		<plant>
 		  <fertilitySensitivity>1</fertilitySensitivity>
 		  <fertilityMin>1.4</fertilityMin>
-		  <growMinGlow>0.6</growMinGlow>
+		  <growMinGlow>0.51</growMinGlow>
 		  <growOptimalGlow>1</growOptimalGlow>
 		  <dieIfLeafless>true</dieIfLeafless>
 		  <harvestTag>Standard</harvestTag>
@@ -194,7 +194,7 @@
 		<plant>
 		  <fertilitySensitivity>0.5</fertilitySensitivity>
 		  <fertilityMin>1.0</fertilityMin>
-		  <growMinGlow>0.49</growMinGlow>
+		  <growMinGlow>0.51</growMinGlow>
 		  <growOptimalGlow>1</growOptimalGlow>
 		  <dieIfLeafless>false</dieIfLeafless>
 		  <harvestTag>Standard</harvestTag>

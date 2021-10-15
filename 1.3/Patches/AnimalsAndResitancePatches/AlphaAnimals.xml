@@ -40,7 +40,7 @@
 					</value>
 				</li>
 						
-				<!-- give select alpha animals animals ash-resistant -->
+				<!-- give select alpha animals animals ash-resistant, some may be redundant -->
 				
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/ThingDef[defName="AA_Aerofleet"]</xpath>
@@ -177,6 +177,69 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_SpinedGow"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_PebbleMit"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_Metallovore"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_FireWasp"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_Thermadon"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="AA_Cinderlisk"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
 				<!-- Black hive -->
 				
 				<li Class="PatchOperationAddModExtension">
@@ -188,7 +251,7 @@
 					</value>
 				</li>
 				
-			<li Class="PatchOperationAddModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/ThingDef[defName="AA_BlackSpelopede"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
@@ -197,7 +260,7 @@
 					</value>
 				</li>
 				
-			<li Class="PatchOperationAddModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/ThingDef[defName="AA_BlackSpider"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
