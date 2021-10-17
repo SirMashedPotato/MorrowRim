@@ -12,7 +12,7 @@
 				<!-- give select  animals ash-resistant -->
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WF_WastelandDeer"]</xpath>
+					<xpath>/Defs/ThingDef[defName="RG-WF_WastelandDeer"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -21,7 +21,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WF_WastelandSquirrel"]</xpath>
+					<xpath>/Defs/ThingDef[defName="RG-WF_WastelandSquirrel"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -30,7 +30,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WF_WastelandBeaver"]</xpath>
+					<xpath>/Defs/ThingDef[defName="RG-WF_WastelandBeaver"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -39,7 +39,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WF_WastelandBear"]</xpath>
+					<xpath>/Defs/ThingDef[defName="RG-WF_WastelandBear"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -48,7 +48,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WF_WastelandDeathclaw"]</xpath>
+					<xpath>/Defs/ThingDef[defName="RG-WF_WastelandDeathclaw"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>

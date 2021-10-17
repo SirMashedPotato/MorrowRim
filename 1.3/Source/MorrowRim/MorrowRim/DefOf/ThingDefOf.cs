@@ -23,6 +23,7 @@ namespace MorrowRim
 
         public static ThingDef Gas_RetchingNetch;
         public static ThingDef Gas_Corprus;
+        public static ThingDef MorrowRim_Gas_Ash;
 
         public static ThingDef MorrowRim_CorprusStalker;
 

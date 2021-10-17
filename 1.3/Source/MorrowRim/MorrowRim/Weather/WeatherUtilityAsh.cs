@@ -10,6 +10,64 @@ namespace MorrowRim
 {
     class WeatherUtilityAsh
     {
+        /* main calls */
+
+
+        public static void DoAshDamageToPawn(Pawn p)
+        {
+            //Is mechanical, try inflict clogged servos, then return
+            if (WeatherUtilityAsh.CheckAshCloggedServos(p) && !WeatherUtilityAsh.IsInResistantTent_Servo(p))
+            {
+                WeatherUtilityAsh.TriggerAshCloggedServos(p);
+                return;
+            }
+
+            //try inflict filled eyes
+            if (WeatherUtilityAsh.CheckAshFilledEyes(p) && !WeatherUtilityAsh.IsInResistantTent_Eye(p))
+            {
+                BodyPartRecord part = WeatherUtilityAsh.GetAshFilledEyes(p);
+                if (part != null)
+                {
+                    WeatherUtilityAsh.TriggerAshFilledEyes(p, part);
+                }
+            }
+
+            //check apparel
+            if (p.RaceProps.Humanlike && WeatherUtilityAsh.CheckApparel(p))
+            {
+                return;
+            }
+
+            //check if buildup is blocked
+            if (!WeatherUtilityAsh.CanBreathe(p) || WeatherUtilityAsh.HasImmunityHediff(p))
+            {
+                return;
+            }
+
+            //check for blocking trait
+            if (p.RaceProps.Humanlike && WeatherUtilityAsh.HasImmunityTrait(p))
+            {
+                return;
+            }
+
+            //extra check for Zombieland, done in code to make it toggleable
+            if (WeatherUtilityAsh.ZombielandCheck(p))
+            {
+                return;
+            }
+
+            //tent check for ashlander yurt
+            if (WeatherUtilityAsh.IsInResistantTent_Hediff(p))
+            {
+                return;
+            }
+
+            //actual ash buildup
+            if (ModSettings_Utility.MorrowRim_SettingAshIgnoreResistance() || (!WeatherUtilityAsh.IsImmuneToAsh(p) && !WeatherUtilityAsh.ExtendedImmuneToAshCheck(p)))
+            {
+                WeatherUtilityAsh.IncreaseAshBuildup(p);
+            }
+        }
 
         /* ========== generic checks ========== */
 

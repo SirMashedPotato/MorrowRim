@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef ParentName="PsycastBaseSkip">
+		<defName>MorrowRim_AshCloudSkip</defName>
+		<label>ash cloud skip</label>
+		<description>Skip a cloud of ash from a nearby ash storm. This not only reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely, but also causes ash build up to anyone inside.</description>
+		<level>4</level>
+		<iconPath>UI/Abilities/MorrowRim_AshCloudSkip</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<statBases>
+		  <Ability_EntropyGain>35</Ability_EntropyGain>
+		  <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>1</warmupTime>
+		  <range>24.9</range>
+		  <targetParams>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetLocations>True</canTargetLocations>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class = "MorrowRim.CompProperties_AbilityCloud">
+			<cloudDef>MorrowRim_Gas_Ash</cloudDef>
+			<smokeRadius>3.5</smokeRadius>
+			<clamorType>Ability</clamorType>
+			<clamorRadius>15</clamorRadius>
+		  </li>
+		  <li Class="CompProperties_AbilityEffecterOnTarget">
+			<effecterDef>Skip_Exit</effecterDef>
+			<maintainForTicks>60</maintainForTicks>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDefs>
+			  <li>PsycastSkipInnerExit</li>
+			  <li>PsycastSkipOuterRingExit</li>
+			</fleckDefs>
+			<sound>Psycast_Skip_Exit</sound>
+			<preCastTicks>5</preCastTicks>
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="PsycastBaseSkip">
+		<defName>MorrowRim_RetchingGasSkip</defName>
+		<label>retching gas skip</label>
+		<description>Skip a cloud of retching netch gas from inside a nearby retching netch. This not only reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely, but also causes anyone caught within to vomit profusely.</description>
+		<level>4</level>
+		<iconPath>UI/Abilities/MorrowRim_RetchingGasSkip</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<statBases>
+		  <Ability_EntropyGain>35</Ability_EntropyGain>
+		  <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+		  <warmupTime>1</warmupTime>
+		  <range>24.9</range>
+		  <targetParams>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetLocations>True</canTargetLocations>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class = "MorrowRim.CompProperties_AbilityCloud">
+			<cloudDef>Gas_RetchingNetch</cloudDef>
+			<smokeRadius>3.5</smokeRadius>
+			<clamorType>Ability</clamorType>
+			<clamorRadius>15</clamorRadius>
+		  </li>
+		  <li Class="CompProperties_AbilityEffecterOnTarget">
+			<effecterDef>Skip_Exit</effecterDef>
+			<maintainForTicks>60</maintainForTicks>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDefs>
+			  <li>PsycastSkipInnerExit</li>
+			  <li>PsycastSkipOuterRingExit</li>
+			</fleckDefs>
+			<sound>Psycast_Skip_Exit</sound>
+			<preCastTicks>5</preCastTicks>
+		  </li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

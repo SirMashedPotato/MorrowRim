@@ -107,6 +107,8 @@
     <Compile Include="PlaceWorkers\PlaceWorker_ShowAshformerRadius.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowVesselRadius.cs" />
     <Compile Include="Quests\QuestNode_Root_CorrusRefugeeJoins_WalkIn.cs" />
+    <Compile Include="Royalty\CompAbilityEffect_Cloud.cs" />
+    <Compile Include="Royalty\CompProperties_AbilityCloud.cs" />
     <Compile Include="ThinkNode\JobGiver_HideFromAshStorm.cs" />
     <Compile Include="ThinkNode\JobGiver_Insult.cs" />
     <Compile Include="ThinkNode\JobGiver_Mine.cs" />
