@@ -1,6 +1,7 @@
 ﻿using System;
 using Verse;
 using RimWorld;
+
 namespace MorrowRim
 {
     class CompProperties_AbilityCloud : CompProperties_AbilityEffect

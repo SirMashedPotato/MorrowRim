@@ -323,7 +323,6 @@
         <li>Medicine</li>
       </categories>
       <disallowedThingDefs>
-        <li>MedicineHerbal</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
