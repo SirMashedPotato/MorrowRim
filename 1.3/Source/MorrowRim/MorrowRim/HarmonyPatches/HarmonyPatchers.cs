@@ -780,6 +780,52 @@ namespace MorrowRim
         }
     }
 
+    /* 
+     * Harmony patch for animals that aren't butchered for meat, instead a strange material
+     * Scales based on lifestage, using the pre-generated rimworld stack size
+     */
+
+    [HarmonyPatch(typeof(Thing))]
+    [HarmonyPatch("ButcherProducts")]
+    public static class Thing_ButcherProducts_Patch
+    {
+        [HarmonyPostfix]
+        public static void StrangButcherPatch(ref Thing __instance, ref IEnumerable<Thing> __result)
+        {
+            if(__instance is Pawn && __instance.def.butcherProducts != null)
+            {
+                Pawn pawn = __instance as Pawn;
+                var props = ExtendedRaceProperties.Get(pawn.def);
+                if(props != null && props.StrangeButcher)
+                {
+                    int div;
+                    switch (pawn.ageTracker.CurLifeStageIndex)
+                    {
+                        case 0:
+                            div = 3;
+                            break;
+                        case 1:
+                            div = 2;
+                            break;
+                        default:
+                            return;
+                    }
+                    List<Thing> newList = new List<Thing>();
+                    foreach (Thing thing in __result)
+                    {
+                        int count = thing.stackCount / div;
+                        Thing newThing = ThingMaker.MakeThing(thing.def, null);
+                        newThing.stackCount = count;
+                        newList.Insert(newList.Count, newThing);
+                    }
+                    __result = newList;
+                }
+            }
+        }
+    }
+
+
+
     //temp patches
     /*
     [HarmonyPatch(typeof(SitePartWorker_WorkSite))]

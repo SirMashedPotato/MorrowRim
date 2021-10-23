@@ -939,7 +939,7 @@
 		  <leatherDef>MorrowRim_CliffRacerLeather</leatherDef>
 		  <nameOnTameChance>1</nameOnTameChance>
 		  <trainability>Intermediate</trainability>
-		  <wildness>1</wildness>
+		  <wildness>0.95</wildness>
 		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 		  <lifeExpectancy>8</lifeExpectancy>
@@ -1271,8 +1271,8 @@
 		<race>
 		  <herdAnimal>true</herdAnimal>
 		  <body>MorrowRim_Bipedal</body>
-		  <baseHungerRate>0.35</baseHungerRate>
-		  <baseBodySize>0.18</baseBodySize>
+		  <baseHungerRate>0.14</baseHungerRate>
+		  <baseBodySize>0.3</baseBodySize>
 		  <baseHealthScale>0.45</baseHealthScale>
 		  <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 		  <leatherDef>Leather_Lizard</leatherDef>
@@ -1369,7 +1369,7 @@
 		</lifeStages>
 	  </PawnKindDef>
 	  
-	  <!-- Wormmouth -->
+	<!-- Wormmouth -->
 	  
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_Wormmouth</defName>

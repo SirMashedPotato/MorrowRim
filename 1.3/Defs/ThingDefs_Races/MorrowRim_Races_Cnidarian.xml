@@ -9,6 +9,7 @@
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties">
                 <ashResistant>Resistant</ashResistant>
+				<StrangeButcher>true</StrangeButcher>
             </li>
 		</modExtensions>
 		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nOften farmed by ashlanders for their jelly and leather. Netch are highly protective of their eggs and lay them on their body, preventing the possibilty of harvesting them.\n\nLike many ashland natives netch are resistant to the effects of ash-storms.</description>
@@ -257,6 +258,7 @@
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties">
                 <ashResistant>Resistant</ashResistant>
+				<StrangeButcher>true</StrangeButcher>
             </li>
 		</modExtensions>
 		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nThis breed of netch has been genetically modified to produce chemfuel. They are called retching netch due to the reaction one has upon inhaling the gas released after death. This smell is likely the result of chemfuel mixing with netch jelly. Comparatively more fragile, shorter lived and much more explosive than their unmodified cousins.\n\nLike many ashland natives netch are resistant to the effects of ash-storms.</description>
