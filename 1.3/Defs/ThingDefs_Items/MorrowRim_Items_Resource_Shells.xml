@@ -5,7 +5,7 @@
   <ThingDef ParentName="MakeableShellBase">
     <defName>MorrowRim_RetchingNetchShell</defName>
     <label>retching netch gas shell</label>
-    <description>A pressurized shell filled with fire-retardant foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <description>A pressurized shell filled with retching netch gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
     <graphicData>
       <texPath>MorrowRim/Items/Shells/RetchingNetch</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

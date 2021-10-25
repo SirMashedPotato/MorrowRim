@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	
+
 	<!-- provided by baldamundo -->
 
 	<Operation Class="PatchOperationFindMod">
@@ -12,15 +12,13 @@
 			<operations>
 		
 				<!-- add mushrooms to ashlands -->
-				<!-- Apparently breaks royalty monument quests???
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildPlants</xpath>
-					<value>
-						<RC2_PlantMushroom>0.05</RC2_PlantMushroom> 
-						<RC2_RawTruffles>0.01</RC2_RawTruffles> 
-					</value>
-				</li>
-				-->
+				<!-- <li Class="PatchOperationAdd">  -->
+					<!-- <xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildPlants</xpath> -->
+					<!-- <value> -->
+						<!-- <RC2_PlantMushroom>0.05</RC2_PlantMushroom>  -->
+						<!-- <RC2_RawTruffles>0.01</RC2_RawTruffles>  -->
+					<!-- </value> -->
+				<!-- </li> -->
 
 			  <li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "MorrowRim_RawComberry"]</xpath>
@@ -65,7 +63,7 @@
 				<xpath>/Defs/ThingDef[defName = "MorrowRim_RawMarshmerrow"]</xpath>
 				<value>
 				  <thingCategories>
-					<li>RC2_VegetablesRaw</li>
+					<li>RC2_SweetsRaw</li>
 				  </thingCategories>
 				</value>
 			  </li>
@@ -89,6 +87,45 @@
 				  </thingCategories>
 				</value>
 			  </li>
+			  
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcaneBulk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcaneBulk"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcaneBulk"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcane"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcane"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  <li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "RC2_ProcessSugarcane"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>MorrowRim_RawMarshmerrow</li>
+				</value>
+			  </li>
+			  
 			</operations>
   
 		</match>
