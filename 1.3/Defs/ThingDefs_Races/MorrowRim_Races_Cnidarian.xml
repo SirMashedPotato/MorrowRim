@@ -213,8 +213,8 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<femaleGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
-			  <drawSize>1.8</drawSize>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
 			  <shadowData>
 				<volume>(0.4, 0.4, 0.4)</volume>
 				<offset>(0,0,-0.2)</offset>
@@ -224,6 +224,10 @@
 			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
 			  <drawSize>1.9</drawSize>
 			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
+			</femaleDessicatedBodyGraphicData>
 		  </li>
 		  <li>
 			<bodyGraphicData>
@@ -235,8 +239,8 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<femaleGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
-			  <drawSize>2.4</drawSize>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
 			  <shadowData>
 				<volume>(0.4, 0.4, 0.4)</volume>
 				<offset>(0,0,-0.2)</offset>
@@ -246,6 +250,10 @@
 			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
 			  <drawSize>2.5</drawSize>
 			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
+			</femaleDessicatedBodyGraphicData>
 		  </li>
 		</lifeStages>
 	</PawnKindDef>
