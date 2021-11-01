@@ -824,6 +824,59 @@ namespace MorrowRim
         }
     }
 
+    /* 
+     * Harmony patch for weather, causing perma ash weather
+     */
+
+    [HarmonyPatch(typeof(WeatherDecider))]
+    [HarmonyPatch("ChooseNextWeather")]
+    public static class WeatherDecider_ChooseNextWeather_Patch
+    {
+        [HarmonyPostfix]
+        public static void AshOverride_Patch(WeatherDecider __instance, ref WeatherDef __result)
+        {
+
+            if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStorm())
+            {
+                if (__result == RimWorld.WeatherDefOf.Clear && __instance.ForcedWeather != RimWorld.WeatherDefOf.Clear)
+                {
+                    __result = WeatherDef.Named("MorrowRim_AshStorm");
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(WeatherDecider))]
+    [HarmonyPatch("CurrentWeatherCommonality")]
+    public static class WeatherDecider_CurrentWeatherCommonality_Patch
+    {
+        [HarmonyPostfix]
+        public static void AshOverridePatch(WeatherDef weather, Map ___map, ref float __result)
+        {
+            if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStorm())
+            {
+                if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms())
+                {
+                    if (!___map.Biome.defName.Contains("MorrowRim")) return;
+                }
+                if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms())
+                {
+                    if (!weather.defName.Contains("AshStorm"))
+                    {
+                        __result = 0;
+                    }
+                } 
+                else
+                {
+                    if (!weather.defName.Contains("Ash"))
+                    {
+                        __result = 0;
+                    }
+                }
+            }
+        }
+    }
+
 
 
     //temp patches

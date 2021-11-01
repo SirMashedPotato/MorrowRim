@@ -239,6 +239,21 @@ namespace MorrowRim
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableCorprusRefugeeSeverity;
         }
 
+        public static bool MorrowRim_SettingEnablePermaAshStorm()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnablePermaAshStorm;
+        }
+
+        public static bool MorrowRim_SettingEnablePermaAshStormOnlyAshlands()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnablePermaAshStormOnlyAshlands;
+        }
+
+        public static bool MorrowRim_SettingEnablePermaAshStormOnlyAshStorms()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnablePermaAshStormOnlyAshStorms;
+        }
+
         /* kwama */
 
         public static bool MorrowRim_SettingForceKwamaNatural()

@@ -159,7 +159,7 @@
 	</ThingDef>
 
 	
-	<!-- Small -->
+	<!-- Small slaughterfish -->
 	
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>MorrowRim_RawSmallSlaughterfish</defName>
@@ -299,6 +299,163 @@
 				<label>Vivec crayfish</label>
 				<capacities>
 					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Sea Netch -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawWaterNetch</defName>
+		<label>sea netch</label>
+		<description>Raw sea netch. A comparatively smaller, and marine, cousin of the netch.  Often considered to be quite a peculiarity by the Dunmer, unlike the netch which is completely normal.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_WaterNetch</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>sea netch</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>ScratchToxic</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Ash Fish -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawAshFish</defName>
+		<label>siltfish</label>
+		<description>Raw siltfish. A lobe-finned fish that can often found in the shallow silty waters of the ashlands. While juvenile siltfish are rather small, adult specimens can get surprisingly large.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_AshFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.025</Nutrition>
+			<MarketValue>0.55</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>siltfish</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- isopod -->
+	<!--
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawIsopod</defName>
+		<label>ashland isopod</label>
+		<description>Raw ashland isopod. A rather large, but still relatively small, isopod. Swarms of these creatures can occasionally be encountered in the waters of the ashlands, often lured in by the death of a large aquatic beast.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_Isopod</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>ashland isopod</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	-->
+	<!-- shieldcrab -->
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>MorrowRim_RawShieldCrab</defName>
+		<label>Redoran shieldcrab</label>
+		<description>Raw Redoran shieldcrab. A rather strange, and somewhat primitive, species of crab. Shieldcrab can often be found swarming the beaches of the ashlands when the moons are at their brightest, laying thousands of tiny eggs in the ashen sand.\n\nHouses in House Redoran territory are often crafted to mimic the shape of the shieldcrab.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/Fish/MorrowRim_ShieldCrab</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.08</Mass>
+			<Nutrition>0.13</Nutrition>
+			<MarketValue>2.9</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>Redoran shieldcrab</label>
+				<capacities>
+					<li>Blunt</li>
 				</capacities>
 				<power>7</power>
 				<cooldownTime>2</cooldownTime>

@@ -566,6 +566,18 @@ namespace MorrowRim
             listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableCorprusExtinction".Translate(), ref settings.MorrowRim_SettingEnableCorprusExtinction, "MorrowRim_SettingEnableCorprusExtinction_Tooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnablePermaAshStorm".Translate(), ref settings.MorrowRim_SettingEnablePermaAshStorm, "MorrowRim_SettingEnablePermaAshStorm_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnablePermaAshStormOnlyAshlands".Translate(), ref settings.MorrowRim_SettingEnablePermaAshStormOnlyAshlands, "MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnablePermaAshStormOnlyAshStorms".Translate(), ref settings.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms);
+            listing_Standard.Gap();
+
             return listing_Standard;
         }
 

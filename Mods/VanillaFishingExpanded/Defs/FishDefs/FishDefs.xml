@@ -3,6 +3,47 @@
 
 	<!-- Fish -->
 	
+	<!-- salt water -->
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_WaterNetch</defName>
+		<thingDef>MorrowRim_RawWaterNetch</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>40</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_Cephalopod</defName>
+		<thingDef>MorrowRim_RawCephalopod</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>8</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_ShieldCrab</defName>
+		<thingDef>MorrowRim_RawShieldCrab</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>6</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+
 	<VCE_Fishing.FishDef>
 		<defName>VCEF_MorrowRim_Crabeater</defName>
 		<thingDef>MorrowRim_RawCrabeater</thingDef>    
@@ -13,32 +54,6 @@
 			<li>Ashlands</li>
 		</allowedBiomes>  	
 		<baseFishingYield>5</baseFishingYield>		
-		
-	</VCE_Fishing.FishDef>
-	
-	<VCE_Fishing.FishDef>
-		<defName>VCEF_MorrowRim_FoyodaFish</defName>
-		<thingDef>MorrowRim_RawFoyodaFish</thingDef>    
-		<fishSizeCategory>Large</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>false</canBeSaltwater>
-		<allowedBiomes>
-			<li>Ashlands</li>
-		</allowedBiomes>  	
-		<baseFishingYield>8</baseFishingYield>		
-		
-	</VCE_Fishing.FishDef>
-	
-	<VCE_Fishing.FishDef>
-		<defName>VCEF_MorrowRim_Mudcrab</defName>
-		<thingDef>MorrowRim_RawMudcrab</thingDef>    
-		<fishSizeCategory>Medium</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>false</canBeSaltwater>
-		<allowedBiomes>
-			<li>Ashlands</li>	
-		</allowedBiomes>  
-		<baseFishingYield>4</baseFishingYield>		
 		
 	</VCE_Fishing.FishDef>
 	
@@ -56,6 +71,89 @@
 		
 	</VCE_Fishing.FishDef>	
 
+	<!-- fresh water -->
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_AshFish</defName>
+		<thingDef>MorrowRim_RawAshFish</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>16</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_AshFishMedium</defName>
+		<thingDef>MorrowRim_RawAshFish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>32</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_Mudcrab</defName>
+		<thingDef>MorrowRim_RawMudcrab</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>	
+		</allowedBiomes>  
+		<baseFishingYield>4</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_FoyodaFish</defName>
+		<thingDef>MorrowRim_RawFoyodaFish</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>8</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_Crayfish</defName>
+		<thingDef>MorrowRim_RawCrayfish</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  
+		<commonality>0.3</commonality>	
+		<baseFishingYield>6</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>		
+	
+	<!-- fresh and salt water -->
+	<!--
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_Isopod</defName>
+		<thingDef>MorrowRim_RawIsopod</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>40</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	-->
 	<VCE_Fishing.FishDef>
 		<defName>VCEF_MorrowRim_SmallSlaughterFish</defName>
 		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>    
@@ -70,6 +168,19 @@
 	</VCE_Fishing.FishDef>
 
 	<VCE_Fishing.FishDef>
+		<defName>VCEF_MorrowRim_SlaughterFish_Medium</defName>
+		<thingDef>MorrowRim_RawSlaughterfish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Ashlands</li>
+		</allowedBiomes>  	
+		<baseFishingYield>6</baseFishingYield>		
+		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
 		<defName>VCEF_MorrowRim_SlaughterFish</defName>
 		<thingDef>MorrowRim_RawSlaughterfish</thingDef>    
 		<fishSizeCategory>Large</fishSizeCategory>
@@ -81,35 +192,6 @@
 		<baseFishingYield>10</baseFishingYield>		
 		
 	</VCE_Fishing.FishDef>
-	
-	<VCE_Fishing.FishDef>
-		<defName>VCEF_MorrowRim_Cephalopod</defName>
-		<thingDef>MorrowRim_RawCephalopod</thingDef>    
-		<fishSizeCategory>Medium</fishSizeCategory>
-		<canBeFreshwater>false</canBeFreshwater>
-		<canBeSaltwater>true</canBeSaltwater>
-		<allowedBiomes>
-			<li>Ashlands</li>
-		</allowedBiomes>  	
-		<baseFishingYield>8</baseFishingYield>		
-		
-	</VCE_Fishing.FishDef>
-	
-		
-	<VCE_Fishing.FishDef>
-		<defName>VCEF_MorrowRim_Crayfish</defName>
-		<thingDef>MorrowRim_RawCrayfish</thingDef>    
-		<fishSizeCategory>Large</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>false</canBeSaltwater>
-		<allowedBiomes>
-			<li>Ashlands</li>
-		</allowedBiomes>  
-		<commonality>0.3</commonality>	
-		<baseFishingYield>6</baseFishingYield>		
-		
-	</VCE_Fishing.FishDef>	
-	
 
 	<!-- Special -->
 	
