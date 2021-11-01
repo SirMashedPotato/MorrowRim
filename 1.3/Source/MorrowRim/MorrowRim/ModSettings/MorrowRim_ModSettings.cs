@@ -142,7 +142,7 @@ namespace MorrowRim
         private static readonly float MorrowRim_SettingEnableCorprusRefugeeChance_def = 0.5f;
         private static readonly float MorrowRim_SettingEnableCorprusRefugeeSeverity_def = 0.1f;
         private static readonly bool MorrowRim_SettingEnablePermaAshStorm_def = false;
-        private static readonly bool MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def = false;
+        private static readonly bool MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def = true;
         private static readonly bool MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def = false;
 
         private static readonly bool MorrowRim_SettingEnableScribBehaviour_def = true;

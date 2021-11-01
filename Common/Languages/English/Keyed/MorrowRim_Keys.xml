@@ -145,7 +145,7 @@
 	<MorrowRim_SettingEnablePermaAshStorm>Enable Red Mountain eruption</MorrowRim_SettingEnablePermaAshStorm>
 	<MorrowRim_SettingEnablePermaAshStorm_Tooltip>This causes permanent ash weather. You're only respite from ash storms will be... more ash, just slightly less stormy.</MorrowRim_SettingEnablePermaAshStorm_Tooltip>
 	<MorrowRim_SettingEnablePermaAshStormOnlyAshlands>Only affects MorrowRim biomes.</MorrowRim_SettingEnablePermaAshStormOnlyAshlands>
-	<MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>You probably don't want to enable this, unless you only want regular ash storms.</MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>
+	<MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>You probably don't want to disable this, unless you only want regular ash storms in non-MorrowRim biomes.</MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>
 	<MorrowRim_SettingEnablePermaAshStormOnlyAshStorms>Only ash storms, no ash fall or lingering ash clouds.</MorrowRim_SettingEnablePermaAshStormOnlyAshStorms>
 	
 	
