@@ -51,6 +51,8 @@
 	
 	<LetterLabelKwamaNestEmerges>kwama nest expands</LetterLabelKwamaNestEmerges>
 	<LetterKwamaNestEmerges>A kwama nest is expanding into a nearby cave. They will remain peaceful, unless threatened.</LetterKwamaNestEmerges>
+	
+	<MorrowRim_KwamaNestExpands>A nearby kwama nest has expanded</MorrowRim_KwamaNestExpands>
 
 	<!-- misc -->
 	<MorrowRim_Notification_CorprusInfected>{0} has contracted corprus!</MorrowRim_Notification_CorprusInfected>

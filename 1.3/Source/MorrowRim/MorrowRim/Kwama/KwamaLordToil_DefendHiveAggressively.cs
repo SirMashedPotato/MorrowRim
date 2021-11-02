@@ -18,7 +18,7 @@ namespace MorrowRim.Kwama
 				this.lord.ownedPawns[i].mindState.duty = duty;
 				//Log.Message("kwama unit " + i + ", " + this.lord.ownedPawns[i].def.defName + ", switching to defend hive agressively");
 			}
-			if (lord.faction.RelationKindWith(Faction.OfPlayer) != FactionRelationKind.Hostile)
+			if (lord.faction.RelationKindWith(Faction.OfPlayer) != FactionRelationKind.Hostile && this.lord.ownedPawns != null && !this.lord.ownedPawns[0].Position.Fogged(this.Map))
 			{
 				Faction.OfPlayer.SetRelationDirect(lord.faction, FactionRelationKind.Hostile, false, "Nest threatened");
 				Find.LetterStack.ReceiveLetter("LetterLabelKwamaNestThreatened".Translate().CapitalizeFirst(), "LetterKwamaNestThreatened".Translate(), LetterDefOf.NegativeEvent, null, null, null);

@@ -10,7 +10,6 @@ namespace MorrowRim
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			Log.Message("Trying to make scamp insult someone");
 			Pawn target = TryFindNewTarget(pawn);
 			Job result;
 			if (target == null)
@@ -26,18 +25,15 @@ namespace MorrowRim
 
 		public Job JobOnThing(Pawn pawn, Pawn t, bool forced = false)
 		{
-			Log.Message("Insulintg: " + t);
 			return JobMaker.MakeJob(RimWorld.JobDefOf.Insult, t);
 		}
 
-		//
 
 		private Pawn TryFindNewTarget(Pawn pawn)
 		{
 			InsultingSpreeMentalStateUtility.GetInsultCandidatesFor(pawn, candidates, false);
 			bool result = candidates.TryRandomElement(out Pawn target);
 			candidates.Clear();
-			Log.Message("Found target: " + target);
 			return target;
 		}
 

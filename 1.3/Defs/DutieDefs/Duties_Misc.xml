@@ -66,6 +66,26 @@
             </li>
           </subNodes>
         </li>
+		<!-- Don't work
+		<li Class="ThinkNode_ChancePerHour_Constant">
+			<mtbHours>0.5</mtbHours>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalPawnKind">
+					<pawnKind>MorrowRim_KwamaWorker</pawnKind>
+					<subNodes>
+						<li Class="ThinkNode_ConditionalRequireCapacities">
+							<requiredCapacities>
+								<li>Manipulation</li>
+							</requiredCapacities>
+							<subNodes>
+								<li Class="MorrowRim.Kwama.JobGiver_CleanHive" />
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</li>
+		-->
         <li Class="ThinkNode_Tagger">
           <tagToGive>SatisfyingNeeds</tagToGive>
           <subNodes>

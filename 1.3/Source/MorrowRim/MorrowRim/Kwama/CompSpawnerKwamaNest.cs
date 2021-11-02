@@ -19,7 +19,7 @@ namespace MorrowRim.Kwama
 
 		// Token: 0x17000E90 RID: 3728
 		// (get) Token: 0x06005195 RID: 20885 RVA: 0x001B4248 File Offset: 0x001B2448
-		private bool CanSpawnChildHive
+		public bool CanSpawnChildHive
 		{
 			get
 			{
@@ -52,7 +52,7 @@ namespace MorrowRim.Kwama
 				KwamaNest t;
 				if (this.TrySpawnChildHive(false, out t))
 				{
-					Messages.Message("MessageHiveReproduced".Translate(), t, MessageTypeDefOf.NegativeEvent, true);
+					Messages.Message("MorrowRim_KwamaNestExpands".Translate(), t, MessageTypeDefOf.NeutralEvent, true);
 					return;
 				}
 				this.CalculateNextHiveSpawnTick();

@@ -101,6 +101,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_GiveQuest_Corprus.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStrider.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStrider_Single.cs" />
+    <Compile Include="Kwama\JobGiver_CleanHive.cs" />
     <Compile Include="Kwama\JobGiver_MineRandom.cs" />
     <Compile Include="Kwama\KwamaThinkNode_ConditionalMiningEnabled.cs" />
     <Compile Include="ModSettings\ModSettings_Presets.cs" />

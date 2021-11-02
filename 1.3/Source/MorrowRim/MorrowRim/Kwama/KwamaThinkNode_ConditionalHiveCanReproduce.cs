@@ -11,7 +11,7 @@ namespace MorrowRim.Kwama
 		protected override bool Satisfied(Pawn pawn)
 		{
 			KwamaNest hive = pawn.mindState.duty.focus.Thing as KwamaNest;
-			return hive != null && hive.GetComp<CompSpawnerKwamaNest>().canSpawnHives;
+			return hive != null && hive.GetComp<CompSpawnerKwamaNest>().CanSpawnChildHive;
 		}
 	}
 }
