@@ -24,6 +24,7 @@
 		</comps>
 		<race>
 		  <thinkTreeMain>MorrowRim_Corprus</thinkTreeMain>
+		  <herdMigrationAllowed>false</herdMigrationAllowed>
 		  <useMeatFrom>Human</useMeatFrom>
 		  <fleshType>MorrowRim_AshBeast</fleshType>
 		  <predator>true</predator>
