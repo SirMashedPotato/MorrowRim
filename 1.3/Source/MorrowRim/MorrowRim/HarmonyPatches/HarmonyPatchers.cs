@@ -233,6 +233,7 @@ namespace MorrowRim
     }
 
     //fix rich soil on volcanic ashlands
+
     [HarmonyPatch(typeof(MapGenerator))]
     [HarmonyPatch("GenerateMap")]
     public static class MapGenerator_GenerateMap_Patch
@@ -240,20 +241,24 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ReplaceTerrainWithAsh(ref Map __result)
         {
-            if (__result.Biome.defName == "MorrowRim_VolcanicAshlands" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsIsland" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsArchipelago")
+            if (__result != null && __result.IsPlayerHome)
             {
-                TerrainDef terrainDef = DefDatabase<TerrainDef>.GetNamed("MorrowRim_VolcanicGravel");
-                TerrainGrid terrainGrid = __result.terrainGrid;
-                foreach (IntVec3 cell in __result.AllCells)
+                if (__result.Biome.defName == "MorrowRim_VolcanicAshlands" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsIsland" || __result.Biome.defName == "MorrowRim_VolcanicAshlandsArchipelago")
                 {
-                    if (cell.GetTerrain(__result).defName == "SoilRich")
+                    TerrainDef terrainDef = DefDatabase<TerrainDef>.GetNamed("MorrowRim_VolcanicGravel");
+                    TerrainGrid terrainGrid = __result.terrainGrid;
+                    foreach (IntVec3 cell in __result.AllCells)
                     {
-                        terrainGrid.SetTerrain(cell, terrainDef);
+                        if (cell.GetTerrain(__result).defName == "SoilRich")
+                        {
+                            terrainGrid.SetTerrain(cell, terrainDef);
+                        }
                     }
                 }
             }
         }
     }
+ 
 
     [HarmonyPatch(typeof(GenStep_RockChunks))]
     [HarmonyPatch("Generate")]
