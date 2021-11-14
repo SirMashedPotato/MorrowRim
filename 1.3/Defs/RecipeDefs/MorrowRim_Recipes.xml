@@ -62,6 +62,7 @@
 		  <li>
 			<filter>
 			  <thingDefs>
+				<li>InsectJelly</li>
 				<li>MorrowRim_ScribJelly</li>
 				<li>MorrowRim_AshHopperJelly</li>
 				<li>MorrowRim_NetchJelly</li>
@@ -75,6 +76,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 		  <thingDefs>
+			<li>InsectJelly</li>
 			<li>MorrowRim_Muck</li>
 			<li>MorrowRim_ScribJelly</li>
 			<li>MorrowRim_AshHopperJelly</li>

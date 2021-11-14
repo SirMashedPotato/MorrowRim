@@ -94,7 +94,7 @@
 		  <MaxHitPoints>60</MaxHitPoints>
 		  <Flammability>0.2</Flammability>
 		  <Nutrition>0.5</Nutrition>
-		  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		  <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<comps>
 		  <li Class="CompProperties_Rottable">
