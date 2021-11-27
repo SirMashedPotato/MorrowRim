@@ -24,7 +24,7 @@
 							<defName>MorrowRim_AchievementFishingSlaughterfish</defName>
 							<label>Slaughterfish Slaughterer</label>
 							<description>Obtain 500 Vvardenfell slaughterfish</description>
-							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundFishing</bgtexPath>
 							<tab>MorrowRim_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>MorrowRim_RawSlaughterfish</def>
@@ -39,7 +39,7 @@
 							<defName>MorrowRim_AchievementFishingCrayfish</defName>
 							<label>One For Each Lesson</label>
 							<description>Obtain 36 Vivec crayfish</description>
-							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundFishing</bgtexPath>
 							<tab>MorrowRim_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>MorrowRim_RawCrayfish</def>
@@ -54,7 +54,7 @@
 							<defName>MorrowRim_AchievementFishingSailfin</defName>
 							<label>One For the Trophy Case</label>
 							<description>Obtain a Resdaynian sailfin</description>
-							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundFishing</bgtexPath>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundFishing</bgtexPath>
 							<tab>MorrowRim_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>MorrowRim_RawSailfin</def>

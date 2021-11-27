@@ -282,7 +282,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>MorrowRim_DaedraHide</defName>
 		<label>daedra hide</label>
-		<description>Tough hide from a genetically enginereed daedra. Rather protective and a decent insulator with high durability.</description>
+		<description>Tough hide from a daedra. Rather protective and a decent insulator with high durability.</description>
 		<graphicData>
 		  <color>(101,93,63)</color>
 		</graphicData>
