@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="BiomeWorker\BiomeWorker_AshSwamp.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_GlaciatedAshlands.cs" />
+    <Compile Include="Comps\CompCollapser.cs" />
     <Compile Include="Comps\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comps\Comp_BeserkerRage.cs" />
     <Compile Include="CompTarget\CompTargetable_VesselRadius.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="CompTarget\CompTargetEffect_DaedraSummon.cs" />
     <Compile Include="DefModExtensions\YurtModExtension.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
+    <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="HarmonyPatches\Patch_HediffProperties.cs" />
     <Compile Include="HarmonyPatches\Patch_PlantProperties.cs" />
     <Compile Include="Comps\Properties\CompProperties_Harvestable.cs" />
@@ -101,6 +103,8 @@
     <Compile Include="IncidentWorker\IncidentWorker_GiveQuest_Corprus.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStrider.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStrider_Single.cs" />
+    <Compile Include="JobDriver\JobDriver_BuildAshCastle.cs" />
+    <Compile Include="JoyGiver\JoyGiver_BuildAshCastle.cs" />
     <Compile Include="Kwama\JobGiver_CleanHive.cs" />
     <Compile Include="Kwama\JobGiver_MineRandom.cs" />
     <Compile Include="Kwama\KwamaThinkNode_ConditionalMiningEnabled.cs" />

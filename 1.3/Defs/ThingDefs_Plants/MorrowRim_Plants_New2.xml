@@ -107,6 +107,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>10</Beauty>
+		  <BeautyOutdoors>10</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -135,6 +136,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>24</Beauty>
+		  <BeautyOutdoors>24</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -171,6 +173,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>20</Beauty>
+		  <BeautyOutdoors>20</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -207,6 +210,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>30</Beauty>
+		  <BeautyOutdoors>30</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -244,6 +248,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>18</Beauty>
+		  <BeautyOutdoors>18</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>

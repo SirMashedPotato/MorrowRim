@@ -341,6 +341,7 @@
 		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
 		  <harvestMinGrowth>0.50</harvestMinGrowth>
 		  <interferesWithRoof>false</interferesWithRoof>
+		  <purpose>Health</purpose>
 		</plant>
 	</ThingDef>
 	

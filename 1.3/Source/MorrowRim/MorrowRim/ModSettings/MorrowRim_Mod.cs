@@ -660,6 +660,18 @@ namespace MorrowRim
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableAshCastles".Translate(), ref settings.MorrowRim_SettingEnableAshCastles);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableAshCastlesDuringAshStorm".Translate(), ref settings.MorrowRim_SettingEnableAshCastlesDuringAshStorm);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_SettingEnableAshCastlesMinDistance".Translate() + " (" + settings.MorrowRim_SettingEnableAshCastlesMinDistance + " tiles)");
+            settings.MorrowRim_SettingEnableAshCastlesMinDistance = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_SettingEnableAshCastlesMinDistance, 1f, 50f) * 10) / 10;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             //listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableScampBehaviour".Translate(), ref settings.MorrowRim_SettingEnableScampBehaviour);
             //listing_Standard.Gap();
 

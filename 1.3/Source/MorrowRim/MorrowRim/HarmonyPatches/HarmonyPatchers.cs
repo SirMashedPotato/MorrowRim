@@ -95,11 +95,11 @@ namespace MorrowRim
         public static void GrowInBiome(List<ThingDef> outPlants, Map ___map)
         {
             List<ThingDef> PlantsToRemove = new List<ThingDef>();
-            if (ModSettings_Utility.CheckBiomesPatch() && !ModSettings_Utility.MorrowRim_SettingBiomeEnablePlantsOutside())
+            if (ModSettings_Utility.CheckBiomesPatch() && !ModSettings_Utility.MorrowRim_SettingBiomeEnablePlantsOutside() && !___map.Biome.defName.Contains("MorrowRim_"))
             {
                 foreach (ThingDef plant in outPlants)
                 {
-                    if (!___map.Biome.defName.Contains("MorrowRim_") && plantsList.Contains(plant.defName))
+                    if (plantsList.Contains(plant.defName))
                     {
                         PlantsToRemove.Add(plant);
                     }
@@ -214,7 +214,6 @@ namespace MorrowRim
     }
 
     //remove sand from beaches generated in specific biomes
-    //TODO make setting
     [HarmonyPatch(typeof(BeachMaker))]
     [HarmonyPatch("BeachTerrainAt")]
     public static class BeachMaker_BeachTerrainAt_Patch
@@ -881,26 +880,4 @@ namespace MorrowRim
             }
         }
     }
-
-
-
-    //temp patches
-    /*
-    [HarmonyPatch(typeof(SitePartWorker_WorkSite))]
-    [HarmonyPatch("Init")]
-    public static class SitePartWorker_WorkSite_Init_Patch
-    {
-        [HarmonyPrefix]
-        public static bool prePatch(Site site, SitePart sitePart)
-        {
-            Log.Message("SitePartWorker_WorkSite_Init_Patch PRE: Faction = " + site.Faction);
-            return true;
-        }
-        [HarmonyPostfix]
-        public static void postPatch(Site site, SitePart sitePart)
-        {
-            Log.Message("SitePartWorker_WorkSite_Init_Patch POST: Faction = " + site.Faction + ", tile = " + site.Tile);
-        }
-    }
-    */
 }

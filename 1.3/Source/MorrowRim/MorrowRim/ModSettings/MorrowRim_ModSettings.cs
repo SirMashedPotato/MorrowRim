@@ -71,6 +71,9 @@ namespace MorrowRim
         public bool MorrowRim_SettingEnableAshStormHiding = MorrowRim_SettingEnableAshStormHiding_def;
         public float MorrowRim_SettingEnableAshStormHidingMin = MorrowRim_SettingEnableAshStormHidingMin_def;
         public bool MorrowRim_SettingEnableAshStormHidingHumanlike = MorrowRim_SettingEnableAshStormHidingHumanlike_def;
+        public bool MorrowRim_SettingEnableAshCastles = MorrowRim_SettingEnableAshCastles_def;
+        public bool MorrowRim_SettingEnableAshCastlesDuringAshStorm = MorrowRim_SettingEnableAshCastlesDuringAshStorm_def;
+        public float MorrowRim_SettingEnableAshCastlesMinDistance = MorrowRim_SettingEnableAshCastlesMinDistance_def;
 
         public bool MorrowRim_SettingEnableAshBuildupNotifications = MorrowRim_SettingEnableAshBuildupNotifications_def;
         public bool MorrowRim_SettingEnableAshBuildupNotifications_Colonist = MorrowRim_SettingEnableAshBuildupNotifications_Colonist_def;
@@ -151,6 +154,9 @@ namespace MorrowRim
         private static readonly bool MorrowRim_SettingEnableAshStormHiding_def = true;
         private static readonly float MorrowRim_SettingEnableAshStormHidingMin_def = 0f;
         private static readonly bool MorrowRim_SettingEnableAshStormHidingHumanlike_def = false;
+        private static readonly bool MorrowRim_SettingEnableAshCastles_def = true;
+        private static readonly bool MorrowRim_SettingEnableAshCastlesDuringAshStorm_def = false;
+        private static readonly float MorrowRim_SettingEnableAshCastlesMinDistance_def = 12f;
 
         private static readonly bool MorrowRim_SettingEnableAshBuildupNotifications_def = true;
         private static readonly bool MorrowRim_SettingEnableAshBuildupNotifications_Colonist_def = true;
@@ -232,6 +238,9 @@ namespace MorrowRim
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshStormHiding, "MorrowRim_SettingEnableAshStormHiding", MorrowRim_SettingEnableAshStormHiding_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshStormHidingMin, "MorrowRim_SettingEnableAshStormHidingMin", MorrowRim_SettingEnableAshStormHidingMin_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshStormHidingHumanlike, "MorrowRim_SettingEnableAshStormHidingHumanlike", MorrowRim_SettingEnableAshStormHidingHumanlike_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableAshCastles, "MorrowRim_SettingEnableAshCastles", MorrowRim_SettingEnableAshCastles_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableAshCastlesDuringAshStorm, "MorrowRim_SettingEnableAshCastlesDuringAshStorm", MorrowRim_SettingEnableAshCastlesDuringAshStorm_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableAshCastlesMinDistance, "MorrowRim_SettingEnableAshCastlesMinDistance", MorrowRim_SettingEnableAshCastlesMinDistance_def);
 
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshBuildupNotifications, "MorrowRim_SettingEnableAshBuildupNotifications", MorrowRim_SettingEnableAshBuildupNotifications_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshBuildupNotifications_Colonist, "MorrowRim_SettingEnableAshBuildupNotifications_Colonist", MorrowRim_SettingEnableAshBuildupNotifications_Colonist_def);
@@ -348,6 +357,9 @@ namespace MorrowRim
             settings.MorrowRim_SettingEnableAshStormHiding = MorrowRim_SettingEnableAshStormHiding_def;
             settings.MorrowRim_SettingEnableAshStormHidingMin = MorrowRim_SettingEnableAshStormHidingMin_def;
             settings.MorrowRim_SettingEnableAshStormHidingHumanlike = MorrowRim_SettingEnableAshStormHidingHumanlike_def;
+            settings.MorrowRim_SettingEnableAshCastles = MorrowRim_SettingEnableAshCastles_def;
+            settings.MorrowRim_SettingEnableAshCastlesDuringAshStorm = MorrowRim_SettingEnableAshCastlesDuringAshStorm_def;
+            settings.MorrowRim_SettingEnableAshCastlesMinDistance = MorrowRim_SettingEnableAshCastlesMinDistance_def;
         }
 
         public static void ResetSettings_Notification(MorrowRim_ModSettings settings)

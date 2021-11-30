@@ -296,7 +296,7 @@ namespace MorrowRim
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingKwamaMining;
         }
 
-        /* animal behaviour */
+        /* behaviour */
 
         public static bool MorrowRim_SettingEnableScribBehaviour()
         {
@@ -326,6 +326,21 @@ namespace MorrowRim
         public static bool MorrowRim_SettingEnableAshStormHidingHumanlike()
         {
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableAshStormHidingHumanlike;
+        }
+
+        public static bool MorrowRim_SettingEnableAshCastles()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableAshCastles;
+        }
+
+        public static bool MorrowRim_SettingEnableAshCastlesDuringAshStorm()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableAshCastlesDuringAshStorm;
+        }
+
+        public static float MorrowRim_SettingEnableAshCastlesMinDistance()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableAshCastlesMinDistance;
         }
 
         /* notifications */

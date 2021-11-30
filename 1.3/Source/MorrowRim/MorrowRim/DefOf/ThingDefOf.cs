@@ -55,5 +55,7 @@ namespace MorrowRim
 
         //Items
         public static ThingDef MorrowRim_RawScribCabbage;
+
+        public static ThingDef MorrowRim_AshCastle;
     }
 }

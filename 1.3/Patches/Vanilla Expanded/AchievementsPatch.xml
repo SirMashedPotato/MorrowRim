@@ -25,6 +25,21 @@
 						<!-- Building -->
 						
 						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBuildAshcano</defName>
+							<label>Smol-cano</label>
+							<description>Have a colonist build an ashcano for the first time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlands</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>MorrowRim_AshCastle</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBuildAshcano</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
 							<defName>MorrowRim_AchievementBuildStriderChitin</defName>
 							<label>Stronger Than Wood</label>
 							<description>Build something out of silt strider chitin</description>

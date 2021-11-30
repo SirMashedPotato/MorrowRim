@@ -163,7 +163,7 @@ namespace MorrowRim.Kwama
 			{
 				return false;
 			}
-			if (ModSettings_Utility.MorrowRim_SettingForceKwamaNatural() && (!c.GetTerrain(map).affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) && !c.GetTerrain(map).affordances.Contains(TerrainAffordanceDefOf.Diggable)))
+			if (ModSettings_Utility.MorrowRim_SettingForceKwamaNatural() && (!c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.SmoothableStone) && !c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.Diggable)))
 			{
 				return false;
 			}

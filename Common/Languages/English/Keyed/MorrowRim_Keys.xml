@@ -113,7 +113,7 @@
 	<MorrowRim_SettingKwamaMinDistance>The maximum calculated distance from a kwama egg mine for kwama nests to generate on map creation.</MorrowRim_SettingKwamaMinDistance>
 	<MorrowRim_SettingKwamaEnableGen>Enable kwama nests generating on map creation, if distance to egg mine is satisfied.</MorrowRim_SettingKwamaEnableGen>
 	<MorrowRim_SettingEnablePredatorAvoidKwama>Prevent predators from hunting kwama that belong to a kwama nest.</MorrowRim_SettingEnablePredatorAvoidKwama>
-	<MorrowRim_SettingKwamaEnableTrojanHostile>Enable kwama nests automatically turning hositle when a trojan infestation occurs.</MorrowRim_SettingKwamaEnableTrojanHostile>
+	<MorrowRim_SettingKwamaEnableTrojanHostile>Enable kwama nests automatically turning hostile when a trojan infestation occurs.</MorrowRim_SettingKwamaEnableTrojanHostile>
 	<MorrowRim_SettingKwamaNestReproducing>Enable kwama nests creating other kwama nests, given certain criteria are met.</MorrowRim_SettingKwamaNestReproducing>
 	<MorrowRim_SettingKwamaMining>Enable kwama workers mining natural stone.</MorrowRim_SettingKwamaMining>
 	
@@ -134,6 +134,9 @@
 	<MorrowRim_SettingEnableAshStormHidingMin>The minimum build up for pawns to seek shelter.</MorrowRim_SettingEnableAshStormHidingMin>
 	<MorrowRim_SettingEnableAshStormHidingHumanlike>Enable player colonists hiding from ash storms.</MorrowRim_SettingEnableAshStormHidingHumanlike>
 	<MorrowRim_SettingEnableAshStormHidingHumanlike_Tooltip>Enabling this will cause player colonists to hide indoors if they become afflicted with ash build up during an ash storm.\n\nThey will not respect zones, and will seek rooms that are completely roofed. If they find themselves under a roof at any point, they may remain there, even if they are not in a room.</MorrowRim_SettingEnableAshStormHidingHumanlike_Tooltip>
+	<MorrowRim_SettingEnableAshCastles>Enable pawns building ashcanoes as a form of recreation.</MorrowRim_SettingEnableAshCastles>
+	<MorrowRim_SettingEnableAshCastlesDuringAshStorm>Pawns are allowed to build ashcanoes during ash storms.</MorrowRim_SettingEnableAshCastlesDuringAshStorm>
+	<MorrowRim_SettingEnableAshCastlesMinDistance>The minimum distance between ashcanoes.</MorrowRim_SettingEnableAshCastlesMinDistance>
 	
 	<MorrowRim_SettingEnableCliffRacerExtinction>Enable the wild cliff racer extinction.</MorrowRim_SettingEnableCliffRacerExtinction>
 	<MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>This prevents wild cliff racers from spawning, you may also want to disable the MorrowRim cliff racer swarm incidents.\n\nCliff racers will still be able to appear with traders, or through vanilla or other modded incidents.</MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>
@@ -189,7 +192,7 @@
 	<MorrowRim_ResetFire>Reset volcanic weather settings to default</MorrowRim_ResetFire>
 	<MorrowRim_ResetBiome>Reset biome settings to default</MorrowRim_ResetBiome>
 	<MorrowRim_ResetKwama>Reset kwama settings to default</MorrowRim_ResetKwama>
-	<MorrowRim_ResetAnimalBehaviour>Reset animal behaviour settings to default</MorrowRim_ResetAnimalBehaviour>
+	<MorrowRim_ResetAnimalBehaviour>Reset behaviour settings to default</MorrowRim_ResetAnimalBehaviour>
 	<MorrowRim_ResetNotification>Reset notification settings to default</MorrowRim_ResetNotification>
 	<MorrowRim_ResetModIntegration>Reset mod integration settings to default</MorrowRim_ResetModIntegration>
 	
