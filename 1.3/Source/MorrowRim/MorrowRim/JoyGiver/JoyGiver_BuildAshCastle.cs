@@ -13,9 +13,10 @@ namespace MorrowRim
 		{
             if (ModSettings_Utility.MorrowRim_SettingEnableAshCastles())
             {
-				if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Construction))
+
+				if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Construction) && !pawn.story.traits.HasTrait(TraitDef.Named("MorrowRim_AshLover")))
 				{
-					Log.Message("Construction disabled for " + pawn.Name);
+					Log.Message("Construction disabled, and doesn't have ash lover trait, for " + pawn.Name);
 					return null;
 				}
 				if (!JoyUtility.EnjoyableOutsideNow(pawn, null))
@@ -28,12 +29,6 @@ namespace MorrowRim
 					Log.Message("Ash storm disabled for " + pawn.Name);
 					return null;
 				}
-				/*
-				if (pawn.Map.snowGrid.TotalDepth < 200f)
-				{
-					return null;
-				}
-				*/
 				IntVec3 c = JoyGiver_BuildAshCastle.TryFindAshCastleBuildCell(pawn);
 				if (!c.IsValid)
 				{
