@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorldObjectDef[defName = "Outpost_Logging"]/modExtensions/li[1]/DisallowedBiomes</xpath>
+		<value>
+			<li>MorrowRim_BlightedAshlands</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_VolcanicAshlands</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.Grazelands">MorrowRim_Grazelands</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorldObjectDef[defName = "Outpost_Farming"]/modExtensions/li[1]/DisallowedBiomes</xpath>
+		<value>
+			<li>MorrowRim_BlightedAshlands</li>
+			<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_VolcanicAshlands</li>
+		</value>
+	</Operation>
+
+</Patch>

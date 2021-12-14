@@ -22,5 +22,6 @@
 		<li IfModActive="VanillaExpanded.VCookE">Mods/VanillaCookingExpanded</li>
 		<li IfModActive="VanillaExpanded.VCEF">Mods/VanillaFishingExpanded</li>		
 		<li IfModActive="OskarPotocki.VFE.Insectoid">Mods/VanillaFactionsInsectoids</li>	
+		<li IfModActive="vanillaexpanded.outposts">Mods/VanillaOutpostsExpanded</li>	
 	</v1.3>
 </loadFolders>

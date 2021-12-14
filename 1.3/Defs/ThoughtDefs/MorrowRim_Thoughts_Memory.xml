@@ -5,6 +5,9 @@
 		<defName>MorrowRim_ashCovered</defName>
 		<durationDays>0.2</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>MorrowRim_AshLover</li>
+		</nullifyingTraits>
 		<stages>
 		  <li>
 			<label>covered in ash</label>
