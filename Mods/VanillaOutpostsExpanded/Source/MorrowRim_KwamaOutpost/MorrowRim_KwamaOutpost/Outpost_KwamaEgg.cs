@@ -11,7 +11,7 @@ namespace MorrowRim_KwamaOutpost
     public class Outpost_KwamaEgg : Outpost
     {
 
-        public static int maxDistance = 5;  //make setting in main assembly
+        public static int maxDistance = 5;  //make setting in main assembly?
 
         public static float DistanceFromKwamaNest(int tile)
         {
@@ -34,7 +34,48 @@ namespace MorrowRim_KwamaOutpost
 
         public static string CanSpawnOnWith(int tile, List<Pawn> pawns) => !CloseEnough(DistanceFromKwamaNest(tile)) ? "MorrowRimOutposts.MustBeMade.KwamaNest".Translate(maxDistance) : null;
 
-        public static string RequirementsString(int tile, List<Pawn> pawns) =>
-            Requirement("MorrowRimOutposts.MustBeMade.KwamaNest".Translate(maxDistance), CloseEnough(DistanceFromKwamaNest(tile)));
+        public static string RequirementsString(int tile, List<Pawn> pawns)
+        {
+            return Utils.Requirement("MorrowRimOutposts.MustBeMade.KwamaNest".Translate(maxDistance), CloseEnough(DistanceFromKwamaNest(tile)));
+        }
+
+        /* set up stuff */
+
+        public override string ProductionString()
+        {
+            if (this.workUntilReady > 0) 
+            {
+                return "MorrowRimOutposts.PreparingMine".Translate(((float)this.workUntilReady / (float)this.WorkNeeded).ToStringPercent(), 
+                    ((WorkNeeded - workUntilReady) / (base.TotalSkill(SkillDefOf.Mining) + base.TotalSkill(SkillDefOf.Construction))).ToStringTicksToPeriodVerbose(true, true));
+            }  
+            
+            return base.ProductionString();
+        }
+
+        protected virtual int WorkNeeded
+        {
+            get
+            {
+                return 420000;
+            }
+        }
+
+        public override void PostMake()
+        {
+            base.PostMake();
+            this.workUntilReady = 0;
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+            bool flag = this.workUntilReady < WorkNeeded && !base.Packing;
+            if (flag)
+            {
+                this.workUntilReady += (base.TotalSkill(SkillDefOf.Mining) + base.TotalSkill(SkillDefOf.Construction));
+            }
+        }
+
+        private int workUntilReady;
     }
 }

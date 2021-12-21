@@ -59,6 +59,9 @@
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VOE">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaOutpostsExpanded\Assemblies\VOE.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Outpost_KwamaEgg.cs" />

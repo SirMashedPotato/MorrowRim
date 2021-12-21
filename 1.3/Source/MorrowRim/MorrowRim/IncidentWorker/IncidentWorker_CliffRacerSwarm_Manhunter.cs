@@ -35,7 +35,7 @@ namespace MorrowRim
 			{
 				return false;
 			}
-			List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(pawnKind, map.Tile, parms.points * 1f);
+			List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(pawnKind, map.Tile, parms.points * PointsFactor);
 			Rot4 rot = Rot4.FromAngleFlat((map.Center - spawnCenter).AngleFlat);
 			for (int i = 0; i < list.Count; i++)
 			{
@@ -43,7 +43,7 @@ namespace MorrowRim
 				IntVec3 loc = CellFinder.RandomClosewalkCellNear(spawnCenter, map, 10, null);
 				QuestUtility.AddQuestTag(GenSpawn.Spawn(pawn, loc, map, rot, WipeMode.Vanish, false), parms.questTag);
 				pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, false, false, null, false);
-				pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(300000, 600000);
+				pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(AnimalsStayDurationMin, AnimalsStayDurationMax);
 			}
 			Find.LetterStack.ReceiveLetter("LetterLabelCliffRacerSwarmManhunter".Translate(), "LetterCliffRacerSwarmManhunter".Translate(), LetterDefOf.ThreatBig, list[0], null, null);
 			Find.TickManager.slower.SignalForceNormalSpeedShort();
