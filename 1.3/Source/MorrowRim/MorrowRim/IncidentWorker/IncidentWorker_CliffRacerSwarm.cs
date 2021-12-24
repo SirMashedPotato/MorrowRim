@@ -32,7 +32,7 @@ namespace MorrowRim
 			}
 			float freeColonistsCount = (float)map.mapPawns.FreeColonistsCount;
 			float randomInRange = IncidentWorker_CliffRacerSwarm.CountPerColonistRange.RandomInRange;
-			int num = Mathf.Clamp(GenMath.RoundRandom(freeColonistsCount * randomInRange), 1, 10);
+			int num = Mathf.Clamp(GenMath.RoundRandom(freeColonistsCount * randomInRange), MinCount, MaxCount);
 			for (int i = 0; i < num; i++)
 			{
 				IntVec3 loc = CellFinder.RandomClosewalkCellNear(intVec, map, 10, null);
