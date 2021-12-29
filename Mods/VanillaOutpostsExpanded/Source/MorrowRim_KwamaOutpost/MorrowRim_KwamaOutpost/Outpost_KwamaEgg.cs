@@ -39,11 +39,17 @@ namespace MorrowRim_KwamaOutpost
             return Utils.Requirement("MorrowRimOutposts.MustBeMade.KwamaNest".Translate(maxDistance), CloseEnough(DistanceFromKwamaNest(tile)));
         }
 
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref workUntilReady, "MorrowRim_KwamaEggOutpost_WorkUntilReady", 0);
+        }
+
         /* set up stuff */
 
         public override string ProductionString()
         {
-            if (this.workUntilReady > 0) 
+            if (this.workUntilReady < WorkNeeded) 
             {
                 return "MorrowRimOutposts.PreparingMine".Translate(((float)this.workUntilReady / (float)this.WorkNeeded).ToStringPercent(), 
                     ((WorkNeeded - workUntilReady) / (base.TotalSkill(SkillDefOf.Mining) + base.TotalSkill(SkillDefOf.Construction))).ToStringTicksToPeriodVerbose(true, true));
