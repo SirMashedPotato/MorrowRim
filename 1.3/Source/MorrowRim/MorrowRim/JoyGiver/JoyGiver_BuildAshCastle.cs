@@ -16,23 +16,19 @@ namespace MorrowRim
 
 				if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Construction) && !pawn.story.traits.HasTrait(TraitDef.Named("MorrowRim_AshLover")))
 				{
-					Log.Message("Construction disabled, and doesn't have ash lover trait, for " + pawn.Name);
 					return null;
 				}
 				if (!JoyUtility.EnjoyableOutsideNow(pawn, null))
 				{
-					Log.Message("Outside disabled for " + pawn.Name);
 					return null;
 				}
 				if (!ModSettings_Utility.MorrowRim_SettingEnableAshCastlesDuringAshStorm() && WeatherUtilityAsh.WeatherIsAshStorm(pawn.Map))
 				{
-					Log.Message("Ash storm disabled for " + pawn.Name);
 					return null;
 				}
 				IntVec3 c = JoyGiver_BuildAshCastle.TryFindAshCastleBuildCell(pawn);
 				if (!c.IsValid)
 				{
-					Log.Message("Failed to find cell for " + pawn.Name);
 					return null;
 				}
 				return JobMaker.MakeJob(this.def.jobDef, c);

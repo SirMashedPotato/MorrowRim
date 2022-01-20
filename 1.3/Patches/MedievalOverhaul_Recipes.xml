@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/recipes</xpath>
+					<value>
+						<li>MorrowRim_CrushScrib</li>
+						<li>MorrowRim_CrushAshHopper</li>
+						<li>MorrowRim_WoodFromCorkbulb</li>
+						<li>MorrowRim_WoodFromCorkbulb_Bulk</li>
+						<li>MorrowRim_ResinFromPlantMatter</li>
+						<li>MorrowRim_ResinFromPlantMatter_Bulk</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="DankPyon_SpinningWheel"]/recipes</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="DankPyon_SpinningWheel"]</xpath>
+						<value>
+							<recipes>
+							</recipes>
+						</value>
+					</nomatch>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel"]/recipes</xpath>
+					<value>
+						<li>MorrowRim_MakeClothFromKresh</li>
+						<li>MorrowRim_MakeClothFromKresh_Bulk</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
