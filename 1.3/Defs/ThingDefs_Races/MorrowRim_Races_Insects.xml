@@ -614,7 +614,7 @@
 		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-		  <li>AnimalInsect</li>
+		  <li>AshlandAnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
 	  

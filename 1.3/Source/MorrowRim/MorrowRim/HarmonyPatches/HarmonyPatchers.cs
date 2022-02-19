@@ -614,8 +614,8 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ExtinctionPatch(PawnKindDef animalDef, ref float __result)
         {
-            if (animalDef == PawnKindDefOf.MorrowRim_CliffRacer && ModSettings_Utility.MorrowRim_SettingEnableCliffRacerExtinction()||
-                animalDef == PawnKindDefOf.MorrowRim_SiltStrider && ModSettings_Utility.MorrowRim_SettingEnableSiltStriderExtinction())
+            if (animalDef == PawnKindDefOf.MorrowRim_CliffRacer && (ModSettings_Utility.MorrowRim_SettingEnableCliffRacerExtinction() || TrueCliffRacerExtinctionCheck.IsExtinct()) 
+                || animalDef == PawnKindDefOf.MorrowRim_SiltStrider && ModSettings_Utility.MorrowRim_SettingEnableSiltStriderExtinction())
             {
                 __result = 0f;
             }

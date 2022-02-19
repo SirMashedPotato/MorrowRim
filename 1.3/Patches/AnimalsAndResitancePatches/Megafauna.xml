@@ -10,52 +10,27 @@
 			<operations>
 				
 				<!-- add select animals to ashlands -->
-						
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Arthropleura"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
-					</value>
-				</li>
 				
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Megalania"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
+						<Arthropleura>0.05</Arthropleura>
+						<Meganeura>0.05</Meganeura>
+						<Pulmonoscorpius>0.05</Pulmonoscorpius>
+						<Megalania>0.01</Megalania>
+						<Quinkana>0.01</Quinkana>
+						<Gigantophis>0.01</Gigantophis>
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Quinkana"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_BlightedAshlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
+						<Megalania>0.01</Megalania>
+						<Gigantophis>0.01</Gigantophis>
+						<Pulmonoscorpius>0.01</Pulmonoscorpius>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Gigantophis"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Meganeura"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Pulmonoscorpius"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
-					</value>
-				</li>
-				
 						
 				<!-- give select  animals ash-resistant -->
 				

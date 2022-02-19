@@ -8,15 +8,23 @@
 				
 		<match Class="PatchOperationSequence">
 			<operations>
-				
+			
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
+						<MM_LernaeanHydra>0.01</MM_LernaeanHydra>
+						<MM_WillOWisp>0.01</MM_WillOWisp>
 					</value>
 				</li>
-				
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_BlightedAshlands"]/wildAnimals</xpath>
+					<value>
+						<MM_LernaeanHydra>0.01</MM_LernaeanHydra>
+						<MM_WillOWisp>0.01</MM_WillOWisp>
+					</value>
+				</li>
+	
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra"]</xpath>
 					<value>
@@ -26,14 +34,6 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="MM_WillOWisp"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
-					</value>
-				</li>
-
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/ThingDef[defName="MM_WillOWisp"]</xpath>
 					<value>

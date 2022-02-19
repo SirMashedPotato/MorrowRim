@@ -181,7 +181,7 @@
 				
 				<!-- Floating patches -->
 				<!-- Need to lower speed too -->
-				
+
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch" or defName="MorrowRim_RetchingNetch" or defName="MorrowRim_CliffRacer"]/comps</xpath>
 					<value>
@@ -210,7 +210,7 @@
 						<MoveSpeed>3.5</MoveSpeed>
 					</value>
 				</li>
-				
+
 				<!-- Hunger bile -->
 				
 				<li Class="PatchOperationAdd">
@@ -250,7 +250,7 @@
 							<neverMultiSelect>True</neverMultiSelect>
 							<graphicData>
 							  <shaderType>Transparent</shaderType>
-							  <graphicClass>Graphic_Single</graphicClass>
+							  <graphicClass>Graphic_Random</graphicClass>
 							  <texPath>MorrowRim/Projectile/HungerBile</texPath>
 							</graphicData>
 							<projectile>

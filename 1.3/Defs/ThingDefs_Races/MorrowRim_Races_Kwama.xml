@@ -78,7 +78,7 @@
 		  <MorrowRim_ScribJelly>4</MorrowRim_ScribJelly>
 		</butcherProducts>-->
 		<tradeTags>
-		  <li>AnimalInsect</li>
+		  <li>MorrowRim_AnimalKwama</li>
 		  <li>AshlandAnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
@@ -174,7 +174,7 @@
 		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-		  <li>AnimalInsect</li>
+		  <li>MorrowRim_AnimalKwama</li>
 		</tradeTags>
 	</ThingDef>
 	  
@@ -309,7 +309,7 @@
 		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-		  <li>AnimalInsect</li>
+		  <li>MorrowRim_AnimalKwama</li>
 		</tradeTags>
 	  </ThingDef>
 
@@ -450,7 +450,7 @@
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-		  <li>AnimalInsect</li>
+		  <li>MorrowRim_AnimalKwama</li>
 		</tradeTags>
 	</ThingDef>
 

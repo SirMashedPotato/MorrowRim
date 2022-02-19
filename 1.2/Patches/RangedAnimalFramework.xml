@@ -50,7 +50,7 @@
 						<neverMultiSelect>True</neverMultiSelect>
 						<graphicData>
 						  <shaderType>Transparent</shaderType>
-						  <graphicClass>Graphic_Single</graphicClass>
+						  <graphicClass>Graphic_Random</graphicClass>
 						  <texPath>MorrowRim/Projectile/HungerBile</texPath>
 						</graphicData>
 						<projectile>

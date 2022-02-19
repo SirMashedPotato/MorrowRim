@@ -43,6 +43,10 @@
 	<MorrowRim_LetterLabelCorprusRefugeeJoins>Corprus refugee joins: {PAWN_nameDef}</MorrowRim_LetterLabelCorprusRefugeeJoins>
 	<LetterCorprusRefugeeJoins>A {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.\n\n{0_nameDef} claims to be a {1_label} refugee, but is unwilling to disclose if they are infected with {1_label}, or the severity of the infection..\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily, claiming to have nowhere else to go. You can choose to turn {PAWN_objective} down and send {PAWN_objective} away. However, your colonists will be disturbed at sending someone away in need.</LetterCorprusRefugeeJoins>
 
+	<MorrowRim_TrueCliffRacerExtinctionProgress>The ashlands seem to grow noticeably quieter</MorrowRim_TrueCliffRacerExtinctionProgress>
+	<MorrowRim_TrueCliffRacerExtinctionCompletion_Label>Cliff racer extinction</MorrowRim_TrueCliffRacerExtinctionCompletion_Label>
+	<MorrowRim_TrueCliffRacerExtinctionCompletion_Description>As the cliff racer falls to the ground, the ashlands grow silent. The wild cliff racer population has been diminished to the point of no return, the stragglers will be easily dealt with.\n\nCongratulations, Saint.</MorrowRim_TrueCliffRacerExtinctionCompletion_Description>
+
 	<!-- kawma nests -->
 	<LetterLabelKwamaNestThreatened>kwama nest threatened</LetterLabelKwamaNestThreatened>
 	<LetterKwamaNestThreatened>A kwama nest has been threatened and will now defend their hive aggressively. They will return to a passive state when they feel safe.</LetterKwamaNestThreatened>
@@ -56,6 +60,11 @@
 
 	<!-- misc -->
 	<MorrowRim_Notification_CorprusInfected>{0} has contracted corprus!</MorrowRim_Notification_CorprusInfected>
+	
+	<!-- alerts -->
+	
+	<MorrowRim_Alert_CliffRacerExtinction>Cliff racer extinction</MorrowRim_Alert_CliffRacerExtinction>
+	<MorrowRim_Alert_CliffRacerExtinctionDescription>Cliff racers are a blight upon the ashlands, and you have clearly taken it upon yourself to aid in their extinction.\n\nEach cliff racer killed will add to their extinction progress. Once the target is reached, the wild cliff racer population will be left effectively extinct, leaving the ashlands an oddly quiet place.\n\nCurrent progress: {0}\nCurrent kill count {1}/{2}</MorrowRim_Alert_CliffRacerExtinctionDescription>
 
 	<!-- mod settings -->
 	
@@ -118,6 +127,7 @@
 	<MorrowRim_SettingKwamaMining>Enable kwama workers mining natural stone.</MorrowRim_SettingKwamaMining>
 	
 	<MorrowRim_SettingEnableCliffRacerEvents>Enable the cliff racer incidents.</MorrowRim_SettingEnableCliffRacerEvents>
+	<MorrowRim_SettingEnableCliffRacerEvents_Tooltip>Enables, or disables the cliff racer swarm incidents.\n\nDisabling this setting will override the dynamic extinction check for the swarm incidents.</MorrowRim_SettingEnableCliffRacerEvents_Tooltip>
 	<MorrowRim_SettingEnableSiltStriderEvent>Enable the silt strider incident.</MorrowRim_SettingEnableSiltStriderEvent>
 	<MorrowRim_SettingEnableAlbinoGuarEvent>Enable the albino guar incident.</MorrowRim_SettingEnableAlbinoGuarEvent>
 	<MorrowRim_SettingEnableKwamaNestEmerging>Enable the kwama nest emerges incident.</MorrowRim_SettingEnableKwamaNestEmerging>
@@ -139,13 +149,13 @@
 	<MorrowRim_SettingEnableAshCastlesMinDistance>The minimum distance between ashcanos.</MorrowRim_SettingEnableAshCastlesMinDistance>
 	
 	<MorrowRim_SettingEnableCliffRacerExtinction>Enable the wild cliff racer extinction.</MorrowRim_SettingEnableCliffRacerExtinction>
-	<MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>This prevents wild cliff racers from spawning, you may also want to disable the MorrowRim cliff racer swarm incidents.\n\nCliff racers will still be able to appear with traders, or through vanilla or other modded incidents.</MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>
+	<MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>This prevents wild cliff racers from spawning, you may also want to disable the MorrowRim cliff racer swarm incidents.\n\nCliff racers will still be able to appear with traders, or through vanilla or other modded incidents.\n\nEnabling this setting will override the dynamic extinction check for wild cliff racer spawning.</MorrowRim_SettingEnableCliffRacerExtinction_Tooltip>
 	
 	<MorrowRim_SettingEnableSiltStriderExtinction>Enable the wild silt strider extinction.</MorrowRim_SettingEnableSiltStriderExtinction>
 	<MorrowRim_SettingEnableSiltStriderExtinction_Tooltip>This prevents wild silt striders from spawning, and prevents factions using them as caravan animals. You may also want to disable the MorrowRim silt strider incident.\n\nSilt striders will still be able to appear with traders, or through vanilla or other modded incidents.</MorrowRim_SettingEnableSiltStriderExtinction_Tooltip>
 	
 	<MorrowRim_SettingEnableCorprusExtinction>Enable corprus eradication.</MorrowRim_SettingEnableCorprusExtinction>
-	<MorrowRim_SettingEnableCorprusExtinction_Tooltip>This prevents corprus infections from occruing through the standard infection incident. Corprus beasts will still be able to spread corprus.</MorrowRim_SettingEnableCorprusExtinction_Tooltip>
+	<MorrowRim_SettingEnableCorprusExtinction_Tooltip>This prevents corprus infections from occurring through the standard infection incident. Corprus beasts will still be able to spread corprus.</MorrowRim_SettingEnableCorprusExtinction_Tooltip>
 	
 	<MorrowRim_SettingEnablePermaAshStorm>Enable Red Mountain eruption</MorrowRim_SettingEnablePermaAshStorm>
 	<MorrowRim_SettingEnablePermaAshStorm_Tooltip>This causes permanent ash weather. You're only respite from ash storms will be... more ash, just slightly less stormy.</MorrowRim_SettingEnablePermaAshStorm_Tooltip>
@@ -153,6 +163,9 @@
 	<MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>You probably don't want to disable this, unless you only want regular ash storms in non-MorrowRim biomes.</MorrowRim_SettingEnablePermaAshStormOnlyAshlands_Tooltip>
 	<MorrowRim_SettingEnablePermaAshStormOnlyAshStorms>Only ash storms, no ash fall or lingering ash clouds.</MorrowRim_SettingEnablePermaAshStormOnlyAshStorms>
 	
+	<MorrowRim_SettingEnableTrueCliffRacerExtinction>Enable dynamic cliff racer extinction.</MorrowRim_SettingEnableTrueCliffRacerExtinction>
+	<MorrowRim_SettingEnableTrueCliffRacerExtinction_Tooltip>With this, cliff racers will go extinct once the targeted number of wild cliff racers have been killed. Not only will this prevent any more wild cliff racers from appearing, but will also prevent the cliff racer swarm incidents.\n\nDisabling this setting after reaching the number will re-enable wild cliff racers, until the setting is enabled again.\n\nThis setting is NOT retroactive, cliff racer kills are only counted while it is activated.\n\nDisabling cliff racers, or cliff racer incidents, through other settings will override the same behaviour from this setting.</MorrowRim_SettingEnableTrueCliffRacerExtinction_Tooltip>
+	<MorrowRim_SettingEnableTrueCliffRacerExtinctionCount>The number of wild cliff racers that need to be killed.</MorrowRim_SettingEnableTrueCliffRacerExtinctionCount>
 	
 	<MorrowRim_SettingEnableAshBuildupNotifications>Enable notifications for when a pawn reaches the ash buildup threshold.</MorrowRim_SettingEnableAshBuildupNotifications>
 	<MorrowRim_SettingEnableAshBuildupNotifications_Colonist>Enable notifications for player colonists.</MorrowRim_SettingEnableAshBuildupNotifications_Colonist>

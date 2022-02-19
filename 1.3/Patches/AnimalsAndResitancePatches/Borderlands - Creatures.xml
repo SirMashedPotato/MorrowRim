@@ -4,6 +4,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Borderlands: Creatures</li>
+			<li>Borderlands: The Rim</li>
 		</mods> 
 				
 		<match Class="PatchOperationSequence">
@@ -12,33 +13,15 @@
 				<!-- add select animals to ashlands -->
 				
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Skag"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+						<Skag>0.2</Skag>
+						<SkagSpitter>0.2</SkagSpitter>
+						<Spiderant>0.2</Spiderant>
+						<Rakk>0.2</Rakk>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="SkagSpitter"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Spiderant"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
-					</value>
-				</li>
-				
-			<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Rakk"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
-					</value>
-				</li>
-				
+
 				<!-- give select animals ash-resistant -->
 				
 				<li Class="PatchOperationAddModExtension">

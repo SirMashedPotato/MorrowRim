@@ -12,34 +12,23 @@
 				<!-- add select alpha animals animals to ashlands -->
 						
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.05</MorrowRim_Ashlands>
+						<AA_Aerofleet>0.05</AA_Aerofleet>
+						<AA_Wildpawn>0.2</AA_Wildpawn>
+						<AA_PebbleMit>0.1</AA_PebbleMit>
+						<AA_MammothWorm>0.01</AA_MammothWorm>
+						<AA_Barbslinger>0.01</AA_Barbslinger>
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_BlightedAshlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Ashlands>0.2</MorrowRim_Ashlands>
+						<AA_Barbslinger>0.01</AA_Barbslinger>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="AA_Barbslinger"]/race/wildBiomes</xpath>
-					<value>
-						<MorrowRim_Ashlands>0.01</MorrowRim_Ashlands>
-						<MorrowRim_BlightedAshlands>0.01</MorrowRim_BlightedAshlands>
-					</value>
-				</li>
-						
+	
 				<!-- give select alpha animals animals ash-resistant, some may be redundant -->
 				
 				<li Class="PatchOperationAddModExtension">

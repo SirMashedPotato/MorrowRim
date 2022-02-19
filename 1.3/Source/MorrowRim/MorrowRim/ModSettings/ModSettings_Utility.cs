@@ -254,6 +254,16 @@ namespace MorrowRim
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnablePermaAshStormOnlyAshStorms;
         }
 
+        public static bool MorrowRim_SettingEnableTrueCliffRacerExtinction()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableTrueCliffRacerExtinction;
+        }
+
+        public static int MorrowRim_SettingEnableTrueCliffRacerExtinctionCount()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableTrueCliffRacerExtinctionCount;
+        }
+
         /* kwama */
 
         public static bool MorrowRim_SettingForceKwamaNatural()

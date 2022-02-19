@@ -64,6 +64,8 @@ namespace MorrowRim
         public bool MorrowRim_SettingEnablePermaAshStorm = MorrowRim_SettingEnablePermaAshStorm_def;
         public bool MorrowRim_SettingEnablePermaAshStormOnlyAshlands = MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def;
         public bool MorrowRim_SettingEnablePermaAshStormOnlyAshStorms = MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def;
+        public bool MorrowRim_SettingEnableTrueCliffRacerExtinction = MorrowRim_SettingEnableTrueCliffRacerExtinction_def;
+        public int MorrowRim_SettingEnableTrueCliffRacerExtinctionCount = MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def;
 
         public bool MorrowRim_SettingEnableScribBehaviour = MorrowRim_SettingEnableScribBehaviour_def;
         public bool MorrowRim_SettingEnableScampBehaviour = MorrowRim_SettingEnableScampBehaviour_def;
@@ -85,7 +87,6 @@ namespace MorrowRim
 
         public bool MorrowRim_SettingVFIChitinIntegration = MorrowRim_SettingVFIChitinIntegration_def;
         public bool MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
-
 
         //defaults
         private static readonly bool MorrowRim_SettingEnableLightingEffects_def = true;
@@ -147,6 +148,8 @@ namespace MorrowRim
         private static readonly bool MorrowRim_SettingEnablePermaAshStorm_def = false;
         private static readonly bool MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def = true;
         private static readonly bool MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def = false;
+        private static readonly bool MorrowRim_SettingEnableTrueCliffRacerExtinction_def = true;
+        private static readonly int MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def = 10000;
 
         private static readonly bool MorrowRim_SettingEnableScribBehaviour_def = true;
         private static readonly bool MorrowRim_SettingEnableScampBehaviour_def = true;
@@ -231,6 +234,8 @@ namespace MorrowRim
             Scribe_Values.Look(ref MorrowRim_SettingEnablePermaAshStorm, "MorrowRim_SettingEnablePermaAshStorm", MorrowRim_SettingEnablePermaAshStorm_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnablePermaAshStormOnlyAshlands, "MorrowRim_SettingEnablePermaAshStormOnlyAshlands", MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnablePermaAshStormOnlyAshStorms, "MorrowRim_SettingEnablePermaAshStormOnlyAshStorms", MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableTrueCliffRacerExtinction, "MorrowRim_SettingEnableTrueCliffRacerExtinction", MorrowRim_SettingEnableTrueCliffRacerExtinction_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableTrueCliffRacerExtinctionCount, "MorrowRim_SettingEnableTrueCliffRacerExtinctionCount", MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def);
 
             Scribe_Values.Look(ref MorrowRim_SettingEnableScribBehaviour, "MorrowRim_SettingEnableScribBehaviour", MorrowRim_SettingEnableScribBehaviour_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableScampBehaviour, "MorrowRim_SettingEnableScampBehaviour", MorrowRim_SettingEnableScampBehaviour_def);
@@ -347,6 +352,8 @@ namespace MorrowRim
             settings.MorrowRim_SettingEnablePermaAshStorm = MorrowRim_SettingEnablePermaAshStorm_def;
             settings.MorrowRim_SettingEnablePermaAshStormOnlyAshlands = MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def;
             settings.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms = MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def;
+            settings.MorrowRim_SettingEnableTrueCliffRacerExtinction = MorrowRim_SettingEnableTrueCliffRacerExtinction_def;
+            settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount = MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def;
         }
 
         public static void ResetSettings_AnimalBehaviour(MorrowRim_ModSettings settings)

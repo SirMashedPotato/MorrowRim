@@ -32,5 +32,8 @@
 		<li>VanillaExpanded.VCEF</li>
 		<li>OskarPotocki.VFE.Insectoid</li>
 		<li>vanillaexpanded.outposts</li>
+		<!-- For TerrainMovementKit -->
+		<li>pyrce.terrain.movement.modkit</li>
+		<li>BiomesTeam.BiomesCore</li>
 	</loadAfter>
 </ModMetaData>

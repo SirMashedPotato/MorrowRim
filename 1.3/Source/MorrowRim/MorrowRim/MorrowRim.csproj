@@ -40,7 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -50,15 +50,16 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert\Alert_CliffRacerExtinction.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_AshSwamp.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_GlaciatedAshlands.cs" />
     <Compile Include="Comps\CompCollapser.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="DamageWorkers\DamageWorkerUtility_Corprus.cs" />
     <Compile Include="DamageWorkers\DamageWorker_CorprusBite.cs" />
     <Compile Include="DamageWorkers\DamageWorker_CorprusScratch.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
     <Compile Include="DefModExtensions\AshResistant.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_Ashlands.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_BlightedAshlands.cs" />
@@ -169,6 +171,7 @@
     <Compile Include="Weather\WeatherEvent_AshDamage.cs" />
     <Compile Include="Weather\WeatherOverlay_AshStorm.cs" />
     <Compile Include="Weather\WeatherUtilityFire.cs" />
+    <Compile Include="WorldComps\WorldComponent_CliffRacerTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
@@ -176,8 +179,6 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GenStep\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

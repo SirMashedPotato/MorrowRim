@@ -868,7 +868,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A highly agressive flying reptile found natively in the ashlands. Their appearance may make one consider them to be of little threat, this could not be less true. There are stories of endless swarms of cliff racers driving, much larger, dragon-like creatures out of the ashlands.\n\nCliff racers have an almost unnaturally fast breeding cycle, and are able to breed asexually. If a cliff racer population becomes established in an area it will likely drive all other animals away. As such, cliff racers are best dealt with quickly.\n\nLike many ashland natives cliff racers are resistant to the effects of ash-storms.</description>
+		<description>A highly aggressive flying reptile found natively in the ashlands. Their appearance may make one consider them to be of little threat, this could not be less true. There are stories of endless swarms of cliff racers driving, much larger, dragon-like creatures out of the ashlands.\n\nCliff racers have an almost unnaturally fast breeding cycle, and are able to breed asexually. If a cliff racer population becomes established in an area it will likely drive all other animals away. As such, cliff racers are best dealt with quickly.\n\nLike many ashland natives cliff racers are resistant to the effects of ash-storms.</description>
 		<statBases>
 		  <MoveSpeed>6.0</MoveSpeed>
 		  <MarketValue>350</MarketValue>
@@ -929,6 +929,7 @@
 			</li>
 		</comps>
 		<race>
+		  <deathActionWorkerClass>MorrowRim.DeathActionWorker_CliffRacer</deathActionWorkerClass>
 		  <body>MorrowRim_FlyingHellSpawn</body>
 		  <herdAnimal>true</herdAnimal>
 		  <predator>true</predator>
