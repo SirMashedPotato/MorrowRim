@@ -166,6 +166,7 @@
 	<MorrowRim_SettingEnableTrueCliffRacerExtinction>Enable dynamic cliff racer extinction.</MorrowRim_SettingEnableTrueCliffRacerExtinction>
 	<MorrowRim_SettingEnableTrueCliffRacerExtinction_Tooltip>With this, cliff racers will go extinct once the targeted number of wild cliff racers have been killed. Not only will this prevent any more wild cliff racers from appearing, but will also prevent the cliff racer swarm incidents.\n\nDisabling this setting after reaching the number will re-enable wild cliff racers, until the setting is enabled again.\n\nThis setting is NOT retroactive, cliff racer kills are only counted while it is activated.\n\nDisabling cliff racers, or cliff racer incidents, through other settings will override the same behaviour from this setting.</MorrowRim_SettingEnableTrueCliffRacerExtinction_Tooltip>
 	<MorrowRim_SettingEnableTrueCliffRacerExtinctionCount>The number of wild cliff racers that need to be killed.</MorrowRim_SettingEnableTrueCliffRacerExtinctionCount>
+	<MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert>Enable the cliff racer extinction progress alert.</MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert>
 	
 	<MorrowRim_SettingEnableAshBuildupNotifications>Enable notifications for when a pawn reaches the ash buildup threshold.</MorrowRim_SettingEnableAshBuildupNotifications>
 	<MorrowRim_SettingEnableAshBuildupNotifications_Colonist>Enable notifications for player colonists.</MorrowRim_SettingEnableAshBuildupNotifications_Colonist>

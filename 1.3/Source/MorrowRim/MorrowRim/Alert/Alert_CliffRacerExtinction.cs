@@ -17,7 +17,7 @@ namespace MorrowRim
 
         public override AlertReport GetReport()
         {
-            return ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinction() ? AlertReport.Active : AlertReport.Inactive;
+            return ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinction() && ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert() ? AlertReport.Active : AlertReport.Inactive;
         }
 
         public override TaggedString GetExplanation()

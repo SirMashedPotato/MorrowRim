@@ -264,6 +264,11 @@ namespace MorrowRim
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableTrueCliffRacerExtinctionCount;
         }
 
+        public static bool MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert;
+        }
+
         /* kwama */
 
         public static bool MorrowRim_SettingForceKwamaNatural()

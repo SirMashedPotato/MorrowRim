@@ -560,6 +560,9 @@ namespace MorrowRim
             listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableTrueCliffRacerExtinction".Translate(), ref settings.MorrowRim_SettingEnableTrueCliffRacerExtinction, "MorrowRim_SettingEnableTrueCliffRacerExtinction_Tooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert".Translate(), ref settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert, "MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.Label("MorrowRim_SettingEnableTrueCliffRacerExtinctionCount".Translate() + " (" + settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount + ")");
             settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount = (int)Math.Round(listing_Standard.Slider(settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount, 1000, 100000) / 1000) * 1000;
             listing_Standard.Gap();
