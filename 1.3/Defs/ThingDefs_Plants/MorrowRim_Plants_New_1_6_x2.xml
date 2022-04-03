@@ -305,4 +305,52 @@
 		</plant>
 	</ThingDef>
 	
+	<!-- Ashland fern -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshlandsFern</defName>
+		<label>ashlands fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A small fern that can often be found growing in the ashlands. Not the nicest looking fern out there, but it can survive ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <Beauty>3</Beauty>
+		  <BeautyOutdoors>3</BeautyOutdoors>
+		  <Nutrition>0.2</Nutrition>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshlandsFern</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.2</fertilityMin>
+		  <fertilitySensitivity>0.6</fertilitySensitivity>
+		  <growDays>3.5</growDays>
+		  <growMinGlow>0.3</growMinGlow>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>1</maxMeshCount>
+		  <visualSizeRange>0.95~1.15</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	
 </Defs>
