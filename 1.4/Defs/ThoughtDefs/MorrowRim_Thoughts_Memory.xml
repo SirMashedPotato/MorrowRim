@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>MorrowRim_ashCovered</defName>
+		<durationDays>0.2</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>MorrowRim_AshLover</li>
+		</nullifyingTraits>
+		<stages>
+		  <li>
+			<label>covered in ash</label>
+			<description>It's everywhere!</description>
+			<baseMoodEffect>-4</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_ashCoveredAndLovingIt</defName>
+		<workerClass>MorrowRim.ThoughtWorker_AshLover</workerClass>
+		<requiredTraits>
+		  <li>MorrowRim_AshLover</li>
+		</requiredTraits>
+		<stages>
+		  <li>
+			<label>covered in ash</label>
+			<description>It's everywhere! My shoes, my shirt, even my pants. I LOVE it!</description>
+			<baseMoodEffect>12</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_outsideInBlightStorm</defName>
+		<durationDays>0.2</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>outside during blight storm</label>
+			<description>The sky... The clouds... What happened to them?</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Eating -->
+
+	<ThoughtDef>
+		<defName>MorrowRim_ateScathecraw</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>10</stackLimit>
+		<stages>
+		  <li>
+			<label>ate raw scathecraw</label>
+			<description>It's like eating old leather.</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_ateCorkbulb</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>10</stackLimit>
+		<stages>
+		  <li>
+			<label>ate raw corkbulb</label>
+			<description>I'd rather eat scathecraw.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>MorrowRim_ateMuck</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>consumed muck</label>
+			<description>I think I need a bucket.</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_ateNixOxMilk</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>consumed raw nix ox mucus</label>
+			<description>Bleh, tastes like old socks!</description>
+			<baseMoodEffect>-3</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>MorrowRim_ateInsectEggDirect</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>ate insect egg</label>
+			<description>I ate some slimy insect eggs. It was, possibly, the most disgusting thing I've ever tasted.</description>
+			<baseMoodEffect>-6</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_ateInsectEggAsIngredient</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>ate cooked insect egg</label>
+			<description>I ate a meal cooked with slimy insect eggs. The seasoning partly covered the taste, but there were fluid pockets in there that I can't identify.</description>
+			<baseMoodEffect>-2</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

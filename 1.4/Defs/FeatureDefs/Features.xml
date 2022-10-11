@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FeatureDef>
+    <defName>MorrowRim_BlightedAshlands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>442</order>
+     <rootBiomes>
+      <li>MorrowRim_BlightedAshlands</li>
+    </rootBiomes>
+    <acceptableBiomes>
+    </acceptableBiomes>
+    <nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
+  </FeatureDef>
+
+  <FeatureDef>
+    <defName>MorrowRim_Ashlands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>451</order>
+     <rootBiomes>
+      <li>MorrowRim_Ashlands</li>
+    </rootBiomes>
+    <acceptableBiomes>
+    </acceptableBiomes>
+    <nameMaker>MorrowRim_NamerAshlands</nameMaker>
+  </FeatureDef>
+
+</Defs>

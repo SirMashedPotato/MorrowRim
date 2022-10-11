@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="MorrowRim_Gas_Base" Abstract="True">
+		<category>Gas</category>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<gas>
+			<expireSeconds>19~21</expireSeconds>
+			<rotationSpeed>5</rotationSpeed>
+		</gas>
+	</ThingDef>
+	<ThingDef ParentName="MorrowRim_Gas_Base">
+		<defName>Gas_RetchingNetch</defName>
+		<thingClass>MorrowRim.Gas_RetchingNetch</thingClass>
+		<label>retching netch gas</label>
+		<graphicData>
+			<color>(79,173,145,50)</color>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MorrowRim_Gas_Base">
+		<defName>Gas_Corprus</defName>
+		<thingClass>MorrowRim.Gas_Corprus</thingClass>
+		<label>corprus infused ash cloud</label>
+		<graphicData>
+			<color>(80,40,40,50)</color>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MorrowRim_Gas_Base">
+		<defName>MorrowRim_Gas_Ash</defName>
+		<thingClass>MorrowRim.Gas_AshStave</thingClass>
+		<label>ash cloud</label>
+		<graphicData>
+			<color>(109,105,85,50)</color>
+		</graphicData>
+	</ThingDef>
+</Defs>

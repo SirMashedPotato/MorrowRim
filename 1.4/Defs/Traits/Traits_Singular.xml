@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TraitDef>
+		<defName>MorrowRim_AshLover</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+		  <li>
+			<label>ash lover</label>
+			<description>[PAWN_nameDef] has always loved ash storms. The feeling of ash slowly wearing down skin, burning the sinuses and filling unexpected holes. [PAWN_pronoun] gets unreasonably happy whenever [PAWN_pronoun] is outside in one.</description>
+		  </li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>MorrowRim_AshAdapted</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</modExtensions>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+		  <li>
+			<label>ash breather</label>
+			<description>[PAWN_nameDef] has mastered the art of breathing during an ash storm, and no longer suffers buildup during one. Though this doesn't meant [PAWN_pronoun] enjoys being outside in them.</description>
+		  </li>
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>

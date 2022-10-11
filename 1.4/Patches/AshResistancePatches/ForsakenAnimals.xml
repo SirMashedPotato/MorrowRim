@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Forsakens: Fauna</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<!-- give select  animals ash-resistant -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_RBehemoth"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_DarkVandal"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_DuskProwler"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_RMurkling"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_ShadowCharger"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="FO_Thunderox"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>	
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

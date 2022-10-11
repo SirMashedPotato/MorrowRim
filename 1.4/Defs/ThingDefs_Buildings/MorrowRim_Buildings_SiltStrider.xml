@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MorrowRim_SiltStriderShell</defName>
+		<label>silt strider shell</label>
+		<description>The empty shell of a silt strider. Can be deconstructed for silt strider chitin.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>MorrowRim/Buildings/SiltStriderShell/Dessicated_SiltStrider</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 4)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>true</rotatable>
+		<costList>
+			<MorrowRim_SiltStriderChitin>180</MorrowRim_SiltStriderChitin>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0.1</Flammability>
+			<MarketValue>50</MarketValue>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(2,3)</size>
+		<blockPlants>true</blockPlants>
+	</ThingDef>
+
+ </Defs>

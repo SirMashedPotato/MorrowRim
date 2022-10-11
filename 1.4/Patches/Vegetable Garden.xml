@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add mushrooms to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildPlants</xpath>
+					<value>
+						<Plantmushroom>0.05</Plantmushroom> 
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

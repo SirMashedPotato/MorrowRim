@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{392A88C3-916C-4228-9C59-4FFA29D715E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MorrowRim</RootNamespace>
+    <AssemblyName>MorrowRim</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net35\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert\Alert_CliffRacerExtinction.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_AshSwamp.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_GlaciatedAshlands.cs" />
+    <Compile Include="Comps\CompCollapser.cs" />
+    <Compile Include="Comps\Properties\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comps\Comp_BeserkerRage.cs" />
+    <Compile Include="CompTarget\CompTargetable_VesselRadius.cs" />
+    <Compile Include="CompTarget\CompTargetEffect_ArchotechFilter.cs" />
+    <Compile Include="CompUse\CompProperties_UseEffectAshformer.cs" />
+    <Compile Include="CompUse\CompUseEffect_Ashformer.cs" />
+    <Compile Include="DamageWorkers\DamageWorkerUtility_Corprus.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_CorprusBite.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_CorprusScratch.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
+    <Compile Include="DefModExtensions\AshResistant.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_Ashlands.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_BlightedAshlands.cs" />
+    <Compile Include="CompTarget\CompTargetEffect_DaedraSummon.cs" />
+    <Compile Include="DefModExtensions\YurtModExtension.cs" />
+    <Compile Include="DefOf\JobDefOf.cs" />
+    <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="HarmonyPatches\Patch_HediffProperties.cs" />
+    <Compile Include="HarmonyPatches\Patch_PlantProperties.cs" />
+    <Compile Include="Comps\Properties\CompProperties_Harvestable.cs" />
+    <Compile Include="Comps\Properties\CompProperties_CorprusSpawnInit.cs" />
+    <Compile Include="Comps\Comp_CorprusSpawnInit.cs" />
+    <Compile Include="Comps\Comp_Harvestable.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_BloatedCorprus.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_RetchingNetch.cs" />
+    <Compile Include="DefModExtensions\ExtendedRaceProperties.cs" />
+    <Compile Include="DefOf\FactionDefOf.cs" />
+    <Compile Include="Gas\Gas_AshStave.cs" />
+    <Compile Include="Gas\Gas_Corprus.cs" />
+    <Compile Include="Gas\Gas_RetchingNetch.cs" />
+    <Compile Include="HarmonyPatches\HarmonyPatchers.cs" />
+    <Compile Include="Comps\Properties\HediffCompProperties_Corprus.cs" />
+    <Compile Include="Comps\HediffComp_Corprus.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="Ideology\RitualAttachableOutcomeEffectWorker_AttractSiltStrider.cs" />
+    <Compile Include="Ideology\ThoughtWorker_AshDesired.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_AlbinoGuar.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm_Manhunter.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_GiveQuest_Corprus.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_SiltStrider.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_SiltStrider_Single.cs" />
+    <Compile Include="JobDriver\JobDriver_BuildAshCastle.cs" />
+    <Compile Include="JoyGiver\JoyGiver_BuildAshCastle.cs" />
+    <Compile Include="Kwama\JobGiver_CleanHive.cs" />
+    <Compile Include="Kwama\JobGiver_MineRandom.cs" />
+    <Compile Include="Kwama\KwamaThinkNode_ConditionalMiningEnabled.cs" />
+    <Compile Include="ModSettings\ModSettings_Presets.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowAshformerRadius.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowVesselRadius.cs" />
+    <Compile Include="Quests\QuestNode_Root_CorrusRefugeeJoins_WalkIn.cs" />
+    <Compile Include="Royalty\CompAbilityEffect_Cloud.cs" />
+    <Compile Include="Royalty\CompAbilityEffect_ManhunterPawnSkip.cs" />
+    <Compile Include="Royalty\CompProperties_AbilityCloud.cs" />
+    <Compile Include="Royalty\CompProperties_AbilityManhunterPawnSkip.cs" />
+    <Compile Include="ThinkNode\JobGiver_HideFromAshStorm.cs" />
+    <Compile Include="ThinkNode\JobGiver_Insult.cs" />
+    <Compile Include="ThinkNode\JobGiver_Mine.cs" />
+    <Compile Include="ThinkNode\JobGiver_Refuel.cs" />
+    <Compile Include="ThinkNode\JobGiver_Flick.cs" />
+    <Compile Include="ThinkNode\JobGiver_Clean.cs" />
+    <Compile Include="Kwama\CompProperties_SpawnerKwamaNest.cs" />
+    <Compile Include="Kwama\CompSpawnerKwamaNest.cs" />
+    <Compile Include="Kwama\DutyDefOf.cs" />
+    <Compile Include="Kwama\GenStep_KwamaNest.cs" />
+    <Compile Include="Kwama\IncidentWorker_Kwama.cs" />
+    <Compile Include="Kwama\IncidentWorker_TrojanInfestation.cs" />
+    <Compile Include="Kwama\KwamaJobGiver_HiveDefense.cs" />
+    <Compile Include="Kwama\KwamaJobGiver_MaintainHives.cs" />
+    <Compile Include="Kwama\KwamaJobGiver_WanderHive.cs" />
+    <Compile Include="Kwama\KwamaLordJob_DefendAndExpandHive.cs" />
+    <Compile Include="Kwama\KwamaLordToil_AssaultColony.cs" />
+    <Compile Include="Kwama\KwamaLordToil_DefendAndExpandHive.cs" />
+    <Compile Include="Kwama\KwamaLordToil_DefendHiveAggressively.cs" />
+    <Compile Include="Kwama\KwamaLordToil_HiveRelated.cs" />
+    <Compile Include="Kwama\KwamaLordToil_HiveRelatedData.cs" />
+    <Compile Include="Kwama\KwamaNest.cs" />
+    <Compile Include="Kwama\KwamaNestUtility.cs" />
+    <Compile Include="Kwama\KwamaThinkNode_ConditionalHiveCanReproduce.cs" />
+    <Compile Include="Kwama\KwamaTunnelSpawner.cs" />
+    <Compile Include="Kwama\KwamaThinkNode_ConditionalPawnKindDef.cs" />
+    <Compile Include="ModSettings\MorrowRim_Mod.cs" />
+    <Compile Include="ModSettings\MorrowRim_ModSettings.cs" />
+    <Compile Include="ModSettings\ModSettings_Utility.cs" />
+    <Compile Include="HarmonyPatches\Patch_RaceProperties.cs" />
+    <Compile Include="DefOf\PawnKindDefOf.cs" />
+    <Compile Include="HarmonyPatches\Patch_ApparelProperties.cs" />
+    <Compile Include="DefModExtensions\PlantProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="DefModExtensions\WeatherProperties.cs" />
+    <Compile Include="ModSettings\VFIChitinIntegration.cs" />
+    <Compile Include="ThinkNode\JobGiver_DoDrugs.cs" />
+    <Compile Include="ThinkNode\JobGiver_EatScribCabbage.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalHideFromAshStorm.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalHideFromAshStorm_Humanlike.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalScribCabbage.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalDoDrugs.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalScampInsults.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_AshLover.cs" />
+    <Compile Include="Weather\WeatherEvent_FireDamage.cs" />
+    <Compile Include="Weather\WeatherOverlay_AshStormAdditional.cs" />
+    <Compile Include="Weather\WeatherUtilityBlight.cs" />
+    <Compile Include="Weather\WeatherUtilityAsh.cs" />
+    <Compile Include="Weather\WeatherEvent_AshBlight.cs" />
+    <Compile Include="Weather\WeatherEvent_AshDamage.cs" />
+    <Compile Include="Weather\WeatherOverlay_AshStorm.cs" />
+    <Compile Include="Weather\WeatherUtilityFire.cs" />
+    <Compile Include="WorldComps\WorldComponent_CliffRacerTracker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

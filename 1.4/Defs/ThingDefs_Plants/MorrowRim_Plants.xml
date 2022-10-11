@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- === Food Sources == -->
+
+	<!-- Ash yam, potato replacement -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_AshYam</defName>
+		<label>ash yam plant</label>
+		<description>A highly nutritious tuber. Ash yams have adapted extraordinarily well to the difficulties of the ashlands. They take no damage during ash storms, can grow in low light, and are even resistant to blight. The only downsides are that they can only grow in ash, and produce a smaller useable yield than cultivated potatoes.\n\nAsh yam recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshYam</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.4</fertilitySensitivity>
+		  <fertilityMin>1.3</fertilityMin>
+		  <growMinGlow>0.51</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawAshYam</harvestedThingDef>
+		  <harvestYield>8</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.05</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>5</growDays>
+		  <visualSizeRange>0.4~0.7</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_AshYamImmature</immatureGraphicPath>
+		  <purpose>Food</purpose>
+		  <maxMeshCount>4</maxMeshCount>
+		  <humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<!-- Hackle-Lo, corn replacement -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_HackleLo</defName>
+		<label>hackle-lo plant</label>
+		<description>A slow growing succulent native to the ashlands. Often harvested by Ashlanders for its edible leaves. As long as one is careful with their harvest, the hackle-lo will continue to grow.\n\nHackle-lo recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>160</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_HackleLo</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<fillPercent>0.1</fillPercent>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.4</fertilitySensitivity>
+		  <fertilityMin>1.0</fertilityMin>
+		  <growMinGlow>0.51</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawHackleLo</harvestedThingDef>
+		  <harvestYield>22</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.05</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>12</growDays>
+		  <visualSizeRange>0.8~1.5</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <purpose>Food</purpose>
+		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+		  <humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<!-- Marshmerrow, rice replacement -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_Marshmerrow</defName>
+		<label>marshmerrow plant</label>
+		<description>A plant often found around sources of water in the ashlands. Faster growing than ash-yams, but with a lower yield. Marshmerrow requires rich soil to grow, and will regrow from the shoots left behind after harvest.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>45</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Marshmerrow</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>1</fertilitySensitivity>
+		  <fertilityMin>1.4</fertilityMin>
+		  <growMinGlow>0.51</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawMarshmerrow</harvestedThingDef>
+		  <harvestYield>6</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowMinSkill>5</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.1</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>3</growDays>
+		  <visualSizeRange>0.6~1.2</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_MarshmerrowImmature</immatureGraphicPath>
+		  <purpose>Food</purpose>
+		  <maxMeshCount>4</maxMeshCount>
+		  <harvestAfterGrowth>0.10</harvestAfterGrowth>
+		  <humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<!-- === Resource Sources == -->
+	
+	<!-- CorkBulb, used for wood -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_CorkBulb</defName>
+		<label>corkbulb plant</label>
+		<description>A large tuber with numerous roots, native to the ashlands. The tuber itself is completely inedible, but the roots can be harvested and processed into wood, or just fed to livestock. Corkbulb can only grow in fertile soil.\n\nCorkbulb recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>140</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_CorkBulb</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<fillPercent>0.1</fillPercent>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+		  <fertilitySensitivity>0.5</fertilitySensitivity>
+		  <fertilityMin>1.0</fertilityMin>
+		  <growMinGlow>0.51</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawCorkbulb</harvestedThingDef>
+		  <harvestYield>3</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowMinSkill>4</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.05</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>8</growDays>
+		  <visualSizeRange>0.6~1.1</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>60</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	
+	<!-- Trama shrub, used for wood -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<ashLover>true</ashLover>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>MorrowRim_SoftAsh</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<defName>MorrowRim_Trama</defName>
+		<label>trama shrub</label>
+		<description>A hardy shrub that is one of the few plants found growing in blighted ashlands. Its mass of tendrils can be harvested for wood, and are rather difficult to navigate. The plant itself is completely immune to blight and ash storms. Trama gets everything it needs from the soil, though is rather poor at processing nutrients, and does not benefit from fertile soil.\n\nTrama recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>140</MaxHitPoints>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>20</pathCost>
+		<fillPercent>0.05</fillPercent>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Trama</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+		  <fertilitySensitivity>0.1</fertilitySensitivity>
+		  <fertilityMin>0.4</fertilityMin>
+		  <soundHarvesting>Harvest_Tree</soundHarvesting>
+		  <growMinGlow>0.1</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Wood</harvestTag>
+		  <harvestedThingDef>WoodLog</harvestedThingDef>
+		  <harvestYield>5</harvestYield>
+		  <harvestFailable>false</harvestFailable>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		  </sowTags>
+		  <sowMinSkill>2</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.05</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>15</growDays>
+		  <harvestWork>150</harvestWork>
+		  <maxMeshCount>4</maxMeshCount>
+		  <visualSizeRange>0.7~1.5</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>100</wildClusterWeight>
+		</plant>
+	</ThingDef>
+
+	<!-- Muck sponge, used for herbal medicine -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_MuckSponge</defName>
+		<label>muck sponge mushroom</label>
+		<description>A sponge like fungus, often found around sources of water in the ashlands. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ground. This muck can be scooped out and refined into herbal medicine. The sponge itself is rather sturdy, but will be slowly worn down by ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>195</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_MuckSponge</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.3, 0.25, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>130</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+		  <sowWork>4000</sowWork>
+		  <fertilitySensitivity>0.4</fertilitySensitivity>
+		  <fertilityMin>1.4</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_Muck</harvestedThingDef>
+		  <harvestYield>16</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <sowMinSkill>10</sowMinSkill>
+		  <blockAdjacentSow>true</blockAdjacentSow>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.0</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>13</growDays>
+		  <visualSizeRange>1.8~2.2</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_MuckSpongeImmature</immatureGraphicPath>
+		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+		  <harvestMinGrowth>0.50</harvestMinGrowth>
+		  <interferesWithRoof>false</interferesWithRoof>
+		  <purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- === Trees == -->
+	
+	<!-- emperor parasol -->
+	
+	<ThingDef ParentName="TreeBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_EmporerParasol</defName>
+		<label>emperor parasol mushroom</label>
+		<description>A giant mushroom found often in the ashlands. Takes a considerable time to grow and does not need light. The stem hardens as the mushroom ages, eventually hardening into an almost wood-like material.\n\nEmperor parasol recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_EmporerParasol</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.35, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<statBases>
+		  <Beauty>2</Beauty>
+		</statBases>
+		<plant>
+		  <fertilitySensitivity>1.0</fertilitySensitivity>
+		  <fertilityMin>1.0</fertilityMin>
+		  <growMinGlow>-0.5</growMinGlow>
+		  <growOptimalGlow>0.9</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>60</growDays>
+		  <visualSizeRange>1.5~3.2</visualSizeRange>
+		  <harvestWork>1000</harvestWork>
+		  <harvestYield>80</harvestYield>
+		  <wildClusterWeight>45</wildClusterWeight>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+	</ThingDef>
+  
+	<!-- === Other == -->
+	
+	<!-- scathecraw -->
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+                <ashLover>true</ashLover>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_Scathecraw</defName>
+		<label>scathecraw plant</label>
+		<description>A sturdy succulent native to the ashlands. As it matures it takes on a much redder hue. Can be harvested for its leaves, which can be begrudgingly consumed. Scathecraw are rather adept at growing in blighted locations, at least compared to other plants. They are capable of growing in soil with low fertility, and of growing in low light levels.\n\nScathecraw recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>		
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_Scathecraw</texPath>
+		  <drawSize>2.2</drawSize>
+		  <shadowData>
+			<volume>(0.55, 0.17, 0.15)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_ScathecrawImmature</immatureGraphicPath>
+		  <neverBlightable>true</neverBlightable>
+		  <fertilitySensitivity>0.1</fertilitySensitivity>
+		  <fertilityMin>0.1</fertilityMin>
+		  <growMinGlow>0.30</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawScathecraw</harvestedThingDef>
+		  <harvestYield>7</harvestYield>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>7.5</wildClusterWeight>
+		  <purpose>Food</purpose>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <sowWork>800</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		</plant>
+  </ThingDef>
+  
+</Defs>

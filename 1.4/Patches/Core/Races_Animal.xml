@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Should affect anything that builds off of BaseInsect -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[@Name="BaseInsect"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+	
+	<!-- Tortoise -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Tortoise"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Iguana -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Iguana"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+	
+    <!-- Dromedary -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+	
+	<!-- Fox_Fennec -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+	
+	<!-- Thrumbo -->
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Thrumbo"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+
+	<!-- Rat -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Rat"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+	
+	<!-- Cobra -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Cobra"]</xpath>
+        <value>
+            <li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

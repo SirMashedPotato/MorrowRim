@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Architect</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Regular -->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/TerrainDef[defName="MorrowRim_Ash" or defName="MorrowRim_StonyAsh" or defName="MorrowRim_SoftAsh" or defName="MorrowRim_SandyAsh"]/affordances</xpath>
+					<value>
+						<li>VFEArch_Foundation</li>
+					</value>
+				</li>
+				
+				<!-- Blighted -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/TerrainDef[defName="MorrowRim_BlightedAsh" or defName="MorrowRim_BlightedStonyAsh" or defName="MorrowRim_BlightedCrackedGround" or defName="MorrowRim_BlightedMud"]/affordances</xpath>
+					<value>
+						<li>VFEArch_Foundation</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[@Name="MorrowRim_BaseInsect" or @Name="MorrowRim_BaseKwama"]</xpath>
+					<value>
+						<li Class="DankPyon.ButcherProperties">
+							<hasBone>false</hasBone>
+							<hasFat>true</hasFat>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch" or defName="MorrowRim_RetchingNetch"]</xpath>
+					<value>
+						<li Class="DankPyon.ButcherProperties">
+							<hasBone>false</hasBone>
+							<hasFat>false</hasFat>
+						</li>
+					</value>
+				</li>	
+				
+				<!-- the two insects not covered by BaseInsect -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SiltStrider" or defName="MorrowRim_NixHound"]</xpath>
+					<value>
+						<li Class="DankPyon.ButcherProperties">
+							<hasBone>false</hasBone>
+							<hasFat>true</hasFat>
+						</li>
+					</value>
+				</li>	
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

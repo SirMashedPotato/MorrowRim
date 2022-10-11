@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Call of Cthulhu - Cosmic Horror</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[@Name="BaseCosmicHorrorRaceInit"]</xpath>
+					<value>
+						<li Class="MorrowRim.ExtendedRaceProperties">
+							<ashResistant>Resistant</ashResistant>
+						</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+	
+</Patch>
+
