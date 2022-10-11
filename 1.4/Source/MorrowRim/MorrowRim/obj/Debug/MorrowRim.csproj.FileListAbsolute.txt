@@ -14,4 +14,3 @@ J:\Modding\Github\MorrowRim\1.4\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.c
 J:\Modding\Github\MorrowRim\1.4\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csproj.CoreCompileInputs.cache
 J:\Modding\Github\MorrowRim\1.4\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.dll
 J:\Modding\Github\MorrowRim\1.4\Assemblies\MorrowRim.dll
-J:\Modding\Github\MorrowRim\1.4\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csproj.CopyComplete
