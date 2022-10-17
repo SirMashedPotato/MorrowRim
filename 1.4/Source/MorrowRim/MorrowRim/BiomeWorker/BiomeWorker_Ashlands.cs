@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace MorrowRim
 {
-    class BiomeWorker_Ashlands : BiomeWorker
+    public class BiomeWorker_Ashlands : BiomeWorker
     {
         public override float GetScore(Tile tile, int tileID)
         {
@@ -20,6 +20,11 @@ namespace MorrowRim
             {
                 return 0f;
             }
+            return AshlandsBiomeWorker(tile, tileID);
+        }
+
+        public static float AshlandsBiomeWorker(Tile tile, int tileID)
+        {
             //standard BiomeWorker
             if (!ModSettings_Utility.MorrowRim_SettingBiomePolarShift())
             {

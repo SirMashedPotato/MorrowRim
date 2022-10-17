@@ -35,6 +35,8 @@ namespace MorrowRim
         public bool MorrowRim_SettingBiomeEnableAshlands = MorrowRim_SettingBiomeEnableAshlands_def;
         public bool MorrowRim_SettingBiomeEnableBlightedAshlands = MorrowRim_SettingBiomeEnableBlightedAshlands_def;
         public bool MorrowRim_SettingBiomeEnableAshlandsSwamp = MorrowRim_SettingBiomeEnableAshlandsSwamp_def;
+        public bool MorrowRim_SettingBiomeEnableGrazelands = MorrowRim_SettingBiomeEnableGrazelands_def;
+        public bool MorrowRim_SettingBiomeEnableVolcanicAshlands = MorrowRim_SettingBiomeEnableVolcanicAshlands_def;
         public bool MorrowRim_SettingBiomeEnablePlantsOutside = MorrowRim_SettingBiomeEnablePlantsOutside_def;
         public bool MorrowRim_SettingBiomeDisableSwampBeaches = MorrowRim_SettingBiomeDisableSwampBeaches_def;
         public bool MorrowRim_SettingBiomeSwitchToDumbLava = MorrowRim_SettingBiomeSwitchToDumbLava_def;
@@ -120,6 +122,8 @@ namespace MorrowRim
         private static readonly bool MorrowRim_SettingBiomeEnableAshlands_def = true;
         private static readonly bool MorrowRim_SettingBiomeEnableBlightedAshlands_def = true;
         private static readonly bool MorrowRim_SettingBiomeEnableAshlandsSwamp_def = true;
+        private static readonly bool MorrowRim_SettingBiomeEnableGrazelands_def = true;
+        private static readonly bool MorrowRim_SettingBiomeEnableVolcanicAshlands_def = true;
         private static readonly bool MorrowRim_SettingBiomeEnablePlantsOutside_def = true;
         private static readonly bool MorrowRim_SettingBiomeDisableSwampBeaches_def = true;
         private static readonly bool MorrowRim_SettingBiomeSwitchToDumbLava_def = false;
@@ -207,6 +211,8 @@ namespace MorrowRim
             Scribe_Values.Look(ref MorrowRim_SettingBiomeEnableAshlands, "MorrowRim_SettingBiomeEnableAshlands", MorrowRim_SettingBiomeEnableAshlands_def);
             Scribe_Values.Look(ref MorrowRim_SettingBiomeEnableBlightedAshlands, "MorrowRim_SettingBiomeEnableBlightedAshlands", MorrowRim_SettingBiomeEnableBlightedAshlands_def);
             Scribe_Values.Look(ref MorrowRim_SettingBiomeEnableAshlandsSwamp, "MorrowRim_SettingBiomeEnableAshlandsSwamp", MorrowRim_SettingBiomeEnableAshlandsSwamp_def);
+            Scribe_Values.Look(ref MorrowRim_SettingBiomeEnableGrazelands, "MorrowRim_SettingBiomeEnableGrazelands", MorrowRim_SettingBiomeEnableGrazelands_def);
+            Scribe_Values.Look(ref MorrowRim_SettingBiomeEnableVolcanicAshlands, "MorrowRim_SettingBiomeEnableVolcanicAshlands", MorrowRim_SettingBiomeEnableVolcanicAshlands_def);
             Scribe_Values.Look(ref MorrowRim_SettingBiomeEnablePlantsOutside, "MorrowRim_SettingBiomeEnablePlantsOutside", MorrowRim_SettingBiomeEnablePlantsOutside_def);
             Scribe_Values.Look(ref MorrowRim_SettingBiomeDisableSwampBeaches, "MorrowRim_SettingBiomeDisableSwampBeaches", MorrowRim_SettingBiomeDisableSwampBeaches_def);
             Scribe_Values.Look(ref MorrowRim_SettingBiomeSwitchToDumbLava, "MorrowRim_SettingBiomeSwitchToDumbLava", MorrowRim_SettingBiomeSwitchToDumbLava_def);
@@ -320,6 +326,8 @@ namespace MorrowRim
             settings.MorrowRim_SettingBiomeEnableAshlands = MorrowRim_SettingBiomeEnableAshlands_def;
             settings.MorrowRim_SettingBiomeEnableBlightedAshlands = MorrowRim_SettingBiomeEnableBlightedAshlands_def;
             settings.MorrowRim_SettingBiomeEnableAshlandsSwamp = MorrowRim_SettingBiomeEnableAshlandsSwamp_def;
+            settings.MorrowRim_SettingBiomeEnableGrazelands = MorrowRim_SettingBiomeEnableGrazelands_def;
+            settings.MorrowRim_SettingBiomeEnableVolcanicAshlands = MorrowRim_SettingBiomeEnableVolcanicAshlands_def;
             settings.MorrowRim_SettingBiomeEnablePlantsOutside = MorrowRim_SettingBiomeEnablePlantsOutside_def;
             settings.MorrowRim_SettingBiomeDisableSwampBeaches = MorrowRim_SettingBiomeDisableSwampBeaches_def;
             settings.MorrowRim_SettingBiomeSwitchToDumbLava = MorrowRim_SettingBiomeSwitchToDumbLava_def;

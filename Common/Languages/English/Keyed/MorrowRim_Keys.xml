@@ -101,6 +101,8 @@
 	<MorrowRim_SettingBiomeEnableAshlands>Enable generation of the ashlands biome.</MorrowRim_SettingBiomeEnableAshlands>
 	<MorrowRim_SettingBiomeEnableBlightedAshlands>Enable generation of the blighted ashlands biome.</MorrowRim_SettingBiomeEnableBlightedAshlands>
 	<MorrowRim_SettingBiomeEnableAshlandsSwamp>Enable generation of the ashlands swamp biome.</MorrowRim_SettingBiomeEnableAshlandsSwamp>
+	<MorrowRim_SettingBiomeEnableGrazelands>Enable generation of the grazelands biome.</MorrowRim_SettingBiomeEnableGrazelands>
+	<MorrowRim_SettingBiomeEnableVolcanicAshlands>Enable generation of the volcanic ashlands biome.</MorrowRim_SettingBiomeEnableVolcanicAshlands>
 	<MorrowRim_SettingBiomeEnablePlantsOutside>Enable certain ashland plants spawning in non-ashland biomes.</MorrowRim_SettingBiomeEnablePlantsOutside>
 	<MorrowRim_SettingBiomeDisableSwampBeaches>Disable the generation of sandy beaches in the Ashlands Swamp.</MorrowRim_SettingBiomeDisableSwampBeaches>
 	<MorrowRim_SettingBiomeSwitchToDumbLava>Switch to 'dumb' lava in Volcanic Ashlands biomes.</MorrowRim_SettingBiomeSwitchToDumbLava>

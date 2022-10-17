@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace MorrowRim
 {
-    class BiomeWorker_BlightedAshlands : BiomeWorker
+    public class BiomeWorker_BlightedAshlands : BiomeWorker
     {
         public override float GetScore(Tile tile, int tileID)
         {

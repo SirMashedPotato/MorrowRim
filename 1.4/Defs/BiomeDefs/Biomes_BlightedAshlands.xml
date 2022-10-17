@@ -128,6 +128,9 @@
 		  <MorrowRim_Trama>0.5</MorrowRim_Trama>
 		  <MorrowRim_Scathecraw_Wild>0.6</MorrowRim_Scathecraw_Wild>
 		  <MorrowRim_EmporerParasol>0.01</MorrowRim_EmporerParasol>
+		  
+		  <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+		  <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
 		</wildPlants>
 		
 		<wildAnimals>
@@ -156,10 +159,9 @@
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 		  <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
 		  <Rat>0.6</Rat>
-		  <MorrowRim_AshHopper>0.5</MorrowRim_AshHopper>
+		  <MorrowRim_Shalk>1</MorrowRim_Shalk>
 		  <MorrowRim_CliffRacer>0.4</MorrowRim_CliffRacer>
-		  <MorrowRim_Alit>0.3</MorrowRim_Alit>
-		  <MorrowRim_Kagouti>0.25</MorrowRim_Kagouti>
+		  <MorrowRim_Wormmouth>0.3</MorrowRim_Wormmouth>
 		  <Megascarab>1</Megascarab>
 		</pollutionWildAnimals>
 		<allowedPackAnimals>

@@ -10,14 +10,14 @@
 			<operations>
 
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="WasteRat"]</xpath>
+					<xpath>/Defs/ThingDef[defName="WasteRat" or defName="Plant_PebbleCactus" or defName="Plant_GrayGrass"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
 						</li>
 					</value>
 				</li>
-				
+
 			</operations>
 		</match>
 	</Operation>

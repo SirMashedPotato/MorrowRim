@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Forsakens: Fauna</li>
+			<li>Alpha Animals</li>
 		</mods> 
 				
 		<match Class="PatchOperationSequence">
@@ -12,7 +12,7 @@
 				<!-- give select  animals ash-resistant -->
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_RBehemoth"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_RBehemoth"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -21,7 +21,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_DarkVandal"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_DarkVandal"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -30,7 +30,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_DuskProwler"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_DuskProwler"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -39,7 +39,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_RMurkling"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_RMurkling"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -48,7 +48,7 @@
 				</li>	
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_ShadowCharger"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_ShadowCharger"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -57,7 +57,7 @@
 				</li>	
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="FO_Thunderox"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_Thunderox"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>

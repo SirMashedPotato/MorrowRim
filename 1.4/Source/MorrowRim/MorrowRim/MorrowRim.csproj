@@ -66,6 +66,8 @@
     <Compile Include="Alert\Alert_CliffRacerExtinction.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_AshSwamp.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_GlaciatedAshlands.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_Grazelands.cs" />
+    <Compile Include="BiomeWorker\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Comps\CompCollapser.cs" />
     <Compile Include="Comps\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comps\Comp_BeserkerRage.cs" />

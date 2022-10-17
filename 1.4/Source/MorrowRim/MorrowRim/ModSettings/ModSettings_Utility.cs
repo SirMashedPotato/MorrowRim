@@ -157,6 +157,16 @@ namespace MorrowRim
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingBiomeEnableAshlandsSwamp;
         }
 
+        public static bool MorrowRim_SettingBiomeEnableGrazelands()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingBiomeEnableGrazelands;
+        }
+
+        public static bool MorrowRim_SettingBiomeEnableVolcanicAshlands()
+        {
+            return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingBiomeEnableVolcanicAshlands;
+        }
+
         public static bool MorrowRim_SettingBiomeEnablePlantsOutside()
         {
             return LoadedModManager.GetMod<MorrowRim_Mod>().GetSettings<MorrowRim_ModSettings>().MorrowRim_SettingBiomeEnablePlantsOutside;
@@ -405,6 +415,11 @@ namespace MorrowRim
         public static bool CheckAshlandsSwamp()
         {
             return LoadedModManager.RunningModsListForReading.Any(x => x.Name == "MorrowRim - Ashlands Swamp");
+        }
+
+        public static bool CheckGrazelands()
+        {
+            return LoadedModManager.RunningModsListForReading.Any(x => x.Name == "MorrowRim - Grazelands");
         }
 
         public static bool CheckVolcanicAshlands()

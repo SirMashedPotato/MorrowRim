@@ -489,6 +489,24 @@ namespace MorrowRim
                 listing_Standard.Gap();
             }
 
+            if (ModSettings_Utility.CheckAshlandsSwamp())
+            {
+                listing_Standard.CheckboxLabeled("MorrowRim_SettingBiomeEnableAshlandsSwamp".Translate(), ref settings.MorrowRim_SettingBiomeEnableAshlandsSwamp);
+                listing_Standard.Gap();
+            }
+
+            if (ModSettings_Utility.CheckGrazelands())
+            {
+                listing_Standard.CheckboxLabeled("MorrowRim_SettingBiomeEnableGrazelands".Translate(), ref settings.MorrowRim_SettingBiomeEnableGrazelands);
+                listing_Standard.Gap();
+            }
+
+            if (ModSettings_Utility.CheckVolcanicAshlands())
+            {
+                listing_Standard.CheckboxLabeled("MorrowRim_SettingBiomeEnableVolcanicAshlands".Translate(), ref settings.MorrowRim_SettingBiomeEnableVolcanicAshlands);
+                listing_Standard.Gap();
+            }
+
             listing_Standard.Label("MorrowRim_SettingBiomeMultiplier".Translate() + " (" + settings.MorrowRim_SettingBiomeMultiplier + "x)");
             settings.MorrowRim_SettingBiomeMultiplier = (int)Math.Round(listing_Standard.Slider(settings.MorrowRim_SettingBiomeMultiplier, 0f, 5f) / 0.1) * 0.1f;
 
