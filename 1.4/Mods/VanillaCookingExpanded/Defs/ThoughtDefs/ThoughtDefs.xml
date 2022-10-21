@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedHackleLo</hediff>
+		<defName>VCE_ConsumedHackleLo</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed hackle-lo</label>
+				<description>I ate some delicious hackle-lo syrup.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedScathecraw</hediff>
+		<defName>VCE_ConsumedScathecraw</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed scathecraw</label>
+				<description>I ate some bitter scathecraw syrup.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedScribCabbage</hediff>
+		<defName>VCE_ConsumedScribCabbage</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed scrib cabbage</label>
+				<description>I ate some delicious scrib cabbage syrup.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedMarshmerrow</hediff>
+		<defName>VCE_ConsumedMarshmerrow</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed marshmerrow</label>
+				<description>I ate some delicious marshmerrow syrup.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

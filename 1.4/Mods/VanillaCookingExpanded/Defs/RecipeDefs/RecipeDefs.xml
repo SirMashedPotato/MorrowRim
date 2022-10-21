@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+					<RecipeDef>
+						<defName>VCE_HackleLoSyrup</defName>
+						<label>make hackle-lo syrup</label>
+						<description>Create hackle-lo syrup from hackle-lo. Hackle-lo syrup is a thin and semi-sweet syrup, known to reduce fatigue in those who consume it.</description>
+						<jobString>Making hackle-lo syrup.</jobString>
+						<workSpeedStat>CookSpeed</workSpeedStat>
+						<effectWorking>Cook</effectWorking>
+						<soundWorking>Recipe_CookMeal</soundWorking>
+						<workAmount>200</workAmount>
+						<recipeUsers>
+							<li>VCE_CondimentPrepTable</li>	  
+						</recipeUsers>	
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MorrowRim_RawHackleLo</li>
+									</thingDefs>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MorrowRim_RawHackleLo</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<VCE_HackleLoSyrup>5</VCE_HackleLoSyrup>
+						</products>
+						<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+					</RecipeDef>
+			
+					<RecipeDef>
+						<defName>VCE_ScathecrawSyrup</defName>
+						<label>make scathecraw syrup</label>
+						<description>Create scathecraw syrup from scathecraw. Scathecraw syrup is a thin and semi-bitter syrup, known to provide resistance to toxic buildup in those who consume it.</description>
+						<jobString>Making scathecraw syrup.</jobString>
+						<workSpeedStat>CookSpeed</workSpeedStat>
+						<effectWorking>Cook</effectWorking>
+						<soundWorking>Recipe_CookMeal</soundWorking>
+						<workAmount>200</workAmount>
+						<recipeUsers>
+							<li>VCE_CondimentPrepTable</li>	  
+						</recipeUsers>	
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MorrowRim_RawScathecraw</li>
+									</thingDefs>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MorrowRim_RawScathecraw</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<VCE_ScathecrawSyrup>5</VCE_ScathecrawSyrup>
+						</products>
+						<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+					</RecipeDef>
+			
+					<RecipeDef>
+						<defName>VCE_ScribCabbageSyrup</defName>
+						<label>make scrib cabbage syrup</label>
+						<description>Create scrib cabbage syrup from scrib cabbage. Scrib cabbage syrup is a thin and semi-sweet syrup, known to fortify movement in those who consume it.</description>
+						<jobString>Making hackle-lo syrup.</jobString>
+						<workSpeedStat>CookSpeed</workSpeedStat>
+						<effectWorking>Cook</effectWorking>
+						<soundWorking>Recipe_CookMeal</soundWorking>
+						<workAmount>200</workAmount>
+						<recipeUsers>
+							<li>VCE_CondimentPrepTable</li>	  
+						</recipeUsers>	
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MorrowRim_RawScribCabbage</li>
+									</thingDefs>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MorrowRim_RawScribCabbage</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<VCE_ScribCabbageSyrup>5</VCE_ScribCabbageSyrup>
+						</products>
+						<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+					</RecipeDef>
+					
+					<RecipeDef>
+						<defName>VCE_MarshmerrowSyrup</defName>
+						<label>make marshmerrow syrup</label>
+						<description>Create marshmerrow syrup from marshmerrow. Marshmerrow syrup is a thin and sweet syrup, known to fortify immunity gain in those who consume it.</description>
+						<jobString>Making hackle-lo syrup.</jobString>
+						<workSpeedStat>CookSpeed</workSpeedStat>
+						<effectWorking>Cook</effectWorking>
+						<soundWorking>Recipe_CookMeal</soundWorking>
+						<workAmount>200</workAmount>
+						<recipeUsers>
+							<li>VCE_CondimentPrepTable</li>	  
+						</recipeUsers>	
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MorrowRim_RawMarshmerrow</li>
+									</thingDefs>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MorrowRim_RawMarshmerrow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<VCE_MarshmerrowSyrup>5</VCE_MarshmerrowSyrup>
+						</products>
+						<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+					</RecipeDef>
+
+</Defs>
