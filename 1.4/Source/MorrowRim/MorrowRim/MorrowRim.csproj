@@ -84,6 +84,7 @@
     <Compile Include="BiomeWorker\BiomeWorker_BlightedAshlands.cs" />
     <Compile Include="CompTarget\CompTargetEffect_DaedraSummon.cs" />
     <Compile Include="DefModExtensions\YurtModExtension.cs" />
+    <Compile Include="DefOf\GeneDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="HarmonyPatches\Patch_HediffProperties.cs" />

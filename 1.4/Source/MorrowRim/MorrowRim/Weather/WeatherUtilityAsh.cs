@@ -44,11 +44,24 @@ namespace MorrowRim
                 return;
             }
 
-            //check for blocking trait
-            if (p.RaceProps.Humanlike && WeatherUtilityAsh.HasImmunityTrait(p))
+            if (p.RaceProps.Humanlike)
             {
-                return;
+                //check for blocking trait
+                if (WeatherUtilityAsh.HasImmunityTrait(p))
+                {
+                    return;
+                }
+
+                if (ModsConfig.BiotechActive && WeatherUtilityAsh.HasImmunityGene(p))
+                {
+                    return;
+                }
             }
+
+            
+
+            //check for blocking gene
+            
 
             //extra check for Zombieland, done in code to make it toggleable
             if (WeatherUtilityAsh.ZombielandCheck(p))
@@ -221,6 +234,11 @@ namespace MorrowRim
             return false;
         }
 
+        public static bool HasImmunityGene(Pawn p)
+        {
+            return p.genes.HasGene(GeneDefOf.MorrowRim_AshResistance);
+        }
+
         //Tent checks
 
         public static bool IsInResistantTent_Thought(Pawn p)
@@ -297,7 +315,7 @@ namespace MorrowRim
 
         public static void ActualNotification(Pawn p, float sev)
         {
-            Messages.Message("MorrowRim_AshBuildupNotification".Translate(p, sev.ToString("0.00")), p, MessageTypeDefOf.NegativeHealthEvent, true);
+            Messages.Message("MorrowRim_AshBuildupNotification".Translate(p, sev.ToStringPercent()), p, MessageTypeDefOf.NegativeHealthEvent, true);
         }
 
         /* ========== plants ========== */

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<GeneDef>
+		<defName>MorrowRim_AshResistance</defName>
+		<label>ash resistant</label>
+		<labelShortAdj>fireproof</labelShortAdj>
+		<description>Carriers of this gene have special mucous lining the respiratory system. They can breathe unhindered during an ash storm.</description>
+		<iconPath>UI/Icons/Genes/MorrowRim_Gene_AshResistance</iconPath>
+		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>ash</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>filter</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>
