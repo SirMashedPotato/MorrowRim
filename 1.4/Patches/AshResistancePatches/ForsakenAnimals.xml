@@ -12,7 +12,7 @@
 				<!-- give select  animals ash-resistant -->
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="AA_RBehemoth"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_Behemoth"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
@@ -39,7 +39,7 @@
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="AA_RMurkling"]</xpath>
+					<xpath>/Defs/ThingDef[defName="AA_Murkling"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>
