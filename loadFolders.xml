@@ -33,6 +33,6 @@
 		<li IfModActive="VanillaExpanded.VCookE">1.4/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="VanillaExpanded.VCEF">Mods/VanillaFishingExpanded</li>		
 		<li IfModActive="OskarPotocki.VFE.Insectoid">Mods/VanillaFactionsInsectoids</li>	
-		<li IfModActive="vanillaexpanded.outposts">Mods/VanillaOutpostsExpanded</li>	
+		<li IfModActive="vanillaexpanded.outposts">1.4/Mods/VanillaOutpostsExpanded</li>	
 	</v1.4>
 </loadFolders>
