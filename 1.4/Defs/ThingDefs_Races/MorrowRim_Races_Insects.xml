@@ -27,7 +27,7 @@
 
 	<!-- Silt strider -->
 	
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="MorrowRim_BaseInsect">
 		<defName>MorrowRim_SiltStrider</defName>
 		<label>silt strider</label>
 		<modExtensions>
@@ -103,8 +103,6 @@
 		  <baseHungerRate>1.5</baseHungerRate>
 		  <baseHealthScale>8.0</baseHealthScale>
 		  <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-		  <fleshType>Insectoid</fleshType>
-		  <bloodDef>Filth_BloodInsect</bloodDef>
 		  <useMeatFrom>Megaspider</useMeatFrom>
 		  <leatherDef>MorrowRim_SiltStriderChitin</leatherDef>
 		  <trainability>None</trainability>
