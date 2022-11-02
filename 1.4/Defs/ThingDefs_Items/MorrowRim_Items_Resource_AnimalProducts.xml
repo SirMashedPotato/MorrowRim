@@ -29,6 +29,7 @@
 		<ingestible>
 		  <preferability>RawTasty</preferability>
 		  <foodType>AnimalProduct, Fluid</foodType>
+		  <babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 		<thingCategories>
 		  <li>AnimalProductRaw</li>
@@ -67,6 +68,7 @@
 		  <preferability>RawBad</preferability>
 		  <foodType>AnimalProduct, Fluid</foodType>
 		  <specialThoughtDirect>MorrowRim_ateNixOxMilk</specialThoughtDirect>
+		  <babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 		<thingCategories>
 		  <li>AnimalProductRaw</li>
