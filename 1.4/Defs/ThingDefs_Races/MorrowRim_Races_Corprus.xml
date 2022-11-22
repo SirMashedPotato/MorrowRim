@@ -42,7 +42,7 @@
 		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 		  <lifeStageAges>
 			<li>
-			  <def>HumanlikeAdult</def>
+			  <def>MorrowRim_AshCreature</def>
 			  <minAge>0</minAge>
 			</li>
 		  </lifeStageAges>
