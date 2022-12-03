@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == peglegs and healing" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or "OldWoundsAnimalBase"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_GlowingShalk</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

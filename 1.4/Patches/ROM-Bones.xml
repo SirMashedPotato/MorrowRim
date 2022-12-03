@@ -11,61 +11,19 @@
 				
 				<!-- Remove bones from animals -->
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_Netch"]/statBases</xpath>
+					<xpath>/Defs/ThingDef[@Name = "MorrowRim_NetchBase" or @Name="MorrowRim_BaseInsect"]/statBases</xpath>
 					<value>
 						<BoneAmount>0</BoneAmount>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_RetchingNetch"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_SiltStrider"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/ThingDef[defName = "MorrowRim_NixHound"]/statBases</xpath>
 					<value>
 						<BoneAmount>0</BoneAmount>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_Shalk"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_AshHopper"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_NixOx"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_FungalShalk"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				
+		
 			</operations>
 		</match>
 	</Operation>
