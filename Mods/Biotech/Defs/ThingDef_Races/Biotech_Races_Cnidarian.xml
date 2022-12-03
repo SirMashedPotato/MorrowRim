@@ -15,7 +15,6 @@
 		</modExtensions>
 		<statBases>
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-			<MeatAmount>40</MeatAmount>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">

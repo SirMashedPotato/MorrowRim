@@ -12,7 +12,7 @@
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
-			<MeatAmount>60</MeatAmount>
+			<MeatAmount>120</MeatAmount>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -106,7 +106,7 @@
 			<specificMeatDef>MorrowRim_NetchJelly</specificMeatDef>
 			<herdAnimal>true</herdAnimal>
 			<body>MorrowRim_Jelly</body>
-			<baseBodySize>1.4</baseBodySize>
+			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.35</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -269,7 +269,6 @@
 			<MoveSpeed>2.7</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
-			<MeatAmount>40</MeatAmount>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<comps>
@@ -285,7 +284,7 @@
 			<executionRange>6</executionRange>
 			<fleshType>MorrowRim_FleshRetchingNetch</fleshType>
 			<bloodDef>MorrowRim_Filth_RetchingNetchBlood</bloodDef>
-			<baseBodySize>1.2</baseBodySize>
+			<baseBodySize>2.2</baseBodySize>
 			<baseHealthScale>1.25</baseHealthScale>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.50</wildness>
