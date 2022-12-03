@@ -128,7 +128,7 @@
 		<defName>MorrowRim_OgrimSmol</defName>
 		<label>ogrim</label>
 		<race>MorrowRim_OgrimSmol</race>
-		<combatPower>150</combatPower>
+		<combatPower>400</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<aiAvoidCover>false</aiAvoidCover>

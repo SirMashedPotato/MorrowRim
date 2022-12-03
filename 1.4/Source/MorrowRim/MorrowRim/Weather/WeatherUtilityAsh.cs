@@ -76,7 +76,7 @@ namespace MorrowRim
             }
 
             //actual ash buildup
-            if (ModSettings_Utility.MorrowRim_SettingAshIgnoreResistance() || (!WeatherUtilityAsh.IsImmuneToAsh(p) && !WeatherUtilityAsh.ExtendedImmuneToAshCheck(p)))
+            if (MorrowRim_ModSettings.SettingAshIgnoreResistance || (!WeatherUtilityAsh.IsImmuneToAsh(p) && !WeatherUtilityAsh.ExtendedImmuneToAshCheck(p)))
             {
                 WeatherUtilityAsh.IncreaseAshBuildup(p);
             }
@@ -123,7 +123,7 @@ namespace MorrowRim
         //check for zombieland zombies
         public static bool ZombielandCheck(Pawn p)
         {
-            return ModSettings_Utility.CheckZombieland() && ModSettings_Utility.MorrowRim_SettingZombielandIntegration() && p.def.defName == "Zombie";
+            return ModSettings_Utility.CheckZombieland() && MorrowRim_ModSettings.SettingZombielandIntegration && p.def.defName == "Zombie";
         }
 
         /* servos */
@@ -137,7 +137,7 @@ namespace MorrowRim
 
         public static void TriggerAshCloggedServos(Pawn p)
         {
-            if (Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingAshCloggedServo())))
+            if (Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingAshCloggedServo)))
             {
                 BodyPartRecord part = p.RaceProps.body.AllParts.RandomElement();
                 p.health.AddHediff(HediffDefOf.MorrowRim_AshCloggedServo, part);
@@ -183,7 +183,7 @@ namespace MorrowRim
 
         public static void TriggerAshFilledEyes(Pawn p, BodyPartRecord part)
         {
-            if (Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingAshFilledEye())))
+            if (Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingAshFilledEye)))
             {
                 if (part != null && !p.health.hediffSet.PartIsMissing(part))
                 {
@@ -274,7 +274,7 @@ namespace MorrowRim
 
         public static void IncreaseAshBuildup(Pawn p)
         {
-            float num = 0.01f * ModSettings_Utility.MorrowRim_SettingAshBuildupMultiplier();
+            float num = 0.01f * MorrowRim_ModSettings.SettingAshBuildupMultiplier;
             num /= (p.BodySize / p.health.capacities.GetLevel(PawnCapacityDefOf.Breathing));
             if (num != 0f)
             {
@@ -287,25 +287,25 @@ namespace MorrowRim
 
         public static void DoNotification(Pawn p, float sevInc, float sevCur)
         {
-            if (ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications() && p != null)
+            if (MorrowRim_ModSettings.SettingEnableAshBuildupNotifications && p != null)
             {
                 //player colonists
-                if (p.IsColonist && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Colonist() &&
-                    sevCur - sevInc < ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold() && sevCur > ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold())
+                if (p.IsColonist && MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_Colonist &&
+                    sevCur - sevInc < MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_ColonistThreshold && sevCur > MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_ColonistThreshold)
                 {
                     ActualNotification(p, sevCur);
                     return;
                 }
                 //player animals
-                if (p.AnimalOrWildMan() && p.Faction != null && p.Faction.IsPlayer && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Animals() &&
-                    sevCur - sevInc < ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold() && sevCur > ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold())
+                if (p.AnimalOrWildMan() && p.Faction != null && p.Faction.IsPlayer && MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_Animals &&
+                    sevCur - sevInc < MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_AnimalsThreshold && sevCur > MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_AnimalsThreshold)
                 {
                     ActualNotification(p, sevCur);
                     return;
                 }
                 //friendly pawns
-                if (p.Faction != null && !p.Faction.HostileTo(Faction.OfPlayer) && ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_Friendly() &&
-                    sevCur - sevInc < ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold() && sevCur > ModSettings_Utility.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold())
+                if (p.Faction != null && !p.Faction.HostileTo(Faction.OfPlayer) && MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_Friendly &&
+                    sevCur - sevInc < MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_FriendlyThreshold && sevCur > MorrowRim_ModSettings.SettingEnableAshBuildupNotifications_FriendlyThreshold)
                 {
                     ActualNotification(p, sevCur);
                     return;
@@ -333,7 +333,7 @@ namespace MorrowRim
                 Def = DamageDefOf.Deterioration,
             };
             //takes damage 14 times becuase of building size
-            info.SetAmount(Rand.Gaussian(ModSettings_Utility.MorrowRim_SettingAshTurbineDamage()));
+            info.SetAmount(Rand.Gaussian(MorrowRim_ModSettings.SettingAshTurbineDamage));
             thing.TakeDamage(info);
         }
 
@@ -344,7 +344,7 @@ namespace MorrowRim
 
         public static bool IsValidPlant(Plant plant)
         {
-            return !IsImmuneToAsh(plant) && Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingAshPlantChance()));
+            return !IsImmuneToAsh(plant) && Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingAshPlantChance));
         }
 
         public static bool IsSownPlant(Plant plant)
@@ -358,8 +358,8 @@ namespace MorrowRim
             {
                 Def = DamageDefOf.Deterioration
             };
-            info.SetAmount(Rand.Gaussian(ModSettings_Utility.MorrowRim_SettingAshPlantDamage()));
-            if (plant.def == ThingDefOf.MorrowRim_MuckSponge && !ModSettings_Utility.MorrowRim_SettingAshIgnoreResistance())
+            info.SetAmount(Rand.Gaussian(MorrowRim_ModSettings.SettingAshPlantDamage));
+            if (plant.def == ThingDefOf.MorrowRim_MuckSponge && !MorrowRim_ModSettings.SettingAshIgnoreResistance)
             {
                 info.SetAmount(info.Amount / 2);
             }

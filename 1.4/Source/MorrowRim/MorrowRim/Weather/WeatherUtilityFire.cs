@@ -16,12 +16,12 @@ namespace MorrowRim
 
         public static bool GetChanceOfBurn(Pawn p)
         {
-            return Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingFireFirePawnChance()) * p.RaceProps.baseBodySize);
+            return Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingFireFirePawnChance) * p.RaceProps.baseBodySize);
         }
 
         public static bool GetChanceOfFirePawn(Pawn p)
         {
-            return Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingFireFirePawnChance()) * p.def.BaseFlammability);
+            return Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingFireFirePawnChance) * p.def.BaseFlammability);
         }
 
         public static void BurnPawn(Pawn p, float f, BodyPartRecord bpr)
@@ -74,7 +74,7 @@ namespace MorrowRim
 
         public static bool GetChanceOfFirePlant(Plant p)
         {
-            return Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingFireFirePlantChance()) * p.def.BaseFlammability);
+            return Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingFireFirePlantChance) * p.def.BaseFlammability);
         }
 
         public static void IgnitePlant(Plant p, float f)

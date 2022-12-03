@@ -24,7 +24,7 @@ namespace MorrowRim
 
         public override void FireEvent()
         {
-            if (!ModSettings_Utility.MorrowRim_SettingEnableFireEffects()) return;
+            if (!MorrowRim_ModSettings.SettingEnableFireEffects) return;
             var props = WeatherProperties.Get(map.weatherManager.curWeather);
             if (props != null)
             {
@@ -100,7 +100,7 @@ namespace MorrowRim
                     {
                         if (WeatherUtilityAsh.IsValidPlant(p) && WeatherUtilityFire.GetChanceOfFirePlant(p))
                         {
-                            if (ModSettings_Utility.MorrowRim_SettingFireOnlySownPlants() && !WeatherUtilityAsh.IsSownPlant(p))
+                            if (MorrowRim_ModSettings.SettingFireOnlySownPlants && !WeatherUtilityAsh.IsSownPlant(p))
                             {
                                 return;
                             }

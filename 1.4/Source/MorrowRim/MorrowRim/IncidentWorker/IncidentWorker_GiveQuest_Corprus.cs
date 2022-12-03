@@ -8,7 +8,7 @@ namespace MorrowRim
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-			if (!base.CanFireNowSub(parms) || !ModSettings_Utility.MorrowRim_SettingEnableCorprusRefugee())
+			if (!base.CanFireNowSub(parms) || !MorrowRim_ModSettings.SettingEnableCorprusRefugee)
 			{
 				return false;
 			}

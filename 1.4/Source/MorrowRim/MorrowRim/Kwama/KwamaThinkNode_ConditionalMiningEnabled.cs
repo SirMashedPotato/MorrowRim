@@ -9,7 +9,7 @@ namespace MorrowRim.Kwama
     {
 		protected override bool Satisfied(Pawn pawn)
 		{
-			return pawn.def == ThingDefOf.MorrowRim_KwamaWorker && ModSettings_Utility.MorrowRim_SettingKwamaMining();
+			return pawn.def == ThingDefOf.MorrowRim_KwamaWorker && MorrowRim_ModSettings.SettingKwamaMining;
 		}
 
 		public string pawnKind;

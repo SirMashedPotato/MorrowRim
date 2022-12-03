@@ -23,8 +23,8 @@ namespace MorrowRim.Kwama
 		{
 			get
 			{
-				return this.canSpawnHives && ModSettings_Utility.MorrowRim_SettingKwamaNestReproducing() 
-					&& KwamaNestUtility.TotalSpawnedHivesCount(this.parent.Map) < ModSettings_Utility.MorrowRim_SettingKwamaMaxNests();
+				return this.canSpawnHives && MorrowRim_ModSettings.SettingKwamaNestReproducing
+					&& KwamaNestUtility.TotalSpawnedHivesCount(this.parent.Map) < MorrowRim_ModSettings.SettingKwamaMaxNests;
 			}
 		}
 
@@ -163,7 +163,7 @@ namespace MorrowRim.Kwama
 			{
 				return false;
 			}
-			if (ModSettings_Utility.MorrowRim_SettingForceKwamaNatural() && (!c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.SmoothableStone) && !c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.Diggable)))
+			if (MorrowRim_ModSettings.SettingForceKwamaNatural && (!c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.SmoothableStone) && !c.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.Diggable)))
 			{
 				return false;
 			}

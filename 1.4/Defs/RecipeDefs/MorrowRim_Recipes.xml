@@ -67,6 +67,7 @@
 				<li>MorrowRim_AshHopperJelly</li>
 				<li>MorrowRim_NetchJelly</li>
 				<li MayRequire="SirMashedPotato.MorrowRim.AshSwamp">MorrowRim_SwampJellyEdible</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_GlowingNetchJelly</li>
 				<li>MorrowRim_ShalkResin</li>
 				<li>MorrowRim_PlantResin</li>
 			  </thingDefs>

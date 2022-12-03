@@ -15,7 +15,7 @@ namespace MorrowRim.Kwama
 		{
 			Map map = (Map)parms.target;
 			IntVec3 intVec;
-			return base.CanFireNowSub(parms) && ModSettings_Utility.MorrowRim_SettingEnableKwamaTrojanInfestation() 
+			return base.CanFireNowSub(parms) && MorrowRim_ModSettings.SettingEnableKwamaTrojanInfestation 
 				&& FactionUtility.DefaultFactionFrom(RimWorld.FactionDefOf.Insect) != null
 				&& KwamaNestUtility.TotalSpawnedHivesCount_NotFogged(map) > 0;
 		}
@@ -50,21 +50,6 @@ namespace MorrowRim.Kwama
 			tunnelHiveSpawner.insectsPoints = Mathf.Clamp(parms.points * Rand.Range(0.3f, 0.6f), 200f, 1000f);
 			tunnelHiveSpawner.spawnedByInfestationThingComp = true;
 			GenSpawn.Spawn(tunnelHiveSpawner, loc, map, WipeMode.FullRefund);
-
-			//Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(RimWorld.ThingDefOf.TunnelHiveSpawner, null), loc, map, WipeMode.FullRefund);
-			//QuestUtility.AddQuestTag(thing, questTag);
-			/*
-			for (int i = 0; i < hiveCount - 1; i++)
-			{
-				loc = CompSpawnerHives.FindChildHiveLocation(thing.Position, map, RimWorld.ThingDefOf.Hive, RimWorld.ThingDefOf.Hive.GetCompProperties<CompProperties_SpawnerHives>(), true, true);
-				if (loc.IsValid)
-				{
-					thing = GenSpawn.Spawn(ThingMaker.MakeThing(RimWorld.ThingDefOf.TunnelHiveSpawner, null), loc, map, WipeMode.FullRefund);
-					QuestUtility.AddQuestTag(thing, questTag);
-				}
-			}
-			return thing;
-			*/
 		}
 	}
 }

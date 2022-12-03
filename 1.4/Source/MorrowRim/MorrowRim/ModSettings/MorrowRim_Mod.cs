@@ -183,7 +183,7 @@ namespace MorrowRim
             TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetDefault".Translate());
             if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetDefault".Translate(), true, true, true))
             {
-                MorrowRim_ModSettings.ResetSettings(settings);
+                MorrowRim_ModSettings.ResetSettings();
             }
             listing_Standard.Gap();
             ResetButtonForPage(listing_Standard);
@@ -201,7 +201,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetAsh".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetAsh".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Ash(settings);
+                        MorrowRim_ModSettings.ResetSettings_Ash();
                     }
                     break;
 
@@ -210,7 +210,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetBlight".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetBlight".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Blight(settings);
+                        MorrowRim_ModSettings.ResetSettings_Blight();
                     }
                     break;
                 case 3:
@@ -218,7 +218,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetFire".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetFire".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Fire(settings);
+                        MorrowRim_ModSettings.ResetSettings_Fire();
                     }
                     break;
 
@@ -227,7 +227,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetBiomeh".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetBiome".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Biome(settings);
+                        MorrowRim_ModSettings.ResetSettings_Biome();
                     }
                     break;
 
@@ -236,7 +236,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetKwama".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetKwama".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Kwama(settings);
+                        MorrowRim_ModSettings.ResetSettings_Kwama();
                     }
                     break;
 
@@ -245,7 +245,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetIncident".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetIncident".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Incident(settings);
+                        MorrowRim_ModSettings.ResetSettings_Incident();
                     }
                     break;
 
@@ -254,7 +254,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetAnimalBehaviour".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetAnimalBehaviour".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_AnimalBehaviour(settings);
+                        MorrowRim_ModSettings.ResetSettings_AnimalBehaviour();
                     }
                     break;
 
@@ -263,7 +263,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetNotification".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetNotification".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_Notification(settings);
+                        MorrowRim_ModSettings.ResetSettings_Notification();
                     }
                     break;
 
@@ -272,7 +272,7 @@ namespace MorrowRim
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetModIntegration".Translate());
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetModIntegration".Translate(), true, true, true))
                     {
-                        MorrowRim_ModSettings.ResetSettings_ModIntegration(settings);
+                        MorrowRim_ModSettings.ResetSettings_ModIntegration();
                     }
                     break;
 
@@ -703,13 +703,19 @@ namespace MorrowRim
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            //listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableScampBehaviour".Translate(), ref settings.MorrowRim_SettingEnableScampBehaviour);
-            //listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableScampInsults".Translate(), ref settings.MorrowRim_SettingEnableScampInsults);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableScribBehaviour".Translate(), ref settings.MorrowRim_SettingEnableScribBehaviour);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_SettingEnableInsectPollutionStimulus".Translate(), ref settings.MorrowRim_SettingEnableInsectPollutionStimulus);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
             listing_Standard.Gap();
 
             return listing_Standard;

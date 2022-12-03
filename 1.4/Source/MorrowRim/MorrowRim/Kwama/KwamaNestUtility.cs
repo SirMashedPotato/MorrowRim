@@ -69,7 +69,7 @@ namespace MorrowRim.Kwama
 				return null;
 			}
 			int attempts = 1;
-			while (ModSettings_Utility.MorrowRim_SettingForceKwamaNatural() && (!loc.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.SmoothableStone) && !loc.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.Diggable)))
+			while (MorrowRim_ModSettings.SettingForceKwamaNatural && (!loc.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.SmoothableStone) && !loc.GetTerrain(map).affordances.Contains(RimWorld.TerrainAffordanceDefOf.Diggable)))
 			{
 				if (!InfestationCellFinder.TryFindCell(out loc, map) || attempts > 5)
 				{

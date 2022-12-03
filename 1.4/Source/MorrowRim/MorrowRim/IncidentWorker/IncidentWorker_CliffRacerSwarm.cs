@@ -12,7 +12,7 @@ namespace MorrowRim
     {
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			if (!base.CanFireNowSub(parms) || !ModSettings_Utility.MorrowRim_SettingEnableCliffRacerEvents() || TrueCliffRacerExtinctionCheck.IsExtinct())
+			if (!base.CanFireNowSub(parms) || !MorrowRim_ModSettings.SettingEnableCliffRacerEvents || TrueCliffRacerExtinctionCheck.IsExtinct())
 			{
 				return false;
 			}

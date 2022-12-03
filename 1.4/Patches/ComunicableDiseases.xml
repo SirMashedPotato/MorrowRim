@@ -3,10 +3,9 @@
 	
     <Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Communicable Diseases [1.1]</li>
+			<li>Communicable Diseases [1.4]</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Corprus Germs -->
 				<li Class="PatchOperationAdd">

@@ -16,8 +16,8 @@ namespace MorrowRim.Kwama
             {
 				return false;
             }
-			return ModSettings_Utility.MorrowRim_SettingEnableKwamaNestEmerging() && base.CanFireNowSub(parms) && 
-				KwamaNestUtility.TotalSpawnedHivesCount(map) < ModSettings_Utility.MorrowRim_SettingKwamaMaxNests() && InfestationCellFinder.TryFindCell(out intVec, map);
+			return MorrowRim_ModSettings.SettingEnableKwamaNestEmerging && base.CanFireNowSub(parms) && 
+				KwamaNestUtility.TotalSpawnedHivesCount(map) < MorrowRim_ModSettings.SettingKwamaMaxNests && InfestationCellFinder.TryFindCell(out intVec, map);
 		}
 
 		// Token: 0x06003B71 RID: 15217 RVA: 0x00139334 File Offset: 0x00137534

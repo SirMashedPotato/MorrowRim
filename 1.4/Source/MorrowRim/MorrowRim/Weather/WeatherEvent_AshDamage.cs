@@ -24,7 +24,7 @@ namespace MorrowRim
 
         public override void FireEvent()
         {
-            if (!ModSettings_Utility.MorrowRim_SettingEnableAshEffects()) return;
+            if (!MorrowRim_ModSettings.SettingEnableAshEffects) return;
 
             //for plants, first to avoid out of bounds exception
             IntVec3[] vecs = new IntVec3[map.AllCells.Where(x => WeatherUtilityAsh.IsValidCell(x, this.map)).Count()];
@@ -60,9 +60,9 @@ namespace MorrowRim
                 if (WeatherUtilityAsh.IsActualPlant(t))
                 {
                     Plant p = t as Plant;
-                    if (ModSettings_Utility.MorrowRim_SettingAshIgnoreResistance() || WeatherUtilityAsh.IsValidPlant(p))
+                    if (MorrowRim_ModSettings.SettingAshIgnoreResistance || WeatherUtilityAsh.IsValidPlant(p))
                     {
-                        if (ModSettings_Utility.MorrowRim_SettingAshOnlySownPlants() && !WeatherUtilityAsh.IsSownPlant(p))
+                        if (MorrowRim_ModSettings.SettingAshOnlySownPlants && !WeatherUtilityAsh.IsSownPlant(p))
                         {
                             return;
                         }

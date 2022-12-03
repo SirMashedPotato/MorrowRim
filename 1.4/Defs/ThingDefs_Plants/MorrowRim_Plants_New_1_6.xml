@@ -51,7 +51,7 @@
 	
 	<!-- cultivated parasol 'bush' -->
 
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="PlantBase" Name="MorrowRim_ParasolMushroomCultivated">
 		<defName>MorrowRim_ParasolMushroomCultivated</defName>
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties">
@@ -62,7 +62,7 @@
             </li>
 		</modExtensions>
 		<label>cultivated parasol mushroom</label>
-		<description>A significantly smaller variant of the emperor parasol. The stem is far too soft to be used in building, but the flesh is completely edible. While the parasol mushroom grows best in light, it is capable of growing in complete darkness.\n\nParasol mushroom recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A significantly smaller variant of the emperor parasol. The stem is far too soft to be used in building, but the flesh is completely edible. While the parasol mushroom grows best in light, it is capable of growing in complete darkness.\n\nParasol mushroom receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<statBases>
 		  <MaxHitPoints>100</MaxHitPoints>
 		  <Nutrition>0.35</Nutrition>
@@ -161,7 +161,7 @@
                 <ashLover>true</ashLover>
             </li>
 		</modExtensions>
-		<description>A small mushroom of unknown species. Likely extremely toxic to humanoids, but grazing animals seem to like it.\n\nAsh fungus recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A small mushroom of unknown species. Likely extremely toxic to humanoids, but grazing animals seem to like it.\n\nAsh fungus receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>1</Beauty>
@@ -250,7 +250,7 @@
             </li>
 		</modExtensions>
 		<label>cultivated Resdayn grass</label>
-		<description>Wild grass, originally from Vvardenfell. Requires fertile soil, but is capable of growing in low light and surviving ash storms.\n\nResdayn grass recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>Wild grass, originally from Vvardenfell. Requires fertile soil, but is capable of growing in low light and surviving ash storms.\n\nResdayn grass receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Flammability>1.3</Flammability>
@@ -299,7 +299,7 @@
             </li>
 		</modExtensions>
 		<label>grazelands haygrass</label>
-		<description>A comparatively more resilient variation of haygrass, created by Great House Telvanni. The increase in durability allows the grass to survive ash storms, but also increases the time taken to harvest.\n\nGrazelands haygrass recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A comparatively more resilient variation of haygrass, created by Great House Telvanni. The increase in durability allows the grass to survive ash storms, but also increases the time taken to harvest.\n\nGrazelands haygrass receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<statBases>
 		  <MaxHitPoints>100</MaxHitPoints>
 		  <Flammability>1.0</Flammability>
@@ -330,7 +330,7 @@
 		  <sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing</li>
 		  </sowResearchPrerequisites>
-		  <wildOrder>1</wildOrder>
+		  <wildOrder>2</wildOrder>
 		  <purpose>Food</purpose>
 		</plant>
 	</ThingDef>

@@ -10,7 +10,7 @@ namespace MorrowRim
 
         protected override bool Satisfied(Pawn pawn)
         {
-            return ModSettings_Utility.MorrowRim_SettingEnableScampInsults();
+            return MorrowRim_ModSettings.SettingEnableScampInsults;
         }
     }
 }

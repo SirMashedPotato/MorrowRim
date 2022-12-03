@@ -11,7 +11,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A bipedal reptile-like daedra, sometimes found in the ashlands. Highly intelligent, rather durable, and frighteningly fast. Clannfear posses sharp claws that can quickly shred opponents, even through armour. Some deny the otherworldy daedric origins of clannfear, claiming they are simply the result of genetic manipulation.\n\nDue to their daedric origin clannfear are resistant to the effects of ash-storms.</description>
+		<description>A bipedal reptile-like daedra, sometimes found in the ashlands. Highly intelligent, rather durable, and frighteningly fast. Clannfear posses sharp claws that can quickly shred opponents, even through armour. Some deny the otherworldly daedric origins of clannfear, claiming they are simply the result of genetic manipulation.\n\nDue to their daedric origin clannfear are resistant to the effects of ash-storms.</description>
 		<statBases>
 		  <MoveSpeed>4.0</MoveSpeed>
 		  <MarketValue>400</MarketValue>
@@ -197,7 +197,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A bipedal reptile-like daedra, sometimes found in the ashlands. Daedroth are highly intelligent and rather durable, strong arms ands sharp claws can easily rip and tear apart humans. Some deny the otherworldy daedric origins of daedroth, claiming they are simply the result of genetic manipulation.\n\nDue to their daedric origin daedroth are resistant to the effects of ash-storms.</description>
+		<description>A bipedal reptile-like daedra, sometimes found in the ashlands. Daedroth are highly intelligent and rather durable, strong arms and sharp claws can easily rip and tear apart humans. Some deny the otherworldly daedric origins of daedroth, claiming they are simply the result of genetic manipulation.\n\nDue to their daedric origin daedroth are resistant to the effects of ash-storms.</description>
 		<statBases>
 		  <MoveSpeed>3.1</MoveSpeed>
 		  <MarketValue>450</MarketValue>
@@ -323,7 +323,7 @@
 		<defName>MorrowRim_Daedroth</defName>
 		<label>daedroth</label>
 		<race>MorrowRim_Daedroth</race>
-		<combatPower>130</combatPower>
+		<combatPower>300</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<aiAvoidCover>true</aiAvoidCover>
@@ -508,7 +508,7 @@
 		<defName>MorrowRim_Ogrim</defName>
 		<label>ogrim</label>
 		<race>MorrowRim_Ogrim</race>
-		<combatPower>150</combatPower>
+		<combatPower>500</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<aiAvoidCover>false</aiAvoidCover>
@@ -758,7 +758,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A daedric beast, sometimes mistaken for a starved human by traders travelling through the ashlands. Though it may appear fragile, and is somewhat fragile, the hunger is a formidible foe for those ill prepared. It has razor sharp claws, coated in a paralytic substance, a long toungue, coated in acidic saliva, and can reportedly even spew toxic bile.\n\nDue to their daedric origin hunger are resistant to the effects of ash-storms.</description>
+		<description>A daedric beast, sometimes mistaken for a starved human by traders travelling through the ashlands. Though it may appear fragile, and is somewhat fragile, the hunger is a formidable foe for those ill prepared. It has razor sharp claws, coated in a paralytic substance, a long tongue, coated in acidic saliva, and can reportedly even spew toxic bile.\n\nDue to their daedric origin hunger are resistant to the effects of ash-storms.</description>
 		<statBases>
 		  <MoveSpeed>3.5</MoveSpeed>
 		  <MarketValue>400</MarketValue>

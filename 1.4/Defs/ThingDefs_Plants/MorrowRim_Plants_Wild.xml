@@ -240,6 +240,7 @@
 		  <harvestTag>Standard</harvestTag>
 		  <harvestedThingDef>MorrowRim_RawScathecraw</harvestedThingDef>
 		  <harvestYield>7</harvestYield>
+		  <wildOrder>2</wildOrder>
 		  <wildClusterRadius>4</wildClusterRadius>
 		  <wildClusterWeight>7.5</wildClusterWeight>
 		  <purpose>Food</purpose>

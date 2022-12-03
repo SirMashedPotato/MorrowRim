@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_WasteSponge]========== -->
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_WasteSponge</defName>
+		<label>waste sponge mushroom</label>
+		<description>A highly mutated sponge-like fungus, often found around sources of polluted water in the ashlands. Slowly fills with toxic waste, a byproduct of the mushroom digesting nutrients from the ground. The sponge itself is rather sturdy, but will be slowly worn down by ash storms.</description>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>MorrowRim_SoftAsh</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>195</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_WasteSponge</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.25, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>130</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<sowWork>4000</sowWork>
+			<growMinGlow>-0.5</growMinGlow>
+			<growOptimalGlow>0.9</growOptimalGlow>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Wastepack</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowMinSkill>10</sowMinSkill>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.0</topWindExposure>
+			<neverBlightable>false</neverBlightable>
+			<growDays>13</growDays>
+			<visualSizeRange>1.0~1.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_WasteSpongeImmature</immatureGraphicPath>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestMinGrowth>0.50</harvestMinGrowth>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_EmporerToxisol]========== -->
+	<ThingDef ParentName="PollutionTreeWithStumpBase">
+		<defName>MorrowRim_EmporerToxisol</defName>
+		<label>emperor toxisol mushroom</label>
+		<description>A highly polluted subspecies of the emperor parasol. Takes a considerable time to grow and does not need light. The stem hardens as the mushroom ages, eventually hardening into an almost wood-like material. Several large pustules can be found growing on the underside of the cap. These pustules will often burst when the tree is felled, releasing clouds of toxic gas into the air.\n\nEmperor toxisol receive a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+			<li Class="MorrowRim.PlantProperties">
+				<ashLover>true</ashLover>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_EmporerToxisol</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<growMinGlow>-0.5</growMinGlow>
+			<growOptimalGlow>0.9</growOptimalGlow>
+			<dieIfLeafless>false</dieIfLeafless>
+			<neverBlightable>true</neverBlightable>
+			<growDays>60</growDays>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>75</harvestYield>
+			<wildClusterWeight>45</wildClusterWeight>
+			<immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_EmporerToxisolImmature</immatureGraphicPath>
+			<sowMinSkill>10</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+		<comps>
+			<li Class="MorrowRim.CompProperties_GasOnDestroy">
+				<gasType>ToxGas</gasType>
+				<radius>2</radius>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_AshlandsToxfern]========== -->
+	<!--
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_AshlandsToxfern</defName>
+		<label>ashlands toxfern</label>
+		<description>A highly mutated fern that can often be found growing in the ashlands, but only in highly polluted regions. Not the nicest looking fern out there, but it can survive ash storms.</description>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_AshlandsToxfern</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<selectable>false</selectable>
+		<plant>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<growMinGlow>0.3</growMinGlow>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1.0~1.4</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	-->
+	<!-- ==========[MorrowRim_GlowingRussula]========== -->
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_GlowingRussula</defName>
+		<label>glowing russula</label>
+		<description>A small mushroom that can be found growing in highly polluted regions of the ashlands. Its gloomy colouration and glow is quite unsettling. Like the glowing coprinus, the flesh is highly toxic to humanoids.</description>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_GlowingRussula</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<selectable>false</selectable>
+		<plant>
+			<cavePlant>false</cavePlant>
+			<growMinGlow>-0.5</growMinGlow>
+			<growOptimalGlow>0.9</growOptimalGlow>
+			<growDays>3.8</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(3,69,47,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_GlowingCoprinus]========== -->
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_GlowingCoprinus</defName>
+		<label>glowing coprinus</label>
+		<description>A small mushroom that can be found growing in highly polluted regions of the ashlands. Its gloomy colouration and glow is quite unsettling. Like the glowing russula, the flesh is highly toxic to humanoids.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_GlowingCoprinus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<selectable>false</selectable>
+		<plant>
+			<cavePlant>false</cavePlant>
+			<growMinGlow>-0.5</growMinGlow>
+			<growOptimalGlow>0.9</growOptimalGlow>
+			<growDays>3.8</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_EmporerGlowingRussula]========== -->
+	<!--
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_EmporerGlowingRussula</defName>
+		<label>emperor glowing russula</label>
+		<description>A subspecies of luminous russula, so heavily mutated by pollution that it grows significantly larger. It bathes the surrounding area in an eerie green glow, an oddly beautiful sight amidst the polluted ashlands. The flesh is too soft to be used as a building material, and is completely inedible thanks to the pollution it grows in.</description>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_EmporerToxicRussula</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<plant>
+			<growMinGlow>-0.5</growMinGlow>
+			<dieIfLeafless>false</dieIfLeafless>
+			<neverBlightable>true</neverBlightable>
+			<growDays>21</growDays>
+			<visualSizeRange>1.2~2.4</visualSizeRange>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>40</harvestYield>
+			<wildClusterWeight>45</wildClusterWeight>
+			<sowMinSkill>10</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing__Fragile</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(3,69,47,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	-->
+	<!-- ==========[MorrowRim_EmporerGlowingCoprinus]========== -->
+	<ThingDef ParentName="PollutionTreeBase">
+		<defName>MorrowRim_EmporerGlowingCoprinus</defName>
+		<label>emperor glowing coprinus</label>
+		<description>A subspecies of violet coprinus, so heavily mutated by pollution that it grows significantly larger. It bathes the surrounding area in an eerie green glow, an oddly beautiful sight amidst the polluted ashlands. The flesh is too soft to be used as a building material, and is completely inedible thanks to the pollution it grows in.</description>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_EmporerGlowingCoprinus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<plant>
+			<fertilityMin>0.50</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growMinGlow>-0.5</growMinGlow>
+			<dieIfLeafless>false</dieIfLeafless>
+			<neverBlightable>true</neverBlightable>
+			<growDays>21</growDays>
+			<visualSizeRange>1.2~2.4</visualSizeRange>
+			<harvestWork>1000</harvestWork>
+			<harvestedThingDef IsNull="True"/>
+			<harvestYield>0</harvestYield>
+			<wildClusterWeight>45</wildClusterWeight>
+			<sowMinSkill>10</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_TramaMass]========== -->
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_TramaMass</defName>
+		<label>trama mass</label>
+		<description>A large mass of trama roots, their growth greatly accelerated by high levels of pollution. The mass is so dense that you can't even walk through it, not that many would dare risk trying.\n\nTrama receive a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<ashLover>true</ashLover>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>MorrowRim_SoftAsh</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+		  <MaxHitPoints>140</MaxHitPoints>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>0.05</fillPercent>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_TramaMass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+		  <soundHarvesting>Harvest_Tree</soundHarvesting>
+		  <growMinGlow>0.1</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Wood</harvestTag>
+		  <harvestedThingDef>WoodLog</harvestedThingDef>
+		  <harvestYield>10</harvestYield>
+		  <harvestFailable>false</harvestFailable>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <sowMinSkill>6</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.05</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>15</growDays>
+		  <harvestWork>300</harvestWork>
+		  <visualSizeRange>1.6~2.4</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>100</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_GlowingParasolMushroom]========== -->
+	<ThingDef ParentName="MorrowRim_ParasolMushroomCultivated">
+		<defName>MorrowRim_GlowingParasolMushroom</defName>
+		<label>glowing parasol mushroom</label>
+		<description>A mutated breed of the parasol mushroom, adapted to grow in highly polluted environments. While the flesh gives off an eerie green glow, it is in fact perfectly safe to eat raw. While this may be the case, it is best not to eat it uncooked.\n\nGlowing parasol mushroom receive a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_GlowingParasolMushroom</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>8</growDays>
+			<harvestYield>6</harvestYield>
+			<harvestedThingDef>MorrowRim_RawGlowingAshFungus</harvestedThingDef>
+			<pollution>PollutedOnly</pollution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -17,13 +17,13 @@ namespace MorrowRim
 
         public override AlertReport GetReport()
         {
-            return ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinction() && ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert() ? AlertReport.Active : AlertReport.Inactive;
+            return MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinction && MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinctionAlert ? AlertReport.Active : AlertReport.Inactive;
         }
 
         public override TaggedString GetExplanation()
         {
             
-            return "MorrowRim_Alert_CliffRacerExtinctionDescription".Translate(TrueCliffRacerExtinctionCheck.PercentageProgress(), TrueCliffRacerExtinctionCheck.CurrentCount(), ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount());
+            return "MorrowRim_Alert_CliffRacerExtinctionDescription".Translate(TrueCliffRacerExtinctionCheck.PercentageProgress(), TrueCliffRacerExtinctionCheck.CurrentCount(), MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinctionCount);
         }
     }
 }

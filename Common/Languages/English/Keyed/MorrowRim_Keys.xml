@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<LanguageData
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+<LanguageData>
 	
 	<!--ash resistance -->
     <MorrowRim_AshResistant>Resistant to ash-storms</MorrowRim_AshResistant>
@@ -141,6 +139,7 @@
 	<MorrowRim_SettingEnableScribBehaviour>Enable the custom kwama scrib behaviour, allowing them to munch on scrib cabbage.</MorrowRim_SettingEnableScribBehaviour>
 	<MorrowRim_SettingEnableScampBehaviour>Enable the custom scamp behaviour, allowing them to take drugs.</MorrowRim_SettingEnableScampBehaviour>
 	<MorrowRim_SettingEnableScampInsults>Enable the custom scamp behaviour, allowing them to insult humanlike pawns.</MorrowRim_SettingEnableScampInsults>
+	<MorrowRim_SettingEnableInsectPollutionStimulus>Enable MorrowRim insects receiving pollution stimulus.</MorrowRim_SettingEnableInsectPollutionStimulus>
 	<MorrowRim_SettingEnableAshStormHiding>Enable tame animals hiding from ash storms.</MorrowRim_SettingEnableAshStormHiding>
 	<MorrowRim_SettingEnableAshStormHiding_Tooltip>Enabling this will cause tame animals to hide indoors if they become afflicted with ash build up during an ash storm.\n\nLivestock will respect pens, but other animals will not respect zones.\n\nAnimals will seek rooms that are completely roofed, though if they find themselves under a roof at any point, they will remain there.</MorrowRim_SettingEnableAshStormHiding_Tooltip>
 	<MorrowRim_SettingEnableAshStormHidingMin>The minimum build up for pawns to seek shelter.</MorrowRim_SettingEnableAshStormHidingMin>

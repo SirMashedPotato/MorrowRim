@@ -18,7 +18,7 @@ namespace MorrowRim
             if (GetWorld(out World world))
             {
                 return world.GetComponent<WorldComponent_CliffRacerTracker>().ExtinctionReached()
-                    && ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinction();
+                    && MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinction;
             }
             return false;
         }
@@ -34,7 +34,7 @@ namespace MorrowRim
 
         public static string PercentageProgress()
         {
-            float target = ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount();
+            float target = MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinctionCount;
             return ((float)CurrentCount() / (float)target).ToStringPercent();
         }
     }
@@ -71,7 +71,7 @@ namespace MorrowRim
 
         public bool ExtinctionReached()
         {
-            return cliffRacerDeaths >= ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount();
+            return cliffRacerDeaths >= MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinctionCount;
         }
 
         public float cliffRacerDeaths = 0;

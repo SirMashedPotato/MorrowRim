@@ -4,7 +4,107 @@ namespace MorrowRim
 {
     class MorrowRim_ModSettings : ModSettings
     {
-        //settings
+        private static MorrowRim_ModSettings _instance;
+
+        /* ==========[GETTERS]========== */
+
+        /* Ash storms */
+        public static bool SettingEnableLightingEffects => _instance.MorrowRim_SettingEnableLightingEffects;
+        public static bool SettingEnableAshEffects => _instance.MorrowRim_SettingEnableAshEffects;
+        public static int SettingAshFilledEye => _instance.MorrowRim_SettingAshFilledEye;
+        public static int SettingAshCloggedServo => _instance.MorrowRim_SettingAshCloggedServo;
+        public static bool SettingAshIgnoreResistance => _instance.MorrowRim_SettingAshIgnoreResistance;
+        public static float SettingAshBuildupMultiplier => _instance.MorrowRim_SettingAshBuildupMultiplier;
+        public static int SettingAshPlantDamage => _instance.MorrowRim_SettingAshPlantDamage;
+        public static int SettingAshPlantChance => _instance.MorrowRim_SettingAshPlantChance;
+        public static bool SettingAshOnlySownPlants => _instance.MorrowRim_SettingAshOnlySownPlants;
+        public static bool SettingAshPreventVisitors => _instance.MorrowRim_SettingAshPreventVisitors;
+        public static bool SettingAshRegrowth => _instance.MorrowRim_SettingAshRegrowth;
+        public static int SettingAshTurbineDamage => _instance.MorrowRim_SettingAshTurbineDamage;
+
+        /* Blight storms */
+        public static bool SettingEnableBlightEffects => _instance.MorrowRim_SettingEnableBlightEffects;
+        public static int SettingBlightPlantChance => _instance.MorrowRim_SettingBlightPlantChance;
+        public static int SettingBlightAnimalChance => _instance.MorrowRim_SettingBlightAnimalChance;
+        public static bool SettingBlightAnimalIgnoreScaling => _instance.MorrowRim_SettingBlightAnimalIgnoreScaling;
+        public static int SettingBlightAnimalNumber => _instance.MorrowRim_SettingBlightAnimalNumber;
+        public static int SettingBlightPlantNumber => _instance.MorrowRim_SettingBlightPlantNumber;
+        public static float SettingBlightAnimalMultiplier => _instance.MorrowRim_SettingBlightAnimalMultiplier;
+
+        /* Volcanic storms */
+        public static bool SettingEnableFireEffects => _instance.MorrowRim_SettingEnableFireEffects;
+        public static bool SettingFireOnlySownPlants => _instance.MorrowRim_SettingFireOnlySownPlants;
+        public static int SettingFireBurnChance => _instance.MorrowRim_SettingFireBurnChance;
+        public static int SettingFireFirePawnChance => _instance.MorrowRim_SettingFireFirePawnChance;
+        public static int SettingFireFirePlantChance => _instance.MorrowRim_SettingFireFirePlantChance;
+
+        /* Biomes */
+        public static bool SettingBiomeEnableAshlands => _instance.MorrowRim_SettingBiomeEnableAshlands;
+        public static bool SettingBiomeEnableBlightedAshlands => _instance.MorrowRim_SettingBiomeEnableBlightedAshlands;
+        public static bool SettingBiomeEnableAshlandsSwamp => _instance.MorrowRim_SettingBiomeEnableAshlandsSwamp;
+        public static bool SettingBiomeEnableGrazelands => _instance.MorrowRim_SettingBiomeEnableGrazelands;
+        public static bool SettingBiomeEnableVolcanicAshlands => _instance.MorrowRim_SettingBiomeEnableVolcanicAshlands;
+        public static bool SettingBiomeEnablePlantsOutside => _instance.MorrowRim_SettingBiomeEnablePlantsOutside;
+        public static bool SettingBiomeDisableSwampBeaches => _instance.MorrowRim_SettingBiomeDisableSwampBeaches;
+        public static bool SettingBiomeSwitchToDumbLava => _instance.MorrowRim_SettingBiomeSwitchToDumbLava;
+        public static float SettingBiomeMultiplier => _instance.MorrowRim_SettingBiomeMultiplier;
+        public static bool SettingBiomePolarShift => _instance.MorrowRim_SettingBiomePolarShift;
+
+        /* Kwama */
+        public static bool SettingForceKwamaNatural => _instance.MorrowRim_SettingForceKwamaNatural;
+        public static int SettingKwamaMinDistance => _instance.MorrowRim_SettingKwamaMinDistance;
+        public static int SettingKwamaMaxNests => _instance.MorrowRim_SettingKwamaMaxNests;
+        public static bool SettingKwamaEnableGen => _instance.MorrowRim_SettingKwamaEnableGen;
+        public static bool SettingEnablePredatorAvoidKwama => _instance.MorrowRim_SettingEnablePredatorAvoidKwama;
+        public static bool SettingKwamaEnableTrojanHostile => _instance.MorrowRim_SettingKwamaEnableTrojanHostile;
+        public static bool SettingKwamaNestReproducing => _instance.MorrowRim_SettingKwamaNestReproducing;
+        public static bool SettingKwamaMining => _instance.MorrowRim_SettingKwamaMining;
+
+        /* Incidents */
+        public static bool SettingEnableKwamaNestEmerging => _instance.MorrowRim_SettingEnableKwamaNestEmerging;
+        public static bool SettingEnableKwamaTrojanInfestation => _instance.MorrowRim_SettingEnableKwamaTrojanInfestation;
+        public static bool SettingEnableCliffRacerEvents => _instance.MorrowRim_SettingEnableCliffRacerEvents;
+        public static bool SettingEnableSiltStriderEvent => _instance.MorrowRim_SettingEnableSiltStriderEvent;
+        public static bool SettingEnableAlbinoGuarEvent => _instance.MorrowRim_SettingEnableAlbinoGuarEvent;
+        public static bool SettingEnableCliffRacerExtinction => _instance.MorrowRim_SettingEnableCliffRacerExtinction;
+        public static bool SettingEnableSiltStriderExtinction => _instance.MorrowRim_SettingEnableSiltStriderExtinction;
+        public static bool SettingEnableCorprusExtinction => _instance.MorrowRim_SettingEnableCorprusExtinction;
+        public static bool SettingEnableCorprusRefugee => _instance.MorrowRim_SettingEnableCorprusRefugee;
+        public static float SettingEnableCorprusRefugeeChance => _instance.MorrowRim_SettingEnableCorprusRefugeeChance;
+        public static float SettingEnableCorprusRefugeeSeverity => _instance.MorrowRim_SettingEnableCorprusRefugeeSeverity;
+        public static bool SettingEnablePermaAshStorm => _instance.MorrowRim_SettingEnablePermaAshStorm;
+        public static bool SettingEnablePermaAshStormOnlyAshlands => _instance.MorrowRim_SettingEnablePermaAshStormOnlyAshlands;
+        public static bool SettingEnablePermaAshStormOnlyAshStorms => _instance.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms;
+        public static bool SettingEnableTrueCliffRacerExtinction => _instance.MorrowRim_SettingEnableTrueCliffRacerExtinction;
+        public static int SettingEnableTrueCliffRacerExtinctionCount => _instance.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount;
+        public static bool SettingEnableTrueCliffRacerExtinctionAlert => _instance.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert;
+
+        /* Behaviour */
+        public static bool SettingEnableScribBehaviour => _instance.MorrowRim_SettingEnableScribBehaviour;
+        public static bool SettingEnableInsectPollutionStimulus => _instance.MorrowRim_SettingEnableInsectPollutionStimulus;
+        public static bool SettingEnableScampInsults => _instance.MorrowRim_SettingEnableScampInsults;
+        public static bool SettingEnableAshStormHiding => _instance.MorrowRim_SettingEnableAshStormHiding;
+        public static float SettingEnableAshStormHidingMin => _instance.MorrowRim_SettingEnableAshStormHidingMin;
+        public static bool SettingEnableAshStormHidingHumanlike => _instance.MorrowRim_SettingEnableAshStormHidingHumanlike;
+        public static bool SettingEnableAshCastles => _instance.MorrowRim_SettingEnableAshCastles;
+        public static bool SettingEnableAshCastlesDuringAshStorm => _instance.MorrowRim_SettingEnableAshCastlesDuringAshStorm;
+        public static float SettingEnableAshCastlesMinDistance => _instance.MorrowRim_SettingEnableAshCastlesMinDistance;
+
+        /* Notifications */
+        public static bool SettingEnableAshBuildupNotifications => _instance.MorrowRim_SettingEnableAshBuildupNotifications;
+        public static bool SettingEnableAshBuildupNotifications_Colonist => _instance.MorrowRim_SettingEnableAshBuildupNotifications_Colonist;
+        public static float SettingEnableAshBuildupNotifications_ColonistThreshold => _instance.MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold;
+        public static bool SettingEnableAshBuildupNotifications_Animals => _instance.MorrowRim_SettingEnableAshBuildupNotifications_Animals;
+        public static float SettingEnableAshBuildupNotifications_AnimalsThreshold => _instance.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold;
+        public static bool SettingEnableAshBuildupNotifications_Friendly => _instance.MorrowRim_SettingEnableAshBuildupNotifications_Friendly;
+        public static float SettingEnableAshBuildupNotifications_FriendlyThreshold => _instance.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold;
+
+
+        /* Integration */
+        public static bool SettingVFIChitinIntegration => _instance.MorrowRim_SettingVFIChitinIntegration;
+        public static bool SettingZombielandIntegration => _instance.MorrowRim_SettingZombielandIntegration;
+
+        /* ==========[SETTINGS]========== */
         public bool MorrowRim_SettingEnableLightingEffects = MorrowRim_SettingEnableLightingEffects_def;
         public bool MorrowRim_SettingEnableAshEffects = MorrowRim_SettingEnableAshEffects_def;
         public int MorrowRim_SettingAshFilledEye = MorrowRim_SettingAshFilledEye_def;
@@ -72,6 +172,7 @@ namespace MorrowRim
 
         public bool MorrowRim_SettingEnableScribBehaviour = MorrowRim_SettingEnableScribBehaviour_def;
         public bool MorrowRim_SettingEnableScampBehaviour = MorrowRim_SettingEnableScampBehaviour_def;
+        public bool MorrowRim_SettingEnableInsectPollutionStimulus = MorrowRim_SettingEnableInsectPollutionStimulus_def;
         public bool MorrowRim_SettingEnableScampInsults = MorrowRim_SettingEnableScampInsults_def;
         public bool MorrowRim_SettingEnableAshStormHiding = MorrowRim_SettingEnableAshStormHiding_def;
         public float MorrowRim_SettingEnableAshStormHidingMin = MorrowRim_SettingEnableAshStormHidingMin_def;
@@ -91,7 +192,7 @@ namespace MorrowRim
         public bool MorrowRim_SettingVFIChitinIntegration = MorrowRim_SettingVFIChitinIntegration_def;
         public bool MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
 
-        //defaults
+        /* ==========[DEFUALTS]========== */
         private static readonly bool MorrowRim_SettingEnableLightingEffects_def = true;
         private static readonly bool MorrowRim_SettingEnableAshEffects_def = true;
         private static readonly int MorrowRim_SettingAshFilledEye_def = 25;
@@ -159,6 +260,7 @@ namespace MorrowRim
 
         private static readonly bool MorrowRim_SettingEnableScribBehaviour_def = true;
         private static readonly bool MorrowRim_SettingEnableScampBehaviour_def = true;
+        private static readonly bool MorrowRim_SettingEnableInsectPollutionStimulus_def = false;
         private static readonly bool MorrowRim_SettingEnableScampInsults_def = true;
         private static readonly bool MorrowRim_SettingEnableAshStormHiding_def = true;
         private static readonly float MorrowRim_SettingEnableAshStormHidingMin_def = 0f;
@@ -178,7 +280,13 @@ namespace MorrowRim
         private static readonly bool MorrowRim_SettingVFIChitinIntegration_def = false;
         private static readonly bool MorrowRim_SettingZombielandIntegration_def = true;
 
-        //save settings
+        public MorrowRim_ModSettings()
+        {
+            _instance = this;
+        }
+
+        /* ==========[SAVING]========== */
+
         public override void ExposeData()
         {
             Scribe_Values.Look(ref MorrowRim_SettingEnableLightingEffects, "MorrowRim_SettingEnableLightingEffects", MorrowRim_SettingEnableLightingEffects_def);
@@ -248,6 +356,7 @@ namespace MorrowRim
 
             Scribe_Values.Look(ref MorrowRim_SettingEnableScribBehaviour, "MorrowRim_SettingEnableScribBehaviour", MorrowRim_SettingEnableScribBehaviour_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableScampBehaviour, "MorrowRim_SettingEnableScampBehaviour", MorrowRim_SettingEnableScampBehaviour_def);
+            Scribe_Values.Look(ref MorrowRim_SettingEnableInsectPollutionStimulus, "MorrowRim_SettingEnableInsectPollutionStimulus", MorrowRim_SettingEnableInsectPollutionStimulus_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableScampInsults, "MorrowRim_SettingEnableScampInsults", MorrowRim_SettingEnableScampInsults_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshStormHiding, "MorrowRim_SettingEnableAshStormHiding", MorrowRim_SettingEnableAshStormHiding_def);
             Scribe_Values.Look(ref MorrowRim_SettingEnableAshStormHidingMin, "MorrowRim_SettingEnableAshStormHidingMin", MorrowRim_SettingEnableAshStormHidingMin_def);
@@ -270,137 +379,138 @@ namespace MorrowRim
             base.ExposeData();
         }
 
-        //reset settings
+        /* ==========[RESETTING]========== */
 
-        public static void ResetSettings(MorrowRim_ModSettings settings)
+        public static void ResetSettings()
         {
-            ResetSettings_Ash(settings);
-            ResetSettings_Blight(settings);
-            ResetSettings_Fire(settings);
-            ResetSettings_Biome(settings);
-            ResetSettings_Kwama(settings);
-            ResetSettings_Incident(settings);
-            ResetSettings_ModIntegration(settings);
-            ResetSettings_AnimalBehaviour(settings);
-            ResetSettings_Notification(settings);
+            ResetSettings_Ash();
+            ResetSettings_Blight();
+            ResetSettings_Fire();
+            ResetSettings_Biome();
+            ResetSettings_Kwama();
+            ResetSettings_Incident();
+            ResetSettings_ModIntegration();
+            ResetSettings_AnimalBehaviour();
+            ResetSettings_Notification();
         }
 
-        public static void ResetSettings_Ash(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Ash()
         {
-            settings.MorrowRim_SettingAshBuildupMultiplier = MorrowRim_SettingAshBuildupMultiplier_def;
-            settings.MorrowRim_SettingAshCloggedServo = MorrowRim_SettingAshCloggedServo_def;
-            settings.MorrowRim_SettingAshFilledEye = MorrowRim_SettingAshFilledEye_def;
-            settings.MorrowRim_SettingAshIgnoreResistance = MorrowRim_SettingAshIgnoreResistance_def;
-            settings.MorrowRim_SettingAshPlantChance = MorrowRim_SettingAshPlantChance_def;
-            settings.MorrowRim_SettingAshPlantDamage = MorrowRim_SettingAshPlantDamage_def;
-            settings.MorrowRim_SettingEnableAshEffects = MorrowRim_SettingEnableAshEffects_def;
-            settings.MorrowRim_SettingEnableLightingEffects = MorrowRim_SettingEnableLightingEffects_def;
-            settings.MorrowRim_SettingAshOnlySownPlants = MorrowRim_SettingAshOnlySownPlants_def;
-            settings.MorrowRim_SettingAshPreventVisitors = MorrowRim_SettingAshPreventVisitors_def;
-            settings.MorrowRim_SettingAshRegrowth = MorrowRim_SettingAshRegrowth_def;
-            settings.MorrowRim_SettingAshTurbineDamage = MorrowRim_SettingAshTurbineDamage_def;
+            _instance.MorrowRim_SettingAshBuildupMultiplier = MorrowRim_SettingAshBuildupMultiplier_def;
+            _instance.MorrowRim_SettingAshCloggedServo = MorrowRim_SettingAshCloggedServo_def;
+            _instance.MorrowRim_SettingAshFilledEye = MorrowRim_SettingAshFilledEye_def;
+            _instance.MorrowRim_SettingAshIgnoreResistance = MorrowRim_SettingAshIgnoreResistance_def;
+            _instance.MorrowRim_SettingAshPlantChance = MorrowRim_SettingAshPlantChance_def;
+            _instance.MorrowRim_SettingAshPlantDamage = MorrowRim_SettingAshPlantDamage_def;
+            _instance.MorrowRim_SettingEnableAshEffects = MorrowRim_SettingEnableAshEffects_def;
+            _instance.MorrowRim_SettingEnableLightingEffects = MorrowRim_SettingEnableLightingEffects_def;
+            _instance.MorrowRim_SettingAshOnlySownPlants = MorrowRim_SettingAshOnlySownPlants_def;
+            _instance.MorrowRim_SettingAshPreventVisitors = MorrowRim_SettingAshPreventVisitors_def;
+            _instance.MorrowRim_SettingAshRegrowth = MorrowRim_SettingAshRegrowth_def;
+            _instance.MorrowRim_SettingAshTurbineDamage = MorrowRim_SettingAshTurbineDamage_def;
         }
 
-        public static void ResetSettings_Blight(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Blight()
         {
-            settings.MorrowRim_SettingBlightPlantChance = MorrowRim_SettingBlightPlantChance_def;
-            settings.MorrowRim_SettingEnableBlightEffects = MorrowRim_SettingEnableBlightEffects_def;
-            settings.MorrowRim_SettingBlightAnimalChance = MorrowRim_SettingBlightAnimalChance_def;
-            settings.MorrowRim_SettingBlightAnimalIgnoreScaling = MorrowRim_SettingBlightAnimalIgnoreScaling_def;
-            settings.MorrowRim_SettingBlightAnimalNumber = MorrowRim_SettingBlightAnimalNumber_def;
-            settings.MorrowRim_SettingBlightPlantNumber = MorrowRim_SettingBlightPlantNumber_def;
-            settings.MorrowRim_SettingBlightAnimalMultiplier = MorrowRim_SettingBlightAnimalMultiplier_def;
+            _instance.MorrowRim_SettingBlightPlantChance = MorrowRim_SettingBlightPlantChance_def;
+            _instance.MorrowRim_SettingEnableBlightEffects = MorrowRim_SettingEnableBlightEffects_def;
+            _instance.MorrowRim_SettingBlightAnimalChance = MorrowRim_SettingBlightAnimalChance_def;
+            _instance.MorrowRim_SettingBlightAnimalIgnoreScaling = MorrowRim_SettingBlightAnimalIgnoreScaling_def;
+            _instance.MorrowRim_SettingBlightAnimalNumber = MorrowRim_SettingBlightAnimalNumber_def;
+            _instance.MorrowRim_SettingBlightPlantNumber = MorrowRim_SettingBlightPlantNumber_def;
+            _instance.MorrowRim_SettingBlightAnimalMultiplier = MorrowRim_SettingBlightAnimalMultiplier_def;
         }
 
-        public static void ResetSettings_Fire(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Fire()
         {
-            settings.MorrowRim_SettingEnableFireEffects = MorrowRim_SettingEnableFireEffects_def;
-            settings.MorrowRim_SettingFireBurnChance = MorrowRim_SettingFireBurnChance_def;
-            settings.MorrowRim_SettingFireFirePawnChance = MorrowRim_SettingFireFirePawnChance_def;
-            settings.MorrowRim_SettingFireFirePlantChance = MorrowRim_SettingFireFirePlantChance_def;
-            settings.MorrowRim_SettingFireOnlySownPlants = MorrowRim_SettingFireOnlySownPlants_def;
+            _instance.MorrowRim_SettingEnableFireEffects = MorrowRim_SettingEnableFireEffects_def;
+            _instance.MorrowRim_SettingFireBurnChance = MorrowRim_SettingFireBurnChance_def;
+            _instance.MorrowRim_SettingFireFirePawnChance = MorrowRim_SettingFireFirePawnChance_def;
+            _instance.MorrowRim_SettingFireFirePlantChance = MorrowRim_SettingFireFirePlantChance_def;
+            _instance.MorrowRim_SettingFireOnlySownPlants = MorrowRim_SettingFireOnlySownPlants_def;
         }
 
-        public static void ResetSettings_Biome(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Biome()
         {
-            settings.MorrowRim_SettingBiomeEnableAshlands = MorrowRim_SettingBiomeEnableAshlands_def;
-            settings.MorrowRim_SettingBiomeEnableBlightedAshlands = MorrowRim_SettingBiomeEnableBlightedAshlands_def;
-            settings.MorrowRim_SettingBiomeEnableAshlandsSwamp = MorrowRim_SettingBiomeEnableAshlandsSwamp_def;
-            settings.MorrowRim_SettingBiomeEnableGrazelands = MorrowRim_SettingBiomeEnableGrazelands_def;
-            settings.MorrowRim_SettingBiomeEnableVolcanicAshlands = MorrowRim_SettingBiomeEnableVolcanicAshlands_def;
-            settings.MorrowRim_SettingBiomeEnablePlantsOutside = MorrowRim_SettingBiomeEnablePlantsOutside_def;
-            settings.MorrowRim_SettingBiomeDisableSwampBeaches = MorrowRim_SettingBiomeDisableSwampBeaches_def;
-            settings.MorrowRim_SettingBiomeSwitchToDumbLava = MorrowRim_SettingBiomeSwitchToDumbLava_def;
-            settings.MorrowRim_SettingBiomeMultiplier = MorrowRim_SettingBiomeMultiplier_def;
-            settings.MorrowRim_SettingBiomePolarShift = MorrowRim_SettingBiomePolarShift_def;
+            _instance.MorrowRim_SettingBiomeEnableAshlands = MorrowRim_SettingBiomeEnableAshlands_def;
+            _instance.MorrowRim_SettingBiomeEnableBlightedAshlands = MorrowRim_SettingBiomeEnableBlightedAshlands_def;
+            _instance.MorrowRim_SettingBiomeEnableAshlandsSwamp = MorrowRim_SettingBiomeEnableAshlandsSwamp_def;
+            _instance.MorrowRim_SettingBiomeEnableGrazelands = MorrowRim_SettingBiomeEnableGrazelands_def;
+            _instance.MorrowRim_SettingBiomeEnableVolcanicAshlands = MorrowRim_SettingBiomeEnableVolcanicAshlands_def;
+            _instance.MorrowRim_SettingBiomeEnablePlantsOutside = MorrowRim_SettingBiomeEnablePlantsOutside_def;
+            _instance.MorrowRim_SettingBiomeDisableSwampBeaches = MorrowRim_SettingBiomeDisableSwampBeaches_def;
+            _instance.MorrowRim_SettingBiomeSwitchToDumbLava = MorrowRim_SettingBiomeSwitchToDumbLava_def;
+            _instance.MorrowRim_SettingBiomeMultiplier = MorrowRim_SettingBiomeMultiplier_def;
+            _instance.MorrowRim_SettingBiomePolarShift = MorrowRim_SettingBiomePolarShift_def;
         }
 
-        public static void ResetSettings_Kwama(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Kwama()
         {
-            settings.MorrowRim_SettingForceKwamaNatural = MorrowRim_SettingForceKwamaNatural_def;
-            settings.MorrowRim_SettingKwamaMinDistance = MorrowRim_SettingKwamaMinDistance_def;
-            settings.MorrowRim_SettingKwamaMaxNests = MorrowRim_SettingKwamaMaxNests_def;
-            settings.MorrowRim_SettingKwamaEnableGen = MorrowRim_SettingKwamaEnableGen_def;
-            settings.MorrowRim_SettingEnablePredatorAvoidKwama = MorrowRim_SettingEnablePredatorAvoidKwama_def;
-            settings.MorrowRim_SettingKwamaEnableTrojanHostile = MorrowRim_SettingKwamaEnableTrojanHostile_def;
-            settings.MorrowRim_SettingKwamaNestReproducing = MorrowRim_SettingKwamaNestReproducing_def;
-            settings.MorrowRim_SettingKwamaMining = MorrowRim_SettingKwamaMining_def;
+            _instance.MorrowRim_SettingForceKwamaNatural = MorrowRim_SettingForceKwamaNatural_def;
+            _instance.MorrowRim_SettingKwamaMinDistance = MorrowRim_SettingKwamaMinDistance_def;
+            _instance.MorrowRim_SettingKwamaMaxNests = MorrowRim_SettingKwamaMaxNests_def;
+            _instance.MorrowRim_SettingKwamaEnableGen = MorrowRim_SettingKwamaEnableGen_def;
+            _instance.MorrowRim_SettingEnablePredatorAvoidKwama = MorrowRim_SettingEnablePredatorAvoidKwama_def;
+            _instance.MorrowRim_SettingKwamaEnableTrojanHostile = MorrowRim_SettingKwamaEnableTrojanHostile_def;
+            _instance.MorrowRim_SettingKwamaNestReproducing = MorrowRim_SettingKwamaNestReproducing_def;
+            _instance.MorrowRim_SettingKwamaMining = MorrowRim_SettingKwamaMining_def;
         }
 
-        public static void ResetSettings_Incident(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Incident()
         {
-            settings.MorrowRim_SettingEnableKwamaNestEmerging = MorrowRim_SettingEnableKwamaNestEmerging_def;
-            settings.MorrowRim_SettingEnableKwamaTrojanInfestation = MorrowRim_SettingEnableKwamaTrojanInfestation_def;
-            settings.MorrowRim_SettingEnableCliffRacerEvents = MorrowRim_SettingEnableCliffRacerEvents_def;
-            settings.MorrowRim_SettingEnableAlbinoGuarEvent = MorrowRim_SettingEnableAlbinoGuarEvent_def;
-            settings.MorrowRim_SettingEnableSiltStriderEvent = MorrowRim_SettingEnableSiltStriderEvent_def;
-            settings.MorrowRim_SettingEnableCliffRacerExtinction = MorrowRim_SettingEnableCliffRacerExtinction_def;
-            settings.MorrowRim_SettingEnableSiltStriderExtinction = MorrowRim_SettingEnableSiltStriderExtinction_def;
-            settings.MorrowRim_SettingEnableCorprusExtinction = MorrowRim_SettingEnableCorprusExtinction_def;
-            settings.MorrowRim_SettingEnableCorprusRefugee = MorrowRim_SettingEnableCorprusRefugee_def;
-            settings.MorrowRim_SettingEnableCorprusRefugeeChance = MorrowRim_SettingEnableCorprusRefugeeChance_def;
-            settings.MorrowRim_SettingEnableCorprusRefugeeSeverity = MorrowRim_SettingEnableCorprusRefugeeSeverity_def;
-            settings.MorrowRim_SettingEnablePermaAshStorm = MorrowRim_SettingEnablePermaAshStorm_def;
-            settings.MorrowRim_SettingEnablePermaAshStormOnlyAshlands = MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def;
-            settings.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms = MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def;
-            settings.MorrowRim_SettingEnableTrueCliffRacerExtinction = MorrowRim_SettingEnableTrueCliffRacerExtinction_def;
-            settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount = MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def;
-            settings.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert = MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert_def;
+            _instance.MorrowRim_SettingEnableKwamaNestEmerging = MorrowRim_SettingEnableKwamaNestEmerging_def;
+            _instance.MorrowRim_SettingEnableKwamaTrojanInfestation = MorrowRim_SettingEnableKwamaTrojanInfestation_def;
+            _instance.MorrowRim_SettingEnableCliffRacerEvents = MorrowRim_SettingEnableCliffRacerEvents_def;
+            _instance.MorrowRim_SettingEnableAlbinoGuarEvent = MorrowRim_SettingEnableAlbinoGuarEvent_def;
+            _instance.MorrowRim_SettingEnableSiltStriderEvent = MorrowRim_SettingEnableSiltStriderEvent_def;
+            _instance.MorrowRim_SettingEnableCliffRacerExtinction = MorrowRim_SettingEnableCliffRacerExtinction_def;
+            _instance.MorrowRim_SettingEnableSiltStriderExtinction = MorrowRim_SettingEnableSiltStriderExtinction_def;
+            _instance.MorrowRim_SettingEnableCorprusExtinction = MorrowRim_SettingEnableCorprusExtinction_def;
+            _instance.MorrowRim_SettingEnableCorprusRefugee = MorrowRim_SettingEnableCorprusRefugee_def;
+            _instance.MorrowRim_SettingEnableCorprusRefugeeChance = MorrowRim_SettingEnableCorprusRefugeeChance_def;
+            _instance.MorrowRim_SettingEnableCorprusRefugeeSeverity = MorrowRim_SettingEnableCorprusRefugeeSeverity_def;
+            _instance.MorrowRim_SettingEnablePermaAshStorm = MorrowRim_SettingEnablePermaAshStorm_def;
+            _instance.MorrowRim_SettingEnablePermaAshStormOnlyAshlands = MorrowRim_SettingEnablePermaAshStormOnlyAshlands_def;
+            _instance.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms = MorrowRim_SettingEnablePermaAshStormOnlyAshStorms_def;
+            _instance.MorrowRim_SettingEnableTrueCliffRacerExtinction = MorrowRim_SettingEnableTrueCliffRacerExtinction_def;
+            _instance.MorrowRim_SettingEnableTrueCliffRacerExtinctionCount = MorrowRim_SettingEnableTrueCliffRacerExtinctionCount_def;
+            _instance.MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert = MorrowRim_SettingEnableTrueCliffRacerExtinctionAlert_def;
         }
 
-        public static void ResetSettings_AnimalBehaviour(MorrowRim_ModSettings settings)
+        public static void ResetSettings_AnimalBehaviour()
         {
-            settings.MorrowRim_SettingEnableScribBehaviour = MorrowRim_SettingEnableScribBehaviour_def;
-            settings.MorrowRim_SettingEnableScampBehaviour = MorrowRim_SettingEnableScampBehaviour_def;
-            settings.MorrowRim_SettingEnableScampInsults = MorrowRim_SettingEnableScampInsults_def;
-            settings.MorrowRim_SettingEnableAshStormHiding = MorrowRim_SettingEnableAshStormHiding_def;
-            settings.MorrowRim_SettingEnableAshStormHidingMin = MorrowRim_SettingEnableAshStormHidingMin_def;
-            settings.MorrowRim_SettingEnableAshStormHidingHumanlike = MorrowRim_SettingEnableAshStormHidingHumanlike_def;
-            settings.MorrowRim_SettingEnableAshCastles = MorrowRim_SettingEnableAshCastles_def;
-            settings.MorrowRim_SettingEnableAshCastlesDuringAshStorm = MorrowRim_SettingEnableAshCastlesDuringAshStorm_def;
-            settings.MorrowRim_SettingEnableAshCastlesMinDistance = MorrowRim_SettingEnableAshCastlesMinDistance_def;
+            _instance.MorrowRim_SettingEnableScribBehaviour = MorrowRim_SettingEnableScribBehaviour_def;
+            _instance.MorrowRim_SettingEnableScampBehaviour = MorrowRim_SettingEnableScampBehaviour_def;
+            _instance.MorrowRim_SettingEnableInsectPollutionStimulus = MorrowRim_SettingEnableInsectPollutionStimulus_def;
+            _instance.MorrowRim_SettingEnableScampInsults = MorrowRim_SettingEnableScampInsults_def;
+            _instance.MorrowRim_SettingEnableAshStormHiding = MorrowRim_SettingEnableAshStormHiding_def;
+            _instance.MorrowRim_SettingEnableAshStormHidingMin = MorrowRim_SettingEnableAshStormHidingMin_def;
+            _instance.MorrowRim_SettingEnableAshStormHidingHumanlike = MorrowRim_SettingEnableAshStormHidingHumanlike_def;
+            _instance.MorrowRim_SettingEnableAshCastles = MorrowRim_SettingEnableAshCastles_def;
+            _instance.MorrowRim_SettingEnableAshCastlesDuringAshStorm = MorrowRim_SettingEnableAshCastlesDuringAshStorm_def;
+            _instance.MorrowRim_SettingEnableAshCastlesMinDistance = MorrowRim_SettingEnableAshCastlesMinDistance_def;
         }
 
-        public static void ResetSettings_Notification(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Notification()
         {
-            settings.MorrowRim_SettingEnableAshBuildupNotifications = MorrowRim_SettingEnableAshBuildupNotifications_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_Colonist = MorrowRim_SettingEnableAshBuildupNotifications_Colonist_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold = MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_Animals = MorrowRim_SettingEnableAshBuildupNotifications_Animals_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold = MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_Friendly = MorrowRim_SettingEnableAshBuildupNotifications_Friendly_def;
-            settings.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold = MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications = MorrowRim_SettingEnableAshBuildupNotifications_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_Colonist = MorrowRim_SettingEnableAshBuildupNotifications_Colonist_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold = MorrowRim_SettingEnableAshBuildupNotifications_ColonistThreshold_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_Animals = MorrowRim_SettingEnableAshBuildupNotifications_Animals_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold = MorrowRim_SettingEnableAshBuildupNotifications_AnimalsThreshold_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_Friendly = MorrowRim_SettingEnableAshBuildupNotifications_Friendly_def;
+            _instance.MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold = MorrowRim_SettingEnableAshBuildupNotifications_FriendlyThreshold_def;
         }
 
-        public static void ResetSettings_ModIntegration(MorrowRim_ModSettings settings)
+        public static void ResetSettings_ModIntegration()
         {
-            settings.MorrowRim_SettingVFIChitinIntegration = MorrowRim_SettingVFIChitinIntegration_def;
-            settings.MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
+            _instance.MorrowRim_SettingVFIChitinIntegration = MorrowRim_SettingVFIChitinIntegration_def;
+            _instance.MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
         }
 
-        public static void ResetSettings_Zombieland(MorrowRim_ModSettings settings)
+        public static void ResetSettings_Zombieland()
         {
-            settings.MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
+            _instance.MorrowRim_SettingZombielandIntegration = MorrowRim_SettingZombielandIntegration_def;
         }
     }
 }

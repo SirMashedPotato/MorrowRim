@@ -11,7 +11,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A large reptile found natively in the ashlands. Like their cousins, the alit and the kagouti, guar are characterised by having a disproportionately large head in comparison to their body. \n\nOften used as pack animals by Dunmer, their minimal intelligence prevents them from being useful in most other ways. Guar may also be farmed for their highly nourishing milk. Outsiders often question how a reptile produces milk, and where it comes from. Those that ask these questions are usally called a "s'wit" or "n'wah".\n\nLike many ashland natives guar are resistant to the effects of ash-storms.</description>
+		<description>A large reptile found natively in the ashlands. Like their cousins, the alit and the kagouti, guar are characterised by having a disproportionately large head in comparison to their body. \n\nOften used as pack animals by Dunmer, their minimal intelligence prevents them from being useful in most other ways. Guar may also be farmed for their highly nourishing milk. Outsiders often question how a reptile produces milk, and where it comes from. Those that ask these questions are usually called a "s'wit" or "n'wah".\n\nLike many ashland natives guar are resistant to the effects of ash-storms.</description>
 		<statBases>
 		  <MoveSpeed>4.5</MoveSpeed>
 		  <MarketValue>300</MarketValue>
@@ -115,6 +115,7 @@
 		  <li>AnimalCommon</li>
 		  <li>AnimalFarm</li>
 		  <li>AshlandAnimalCommon</li>
+		  <li>AshlandAnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
 	  
@@ -429,6 +430,7 @@
 		  <baseHungerRate>0.45</baseHungerRate>
 		  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 		  <leatherDef>MorrowRim_HeavyLeather</leatherDef>
+		  <trainability>Intermediate</trainability>
 		  <gestationPeriodDays>32</gestationPeriodDays>
 		  <wildness>0.80</wildness>
 		  <lifeExpectancy>34</lifeExpectancy>
@@ -605,6 +607,7 @@
 		  <baseHungerRate>0.45</baseHungerRate>
 		  <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 		  <leatherDef>MorrowRim_HeavyLeather</leatherDef>
+		  <trainability>Intermediate</trainability>
 		  <wildness>0.85</wildness>
 		  <lifeExpectancy>37</lifeExpectancy>
 		  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -711,6 +714,7 @@
 		</modExtensions>
 		<statBases>
 		  <ToxicResistance>0.8</ToxicResistance>
+		  <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		  <MoveSpeed>4.2</MoveSpeed>
 		  <MarketValue>300</MarketValue>
 		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -874,6 +878,7 @@
 		  <MarketValue>350</MarketValue>
 		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		  <FilthRate>0</FilthRate>
 		</statBases>
 		<tools>
@@ -1109,7 +1114,7 @@
 		  <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 		  <leatherDef>MorrowRim_HeavyLeather</leatherDef>
 		  <wildness>0.80</wildness>
-		  <trainability>Intermediate</trainability>
+		  <trainability>Advanced</trainability>
 		  <packAnimal>true</packAnimal>
 		  <lifeExpectancy>24</lifeExpectancy>
 		  <petness>0.0</petness>
@@ -1310,6 +1315,7 @@
 		  <li>AnimalCommon</li>
 		  <li>AnimalFarm</li>
 		  <li>AshlandAnimalCommon</li>
+		  <li>AshlandAnimalFarm</li>
 		</tradeTags>
 	  </ThingDef>
 
@@ -1381,7 +1387,7 @@
                 <ashResistant>Resistant</ashResistant>
             </li>
 		</modExtensions>
-		<description>A large carnivorous reptile, closely related to the guar, alit and kagouti. While the wormmouth can be found in the ashlands, it is actually an invasive species originally introduced by the Telvanni. It is named after the shape of its toungue, which looks, and even moves, like a worm.\n\nWhile not the most dangerous beast, its body is covered in heavy plating, protecting it from weaker blows. One should also avoid its saliva, which is highly acidic. The wormmouth eats prey whole, using its saliva to liquify it, before swallowing. Interestingly the wormmouth still has teeth.\n\nDue to being highly adaptable, the wormmouth is resistant to the effects of ash storms.</description>
+		<description>A large carnivorous reptile, closely related to the guar, alit and kagouti. While the wormmouth can be found in the ashlands, it is actually an invasive species originally introduced by the Telvanni. It is named after the shape of its tongue, which looks, and even moves, like a worm.\n\nWhile not the most dangerous beast, its body is covered in heavy plating, protecting it from weaker blows. One should also avoid its saliva, which is highly acidic. The wormmouth eats prey whole, using its saliva to liquefy it, before swallowing. Interestingly the wormmouth still has teeth.\n\nDue to being highly adaptable, the wormmouth is resistant to the effects of ash storms.</description>
 		<statBases>
 		  <MoveSpeed>4.0</MoveSpeed>
 		  <MarketValue>680</MarketValue>
@@ -1389,6 +1395,7 @@
 		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+		  <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		  <FilthRate>4</FilthRate>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>

@@ -20,7 +20,7 @@ namespace MorrowRim
 
         static VFIChitinIntegration()
         {
-            if (ModSettings_Utility.CheckVFEInsects() && ModSettings_Utility.MorrowRim_SettingVFIChitinIntegration())
+            if (ModSettings_Utility.CheckVFEInsects() && MorrowRim_ModSettings.SettingVFIChitinIntegration)
             {
                 SwampIntegration();
                 foreach(ThingDef thing in toPatch)

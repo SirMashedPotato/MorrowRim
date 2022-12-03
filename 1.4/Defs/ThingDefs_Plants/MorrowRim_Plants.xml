@@ -7,6 +7,9 @@
 	<!-- Ash yam, potato replacement -->
 	
 	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshYam</defName>
+		<label>ash yam plant</label>
+		<description>A highly nutritious tuber. Ash yams have adapted extraordinarily well to the difficulties of the ashlands. They take no damage during ash storms, can grow in low light, and are even resistant to blight. The only downsides are that they can only grow in ash, and produce a smaller usable yield than cultivated potatoes.\n\nAsh yam receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties">
                 <ashResistant>Resistant</ashResistant>
@@ -15,9 +18,6 @@
                 <ashLover>true</ashLover>
             </li>
 		</modExtensions>
-		<defName>MorrowRim_AshYam</defName>
-		<label>ash yam plant</label>
-		<description>A highly nutritious tuber. Ash yams have adapted extraordinarily well to the difficulties of the ashlands. They take no damage during ash storms, can grow in low light, and are even resistant to blight. The only downsides are that they can only grow in ash, and produce a smaller useable yield than cultivated potatoes.\n\nAsh yam recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<neverMultiSelect>true</neverMultiSelect>
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
@@ -70,7 +70,7 @@
 		</modExtensions>
 		<defName>MorrowRim_HackleLo</defName>
 		<label>hackle-lo plant</label>
-		<description>A slow growing succulent native to the ashlands. Often harvested by Ashlanders for its edible leaves. As long as one is careful with their harvest, the hackle-lo will continue to grow.\n\nHackle-lo recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A slow growing succulent native to the ashlands. Often harvested by Ashlanders for its edible leaves. As long as one is careful with their harvest, the hackle-lo will continue to grow.\n\nHackle-lo receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<neverMultiSelect>true</neverMultiSelect>
 		<statBases>
 		  <MaxHitPoints>160</MaxHitPoints>
@@ -174,7 +174,7 @@
 		</modExtensions>
 		<defName>MorrowRim_CorkBulb</defName>
 		<label>corkbulb plant</label>
-		<description>A large tuber with numerous roots, native to the ashlands. The tuber itself is completely inedible, but the roots can be harvested and processed into wood, or just fed to livestock. Corkbulb can only grow in fertile soil.\n\nCorkbulb recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A large tuber with numerous roots, native to the ashlands. The tuber itself is completely inedible, but the roots can be harvested and processed into wood, or just fed to livestock. Corkbulb can only grow in fertile soil.\n\nCorkbulb receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<neverMultiSelect>true</neverMultiSelect>
 		<statBases>
 		  <MaxHitPoints>140</MaxHitPoints>
@@ -238,7 +238,7 @@
 		</modExtensions>
 		<defName>MorrowRim_Trama</defName>
 		<label>trama shrub</label>
-		<description>A hardy shrub that is one of the few plants found growing in blighted ashlands. Its mass of tendrils can be harvested for wood, and are rather difficult to navigate. The plant itself is completely immune to blight and ash storms. Trama gets everything it needs from the soil, though is rather poor at processing nutrients, and does not benefit from fertile soil.\n\nTrama recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A hardy shrub that is one of the few plants found growing in blighted ashlands. Its mass of tendrils can be harvested for wood, and are rather difficult to navigate. The plant itself is completely immune to blight and ash storms. Trama gets everything it needs from the soil, though is rather poor at processing nutrients, and does not benefit from fertile soil.\n\nTrama receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<neverMultiSelect>true</neverMultiSelect>
 		<statBases>
 		  <MaxHitPoints>140</MaxHitPoints>
@@ -336,7 +336,7 @@
 		  <neverBlightable>false</neverBlightable>
 		  <growDays>13</growDays>
 		  <visualSizeRange>1.8~2.2</visualSizeRange>
-		  <wildOrder>2</wildOrder>
+		  <wildOrder>3</wildOrder>
 		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_MuckSpongeImmature</immatureGraphicPath>
 		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
 		  <harvestMinGrowth>0.50</harvestMinGrowth>
@@ -360,7 +360,7 @@
 		</modExtensions>
 		<defName>MorrowRim_EmporerParasol</defName>
 		<label>emperor parasol mushroom</label>
-		<description>A giant mushroom found often in the ashlands. Takes a considerable time to grow and does not need light. The stem hardens as the mushroom ages, eventually hardening into an almost wood-like material.\n\nEmperor parasol recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A giant mushroom found often in the ashlands. Takes a considerable time to grow and does not need light. The stem hardens as the mushroom ages, eventually hardening into an almost wood-like material.\n\nEmperor parasol receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<graphicData>
 		  <texPath>MorrowRim/Plants/MorrowRim_EmporerParasol</texPath>
 		  <graphicClass>Graphic_Random</graphicClass>
@@ -407,7 +407,7 @@
 		</modExtensions>
 		<defName>MorrowRim_Scathecraw</defName>
 		<label>scathecraw plant</label>
-		<description>A sturdy succulent native to the ashlands. As it matures it takes on a much redder hue. Can be harvested for its leaves, which can be begrudgingly consumed. Scathecraw are rather adept at growing in blighted locations, at least compared to other plants. They are capable of growing in soil with low fertility, and of growing in low light levels.\n\nScathecraw recieve a 10% boost to growth rate, while outside during, an ash storm.</description>
+		<description>A sturdy succulent native to the ashlands. As it matures it takes on a much redder hue. Can be harvested for its leaves, which can be begrudgingly consumed. Scathecraw are rather adept at growing in blighted locations, at least compared to other plants. They are capable of growing in soil with low fertility, and of growing in low light levels.\n\nScathecraw receive a 10% boost to growth rate, while outside during, an ash storm.</description>
 		<neverMultiSelect>true</neverMultiSelect>
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>

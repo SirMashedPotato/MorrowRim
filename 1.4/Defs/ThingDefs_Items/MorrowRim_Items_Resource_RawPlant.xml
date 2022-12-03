@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>MorrowRim_RawAshYam</defName>
-		<label>ash-yam</label>
+		<label>ash yam</label>
 		<description>Raw ash yam.</description>
 		<graphicData>
 		  <texPath>MorrowRim/Items/Resources/MorrowRim_AshYam_Raw</texPath>

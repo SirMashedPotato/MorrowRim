@@ -8,7 +8,7 @@ namespace MorrowRim
     {
         public override float GetScore(Tile tile, int tileID)
         {
-            if (!ModSettings_Utility.MorrowRim_SettingBiomeEnableAshlandsSwamp())
+            if (!MorrowRim_ModSettings.SettingBiomeEnableAshlandsSwamp)
             {
                 return -100f;
             }
@@ -21,7 +21,7 @@ namespace MorrowRim
                 return 0f;
             }
             //standard BiomeWorker
-            if (!ModSettings_Utility.MorrowRim_SettingBiomePolarShift())
+            if (!MorrowRim_ModSettings.SettingBiomePolarShift)
             {
                 if (tile.temperature <= 0 - 10f)
                 {
@@ -31,7 +31,7 @@ namespace MorrowRim
                 {
                     return 0f;
                 }
-                return (22.5f + (tile.temperature - 20f) * 2.2f + (tile.rainfall - 600f) / 100f) * ModSettings_Utility.MorrowRim_SettingBiomeMultiplier();
+                return (22.5f + (tile.temperature - 20f) * 2.2f + (tile.rainfall - 600f) / 100f) * MorrowRim_ModSettings.SettingBiomeMultiplier;
             }
             //polar BiomeWorker
             if (tile.temperature > 0f)
@@ -42,7 +42,7 @@ namespace MorrowRim
             {
                 return 0f;
             }
-            return -tile.temperature * ModSettings_Utility.MorrowRim_SettingBiomeMultiplier();
+            return -tile.temperature * MorrowRim_ModSettings.SettingBiomeMultiplier;
         }
 
     }

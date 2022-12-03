@@ -37,7 +37,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void AshStormLighting(ref Map map, ref float __result)
         {
-            if (ModSettings_Utility.MorrowRim_SettingEnableLightingEffects())
+            if (MorrowRim_ModSettings.SettingEnableLightingEffects)
             {
                 var pm = WeatherProperties.Get(map.Biome);
                 if (pm != null && pm.reduceLightLevels && map.weatherManager.curWeather != WeatherDefOf.Clear)
@@ -95,7 +95,7 @@ namespace MorrowRim
         public static void GrowInBiome(List<ThingDef> outPlants, Map ___map)
         {
             List<ThingDef> PlantsToRemove = new List<ThingDef>();
-            if (ModSettings_Utility.CheckBiomesPatch() && !ModSettings_Utility.MorrowRim_SettingBiomeEnablePlantsOutside() && !___map.Biome.defName.Contains("MorrowRim_"))
+            if (ModSettings_Utility.CheckBiomesPatch() && !MorrowRim_ModSettings.SettingBiomeEnablePlantsOutside && !___map.Biome.defName.Contains("MorrowRim_"))
             {
                 foreach (ThingDef plant in outPlants)
                 {
@@ -121,7 +121,7 @@ namespace MorrowRim
         [HarmonyPrefix]
         public static bool IncreaseGrowthAfterAshStorm(Map ___map)
         {
-            if (ModSettings_Utility.MorrowRim_SettingAshRegrowth())
+            if (MorrowRim_ModSettings.SettingAshRegrowth)
             {
                 if (WeatherUtilityAsh.WeatherIsAshStorm(___map))
                 {
@@ -188,7 +188,7 @@ namespace MorrowRim
                     {
                         __result = TerrainDef.Named("MorrowRim_VolcanicSand");
                     }
-                    if (ModSettings_Utility.MorrowRim_SettingBiomeSwitchToDumbLava() && __result.defName == "RG_Lava")
+                    if (MorrowRim_ModSettings.SettingBiomeSwitchToDumbLava && __result.defName == "RG_Lava")
                     {
                         __result = TerrainDef.Named("MorrowRimRG_LavaDumb");
                     }
@@ -221,7 +221,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ReplaceTerrainWithAsh(BiomeDef biome, ref TerrainDef __result)
         {
-            if (biome.defName == "MorrowRim_AshSwamp" && ModSettings_Utility.MorrowRim_SettingBiomeDisableSwampBeaches())
+            if (biome.defName == "MorrowRim_AshSwamp" && MorrowRim_ModSettings.SettingBiomeDisableSwampBeaches)
             {
                 if (__result == TerrainDefOf.Sand || __result == TerrainDefOf.Ice)
                 {
@@ -424,7 +424,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void PreventVisitorsDuringAshStorms(IncidentParms parms, ref bool __result)
         {
-            if (ModSettings_Utility.MorrowRim_SettingAshPreventVisitors()) 
+            if (MorrowRim_ModSettings.SettingAshPreventVisitors) 
             {
                 if (__result)
                 {
@@ -450,7 +450,7 @@ namespace MorrowRim
         public static bool Gen_KwamaNest(Map map, GenStepParams parms)
         {
             //advanced version, chance based on proximity to egg mine
-            if (ModSettings_Utility.MorrowRim_SettingKwamaEnableGen() && FactionUtility.DefaultFactionFrom(FactionDefOf.MorrowRim_Kwama) != null)
+            if (MorrowRim_ModSettings.SettingKwamaEnableGen && FactionUtility.DefaultFactionFrom(FactionDefOf.MorrowRim_Kwama) != null)
             {
                 WorldGrid worldGrid = Find.WorldGrid;
                 WorldObjectsHolder worldObjectsHolder = Find.WorldObjects;
@@ -466,7 +466,7 @@ namespace MorrowRim
                     || map.Biome.defName == "MorrowRim_VolcanicAshlands" || map.Biome.defName == "MorrowRim_AshSwamp") distance /= 2;   //doubles probability for certain biomes
                 if (map.Biome.defName == "MorrowRim_BlightedAshlands") distance *= 2;   //halves probability if the biome is blighted ashlands
                                                                                         //Log.Message("Checking for spawn chance of kwama nests, distance from nearest nest is: " + distance);
-                if (Rand.Range(0, distance + 1) <= ModSettings_Utility.MorrowRim_SettingKwamaMinDistance())
+                if (Rand.Range(0, distance + 1) <= MorrowRim_ModSettings.SettingKwamaMinDistance)
                 {
                     Kwama.GenStep_KwamaNest kwamaNest = new Kwama.GenStep_KwamaNest();
                     kwamaNest.Generate(map, parms);
@@ -614,8 +614,8 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ExtinctionPatch(PawnKindDef animalDef, ref float __result)
         {
-            if (animalDef == PawnKindDefOf.MorrowRim_CliffRacer && (ModSettings_Utility.MorrowRim_SettingEnableCliffRacerExtinction() || TrueCliffRacerExtinctionCheck.IsExtinct()) 
-                || animalDef == PawnKindDefOf.MorrowRim_SiltStrider && ModSettings_Utility.MorrowRim_SettingEnableSiltStriderExtinction())
+            if (animalDef == PawnKindDefOf.MorrowRim_CliffRacer && (MorrowRim_ModSettings.SettingEnableCliffRacerExtinction || TrueCliffRacerExtinctionCheck.IsExtinct()) 
+                || animalDef == PawnKindDefOf.MorrowRim_SiltStrider && MorrowRim_ModSettings.SettingEnableSiltStriderExtinction)
             {
                 __result = 0f;
             }
@@ -629,7 +629,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ExtinctionPatch(ThingDef pawn, ref bool __result)
         {
-            if (pawn == ThingDefOf.MorrowRim_SiltStrider && ModSettings_Utility.MorrowRim_SettingEnableSiltStriderExtinction())
+            if (pawn == ThingDefOf.MorrowRim_SiltStrider && MorrowRim_ModSettings.SettingEnableSiltStriderExtinction)
             {
                 __result = false;
             }
@@ -643,7 +643,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void ExtinctionPatch(IncidentDef diseaseInc, ref float __result)
         {
-            if (diseaseInc.defName == "MorrowRim_Disease_Corprus" && ModSettings_Utility.MorrowRim_SettingEnableCorprusExtinction())
+            if (diseaseInc.defName == "MorrowRim_Disease_Corprus" && MorrowRim_ModSettings.SettingEnableCorprusExtinction)
             {
                 __result = 0f;
             }
@@ -687,7 +687,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void KwamaPatch(Pawn predator, Pawn prey, ref bool __result)
         {
-            if (__result && ModSettings_Utility.MorrowRim_SettingEnablePredatorAvoidKwama())
+            if (__result && MorrowRim_ModSettings.SettingEnablePredatorAvoidKwama)
             {
                 if (prey.Faction != null && prey.Faction.def == FactionDefOf.MorrowRim_Kwama)
                 {
@@ -728,7 +728,7 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void KwamaPatch(Map map, IntVec3 loc)
         {
-            if (ModSettings_Utility.MorrowRim_SettingKwamaEnableTrojanHostile())
+            if (MorrowRim_ModSettings.SettingKwamaEnableTrojanHostile)
             {
                 if (loc.GetThingList(map).Where(x => x.def == ThingDefOf.MorrowRim_KwamaNest).Any())
                 {
@@ -840,7 +840,7 @@ namespace MorrowRim
         public static void AshOverride_Patch(WeatherDecider __instance, ref WeatherDef __result)
         {
 
-            if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStorm())
+            if (MorrowRim_ModSettings.SettingEnablePermaAshStorm)
             {
                 if (__result == RimWorld.WeatherDefOf.Clear && __instance.ForcedWeather != RimWorld.WeatherDefOf.Clear)
                 {
@@ -857,13 +857,13 @@ namespace MorrowRim
         [HarmonyPostfix]
         public static void AshOverridePatch(WeatherDef weather, Map ___map, ref float __result)
         {
-            if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStorm())
+            if (MorrowRim_ModSettings.SettingEnablePermaAshStorm)
             {
-                if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms())
+                if (MorrowRim_ModSettings.SettingEnablePermaAshStormOnlyAshStorms)
                 {
                     if (!___map.Biome.defName.Contains("MorrowRim")) return;
                 }
-                if (ModSettings_Utility.MorrowRim_SettingEnablePermaAshStormOnlyAshStorms())
+                if (MorrowRim_ModSettings.SettingEnablePermaAshStormOnlyAshStorms)
                 {
                     if (!weather.defName.Contains("AshStorm"))
                     {

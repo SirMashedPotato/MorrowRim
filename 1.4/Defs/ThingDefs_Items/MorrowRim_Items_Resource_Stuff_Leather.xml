@@ -76,6 +76,9 @@
 			<MaxHitPoints>1.5</MaxHitPoints>
 			<Beauty>1.2</Beauty>
 		  </statFactors>
+		   <statOffsets>
+			<ToxicResistance>0.02</ToxicResistance>
+		  </statOffsets>
 		</stuffProps>
 		<tradeTags>
 			<li>AshlandCommon</li>

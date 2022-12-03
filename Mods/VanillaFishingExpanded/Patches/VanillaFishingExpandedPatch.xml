@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
-
 			<li Class="PatchOperationFindMod">
 				<mods>
 					<li>Vanilla Fishing Expanded</li>
-				</mods> 
-				<match Class="PatchOperationAdd"> 
+				</mods>
+				<match Class="PatchOperationAdd">
 					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
 					<value>
 						<li>MorrowRim_Ashlands</li>
 					</value>
 				</match>
 			</li>
-
 		</operations>
 	</Operation>
 </Patch>

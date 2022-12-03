@@ -8,9 +8,9 @@ namespace MorrowRim
 
         protected override bool Satisfied(Pawn pawn)
         {
-            return ModSettings_Utility.MorrowRim_SettingEnableAshStormHiding() 
+            return MorrowRim_ModSettings.SettingEnableAshStormHiding
                 && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup) != null
-                && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup).Severity >= ModSettings_Utility.MorrowRim_SettingEnableAshStormHidingMin()
+                && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup).Severity >= MorrowRim_ModSettings.SettingEnableAshStormHidingMin
                 && pawn.Map != null && WeatherUtilityAsh.WeatherIsAshStorm(pawn.Map);
         }
     }

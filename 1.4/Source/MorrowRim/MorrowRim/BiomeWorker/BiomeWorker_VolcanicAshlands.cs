@@ -12,7 +12,7 @@ namespace MorrowRim
 
         public override float GetScore(Tile tile, int tileID)
         {
-            if (!ModSettings_Utility.MorrowRim_SettingBiomeEnableVolcanicAshlands())
+            if (!MorrowRim_ModSettings.SettingBiomeEnableVolcanicAshlands)
             {
                 return -100f;
             }

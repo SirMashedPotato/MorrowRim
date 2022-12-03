@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_GlowingNetchFertilized</defName>
+		<label>glowing netch egg (fert.)</label>
+		<description>A fertilized glowing netch egg. If all goes well, it should hatch into a glowing netch calf. It can be eaten raw, but it's much better cooked.\n\nExpensive due to glowing netch being highly protective of their eggs.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/MorrowRim_JellyEgg</texPath>
+			<color>(125,173,102)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_GlowingNetch</hatcherPawn>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_GlowingShalkFertilized</defName>
+		<label>glowing shalk egg (fert.)</label>
+		<description>A fertilized shalk egg. If all goes well, it should hatch into a baby glowing shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+			<color>(109,161,109)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>4.7</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_GlowingShalk</hatcherPawn>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+		<ingestible>
+			<specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+</Defs>

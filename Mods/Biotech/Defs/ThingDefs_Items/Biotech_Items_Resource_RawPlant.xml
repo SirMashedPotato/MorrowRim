@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>MorrowRim_RawGlowingAshFungus</defName>
+		<label>glowing ash fungus flesh</label>
+		<description>Raw flesh from a glowing ashland mushroom, quite tasty, but not very safe to eat raw. Not your bog-standard raw fungus.</description>
+		<graphicData>
+			<texPath>MorrowRim/Items/Resources/MorrowRim_GlowingAshFungus_raw</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRawPlant</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

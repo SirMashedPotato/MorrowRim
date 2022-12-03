@@ -69,8 +69,10 @@
     <Compile Include="BiomeWorker\BiomeWorker_Grazelands.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Comps\CompCollapser.cs" />
+    <Compile Include="Comps\Comp_GasOnDestroy.cs" />
     <Compile Include="Comps\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comps\Comp_BeserkerRage.cs" />
+    <Compile Include="Comps\Properties\CompProperties_GasOnDestroy.cs" />
     <Compile Include="CompTarget\CompTargetable_VesselRadius.cs" />
     <Compile Include="CompTarget\CompTargetEffect_ArchotechFilter.cs" />
     <Compile Include="CompUse\CompProperties_UseEffectAshformer.cs" />
@@ -83,10 +85,12 @@
     <Compile Include="BiomeWorker\BiomeWorker_Ashlands.cs" />
     <Compile Include="BiomeWorker\BiomeWorker_BlightedAshlands.cs" />
     <Compile Include="CompTarget\CompTargetEffect_DaedraSummon.cs" />
+    <Compile Include="DefModExtensions\PollutionProperties.cs" />
     <Compile Include="DefModExtensions\YurtModExtension.cs" />
     <Compile Include="DefOf\GeneDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="HarmonyPatches\Biotech_PollutionStimulus.cs" />
     <Compile Include="HarmonyPatches\Patch_HediffProperties.cs" />
     <Compile Include="HarmonyPatches\Patch_PlantProperties.cs" />
     <Compile Include="Comps\Properties\CompProperties_Harvestable.cs" />
@@ -167,7 +171,6 @@
     <Compile Include="ThinkNode\ThinkNode_ConditionalHideFromAshStorm.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalHideFromAshStorm_Humanlike.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalScribCabbage.cs" />
-    <Compile Include="ThinkNode\ThinkNode_ConditionalDoDrugs.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalScampInsults.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshLover.cs" />
     <Compile Include="Weather\WeatherEvent_FireDamage.cs" />

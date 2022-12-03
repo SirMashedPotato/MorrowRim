@@ -26,7 +26,7 @@ namespace MorrowRim
 
         public override void FireEvent()
         {
-            if (!ModSettings_Utility.MorrowRim_SettingEnableBlightEffects()) return;
+            if (!MorrowRim_ModSettings.SettingEnableBlightEffects) return;
 
 
             //for plants
@@ -40,7 +40,7 @@ namespace MorrowRim
                 {
                     plants.Add(p);
                 }
-                if (plants.Count >= ModSettings_Utility.MorrowRim_SettingBlightPlantNumber()) break;
+                if (plants.Count >= MorrowRim_ModSettings.SettingBlightPlantNumber) break;
             }
             if (!plants.NullOrEmpty())
             {
@@ -58,7 +58,7 @@ namespace MorrowRim
                     {
                         pawns.Add(allPawnsSpawned[i]);
                     }
-                    if (pawns.Count >= ModSettings_Utility.MorrowRim_SettingBlightAnimalNumber()) break;
+                    if (pawns.Count >= MorrowRim_ModSettings.SettingBlightAnimalNumber) break;
                 }
             }
             if (!pawns.NullOrEmpty())

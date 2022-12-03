@@ -11,7 +11,7 @@ namespace MorrowRim
 
 		public override Job TryGiveJob(Pawn pawn)
 		{
-            if (ModSettings_Utility.MorrowRim_SettingEnableAshCastles())
+            if (MorrowRim_ModSettings.SettingEnableAshCastles)
             {
 
 				if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Construction) && !pawn.story.traits.HasTrait(TraitDef.Named("MorrowRim_AshLover")))
@@ -22,7 +22,7 @@ namespace MorrowRim
 				{
 					return null;
 				}
-				if (!ModSettings_Utility.MorrowRim_SettingEnableAshCastlesDuringAshStorm() && WeatherUtilityAsh.WeatherIsAshStorm(pawn.Map))
+				if (!MorrowRim_ModSettings.SettingEnableAshCastlesDuringAshStorm && WeatherUtilityAsh.WeatherIsAshStorm(pawn.Map))
 				{
 					return null;
 				}
@@ -97,7 +97,7 @@ namespace MorrowRim
 			List<Thing> list = pawn.Map.listerThings.ThingsOfDef(ThingDefOf.MorrowRim_AshCastle);
 			for (int j = 0; j < list.Count; j++)
 			{
-				if (list[j].Position.InHorDistOf(c, ModSettings_Utility.MorrowRim_SettingEnableAshCastlesMinDistance()))
+				if (list[j].Position.InHorDistOf(c, MorrowRim_ModSettings.SettingEnableAshCastlesMinDistance))
 				{
 					return false;
 				}

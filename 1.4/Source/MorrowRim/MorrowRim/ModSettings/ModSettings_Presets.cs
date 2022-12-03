@@ -10,11 +10,11 @@ namespace MorrowRim
 
         public static void PresetResetSettings(MorrowRim_ModSettings settings)
         {
-            MorrowRim_ModSettings.ResetSettings_Ash(settings);
-            MorrowRim_ModSettings.ResetSettings_Blight(settings);
-            MorrowRim_ModSettings.ResetSettings_Fire(settings);
-            MorrowRim_ModSettings.ResetSettings_Incident(settings);
-            MorrowRim_ModSettings.ResetSettings_Zombieland(settings);
+            MorrowRim_ModSettings.ResetSettings_Ash();
+            MorrowRim_ModSettings.ResetSettings_Blight();
+            MorrowRim_ModSettings.ResetSettings_Fire();
+            MorrowRim_ModSettings.ResetSettings_Incident();
+            MorrowRim_ModSettings.ResetSettings_Zombieland();
             sound.PlayOneShotOnCamera();
         }
 

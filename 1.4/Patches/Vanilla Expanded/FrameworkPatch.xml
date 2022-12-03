@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
-
+<Patch>
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -165,7 +162,7 @@
 				<!-- Need to lower speed too -->
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch" or defName="MorrowRim_RetchingNetch" or defName="MorrowRim_CliffRacer"]/comps</xpath>
+					<xpath>/Defs/ThingDef[@Name="MorrowRim_NetchBase" or defName="MorrowRim_CliffRacer"]/comps</xpath>
 					<value>
 						<li Class="AnimalBehaviours.CompProperties_Floating">
 						</li>
@@ -173,7 +170,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="MorrowRim_Netch"]/statBases/MoveSpeed</xpath>
+					<xpath>/Defs/ThingDef[@Name="MorrowRim_NetchBase"]/statBases/MoveSpeed</xpath>
 					<value>
 						<MoveSpeed>2.0</MoveSpeed>
 					</value>

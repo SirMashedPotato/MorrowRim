@@ -40,9 +40,9 @@ namespace MorrowRim
 
 		private void InflictCorprus(Pawn pawn)
         {
-            if (Rand.Chance(ModSettings_Utility.MorrowRim_SettingEnableCorprusRefugeeChance()))
+            if (Rand.Chance(MorrowRim_ModSettings.SettingEnableCorprusRefugeeChance))
             {
-				pawn.health.AddHediff(HediffDefOf.MorrowRim_Corprus, null, null, null).Severity = Rand.Range(0.0f, ModSettings_Utility.MorrowRim_SettingEnableCorprusRefugeeSeverity()+0.1f);
+				pawn.health.AddHediff(HediffDefOf.MorrowRim_Corprus, null, null, null).Severity = Rand.Range(0.0f, MorrowRim_ModSettings.SettingEnableCorprusRefugeeSeverity+0.1f);
 			}
         }
 

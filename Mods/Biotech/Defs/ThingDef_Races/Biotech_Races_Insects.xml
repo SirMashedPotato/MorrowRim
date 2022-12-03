@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_GlowingShalk]========== -->
+	<ThingDef ParentName="MorrowRim_ShalkBase">
+		<defName>MorrowRim_GlowingShalk</defName>
+		<label>glowing shalk</label>
+		<description>A large beetle found natively in the ashlands. The glowing shalk is a subspecies of the regular shalk, which has adapted to life in highly polluted regions, and has subsequently developed a symbiotic bond with a species of glowing fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk absorb nutrients from environmental pollution. Taming a glowing shalk will allow one to regularly harvest these mushrooms.\n\nLike many ashland natives glowing shalk are resistant to the effects of ash-storms.</description>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PollutionProperties">
+				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>3.40</MoveSpeed>
+			<MarketValue>130</MarketValue>
+		</statBases>
+		<tools Inherit="False">
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_GlowingShalkFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>3</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~3</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>MorrowRim_RawGlowingAshFungus</woolDef>
+				<shearIntervalDays>4</shearIntervalDays>
+				<woolAmount>6</woolAmount>
+			</li>
+		</comps>
+		<butcherProducts>
+			<MorrowRim_ShalkResin>2</MorrowRim_ShalkResin>
+			<MorrowRim_RawGlowingAshFungus>4</MorrowRim_RawGlowingAshFungus>
+		</butcherProducts>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AshlandAnimalRare</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_GlowingShalk</defName>
+		<label>glowing shalk</label>
+		<race>MorrowRim_GlowingShalk</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Glowing/GlowingShalk</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Dessicated_Shalk</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Glowing/GlowingShalk</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Dessicated_Shalk</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Glowing/GlowingShalk</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Shalk/Dessicated_Shalk</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

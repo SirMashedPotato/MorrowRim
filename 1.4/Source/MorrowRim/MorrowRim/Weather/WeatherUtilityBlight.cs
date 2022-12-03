@@ -19,7 +19,7 @@ namespace MorrowRim
             {
                 return !p.RaceProps.Humanlike && p.Faction == null && !CheckAshCloggedServos(p) 
                     && p.mindState.mentalStateHandler.CurStateDef != MentalStateDefOf.Manhunter
-                    && Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingBlightAnimalChance()));
+                    && Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingBlightAnimalChance));
             }
             catch (NullReferenceException) 
             {
@@ -29,8 +29,8 @@ namespace MorrowRim
 
         public static bool CheckAnimalBlightScaling(Pawn p)
         {
-            return ModSettings_Utility.MorrowRim_SettingBlightAnimalIgnoreScaling()
-                || p.kindDef.combatPower <  StorytellerUtility.DefaultThreatPointsNow(p.Map) * ModSettings_Utility.MorrowRim_SettingBlightAnimalMultiplier();
+            return MorrowRim_ModSettings.SettingBlightAnimalIgnoreScaling
+                || p.kindDef.combatPower <  StorytellerUtility.DefaultThreatPointsNow(p.Map) * MorrowRim_ModSettings.SettingBlightAnimalMultiplier;
         }
 
         public static void TriggerAnimalBlight(Pawn p)
@@ -52,7 +52,7 @@ namespace MorrowRim
 
         public static bool CheckPlantBlight(Plant p)
         {
-            return !p.Blighted && p.BlightableNow && Rand.Chance(ModSettings_Utility.SettingToFloat(ModSettings_Utility.MorrowRim_SettingBlightPlantChance()));
+            return !p.Blighted && p.BlightableNow && Rand.Chance(ModSettings_Utility.SettingToFloat(MorrowRim_ModSettings.SettingBlightPlantChance));
         }
 
         public static void TriggerPlantBlight(Plant p)

@@ -8,7 +8,7 @@ namespace MorrowRim
 
         protected override bool Satisfied(Pawn pawn)
         {
-            return pawn.kindDef == this.pawnKind && ModSettings_Utility.MorrowRim_SettingEnableScribBehaviour();
+            return pawn.kindDef == this.pawnKind && MorrowRim_ModSettings.SettingEnableScribBehaviour;
         }
     }
 }

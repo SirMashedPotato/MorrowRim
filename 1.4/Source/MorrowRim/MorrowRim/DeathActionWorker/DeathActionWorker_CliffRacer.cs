@@ -7,7 +7,7 @@ namespace MorrowRim
     {
         public override void PawnDied(Corpse corpse)
         {
-            if(corpse.InnerPawn.Faction == null && ModSettings_Utility.MorrowRim_SettingEnableTrueCliffRacerExtinction())
+            if(corpse.InnerPawn.Faction == null && MorrowRim_ModSettings.SettingEnableTrueCliffRacerExtinction)
             {
                 World world = Find.World;
                 if(world != null)
