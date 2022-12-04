@@ -118,9 +118,8 @@
 				<points>
 					<li>(0.5, 0)</li>
 					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(2.5, 0.7)</li>
-					<li>(3, 0)</li>
+					<li>(2, 0.4)</li>
+					<li>(2.5, 0)</li>
 				</points>
 			</litterSizeCurve>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -134,11 +133,11 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.25</minAge>
+					<minAge>0.2</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.5</minAge>
+					<minAge>0.42</minAge>
 					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
 					<soundDeath>Pawn_Muffalo_Death</soundDeath>
 					<soundCall>Pawn_Muffalo_Call</soundCall>

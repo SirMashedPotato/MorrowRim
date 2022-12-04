@@ -448,50 +448,74 @@
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
 		<lifeStages>
-		  <li>
-			<label>retching netch calf</label>
-			<labelPlural>retching netch calves</labelPlural>
-			<bodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
-			  <drawSize>1.3</drawSize>
-			  <shadowData>
-				<volume>(0.4, 0.3, 0.3)</volume>
-				<offset>(0,0,-0.2)</offset>
-			  </shadowData>
-			</bodyGraphicData>
-			<dessicatedBodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
-			  <drawSize>1.3</drawSize>
-			</dessicatedBodyGraphicData>
-		  </li>
-		  <li>
-			<bodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
-			  <drawSize>1.6</drawSize>
-			  <shadowData>
-				<volume>(0.6, 0.45, 0.45)</volume>
-				<offset>(0,0,-0.25)</offset>
-			  </shadowData>
-			</bodyGraphicData>
-			<dessicatedBodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
-			  <drawSize>1.6</drawSize>
-			</dessicatedBodyGraphicData>
-		  </li>
-		  <li>
-			<bodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
-			  <drawSize>2.0</drawSize>
-			  <shadowData>
-				<volume>(0.4, 0.4, 0.4)</volume>
-				<offset>(0,0,-0.2)</offset>
-			  </shadowData>
-			</bodyGraphicData>
-			<dessicatedBodyGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
-			  <drawSize>2.0</drawSize>
-			</dessicatedBodyGraphicData>
-		  </li>
+			<li>
+				<label>retching netch calf</label>
+				<labelPlural>retching netch calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/RetchingNetchCalf</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/Dessicated_RetchingNetchCalf</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/RetchingNetch</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/RetchingNetchBetty</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/Dessicated_RetchingNetch</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/Dessicated_RetchingNetchBetty</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/RetchingNetch</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/RetchingNetchBetty</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/Dessicated_RetchingNetch</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>MorrowRim/Animals/Netch/Retching/Dessicated_RetchingNetchBetty</texPath>
+					<drawSize>1.7</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
 		</lifeStages>
 	</PawnKindDef>
 
