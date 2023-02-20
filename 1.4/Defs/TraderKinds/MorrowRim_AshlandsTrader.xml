@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraderKindDef>
+		<defName>MorrowRim_AshlandsTrader</defName>
+		<label>ashland trader</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>900~1500</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Pemmican</thingDef>
+				<countRange>150~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>25~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>0~10</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AshlandCommon</tradeTag>
+				<thingDefCountRange>5~8</thingDefCountRange>
+				<totalPriceRange>200~600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AshlandRare</tradeTag>
+				<thingDefCountRange>2~6</thingDefCountRange>
+				<totalPriceRange>400~900</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AshlandExotic</tradeTag>
+				<thingDefCountRange>0~4</thingDefCountRange>
+				<totalPriceRange>600~1200</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>AshlandRawPlant</tradeTag>
+				<thingDefCountRange>5~8</thingDefCountRange>
+				<totalPriceRange>200~500</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_KwamaEgg</thingDef>
+				<countRange>75~300</countRange>
+			</li>
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints">
+				<countChances>
+					<li>
+						<count>1</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+			<!-- Implants -->
+			<!-- none -->
+			<!-- Buildings -->
+			<!-- none -->
+			<!-- Exotic -->
+			<!-- Slaves -->
+			<li Class="StockGenerator_Slaves">
+				<respectPopulationIntent>true</respectPopulationIntent>
+				<countRange>0~2</countRange>
+			</li>
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AshlandAnimalCommon</li>
+				</tradeTagsSell>
+				<kindCountRange>2~3</kindCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AshlandAnimalRare</li>
+				</tradeTagsSell>
+				<kindCountRange>1~3</kindCountRange>
+				<countRange>0~2</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AshlandAnimalExotic</li>
+				</tradeTagsSell>
+				<kindCountRange>-3~1</kindCountRange>
+				<countRange>1</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuySlaves"/>
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>
