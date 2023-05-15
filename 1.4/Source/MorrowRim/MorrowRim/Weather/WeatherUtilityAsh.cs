@@ -281,7 +281,10 @@ namespace MorrowRim
                 float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
                 num *= num2;
                 HealthUtility.AdjustSeverity(p, HediffDefOf.MorrowRim_AshBuildup, num);
-                DoNotification(p, num, p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup).Severity);
+                if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup) != null)
+                {
+                    DoNotification(p, num, p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.MorrowRim_AshBuildup).Severity);
+                }
             }
         }
 
